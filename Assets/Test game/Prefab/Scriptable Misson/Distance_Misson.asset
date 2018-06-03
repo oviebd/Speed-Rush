@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b57add42e26fb9e42b2a88e0a896e115, type: 3}
+  m_Name: Distance_Misson
+  m_EditorClassIdentifier: 
+  id: 2
+  name: Distance
+  tag: 
+  minVal: 100
+  maxVal: 100000
+  targetedValue: 10061
+  isItcollisionBased: 0

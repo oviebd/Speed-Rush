@@ -25,8 +25,8 @@ public class GenerateLevel : MonoBehaviour
 
     private ObjectPoolHandler _enemyObjectPool;
 
-    private int _min_enemy_per_block = 2;
-    private int _max_enemy_per_block = 5;
+    private int _min_enemy_per_block = 2; //2
+    private int _max_enemy_per_block = 5;//5
 
     private float _distanceBetweenTwoEnemy;
     private float _last_enemyZpos = 0f;
@@ -51,6 +51,8 @@ public class GenerateLevel : MonoBehaviour
         MakeCalculation();
         GenerateNewFloor();
 
+        ManageEnemySpawn();
+      
         Invoke("ActivePlayer", .5f);
     }
 
@@ -72,6 +74,14 @@ public class GenerateLevel : MonoBehaviour
         //Reward
         _min_distance_for_reward = (_floorMaxZScale * _floorMaxZScale * _floorMaxZScale) * _numberOfblocksAfterRewardSpawn;
     }
+
+
+   public void SetData(LevelInfoClass level)
+    {
+        _min_enemy_per_block = level.min_Enemy;
+        _max_enemy_per_block = level.max_enemy;
+    }
+
 
     public void GenerateNewFloor()
     {
@@ -120,6 +130,7 @@ public class GenerateLevel : MonoBehaviour
         _rewardPrefab.transform.SetParent(_floorParent.transform, true);
         _rewardPrefab.transform.localRotation = _floorParent.transform.rotation;
     }
+
     private void ManageEnemySpawn()
     {
         int maxEnemyOnAPlane = Random.Range(_min_enemy_per_block, _max_enemy_per_block);
@@ -130,22 +141,11 @@ public class GenerateLevel : MonoBehaviour
 
         _distanceBetweenTwoEnemy = factor;
 
+      //  Debug.Log("Distance btwene two enemy :" + _distanceBetweenTwoEnemy);
+
         for (int i = 0; i < maxEnemyOnAPlane; i++)
         {
             GenerateEnemy();
-        }
-
-        _max_enemy_per_block = _max_enemy_per_block + 2;
-        _min_enemy_per_block = _min_enemy_per_block + 1;
-
-        if (_min_enemy_per_block >= 10)
-        {
-            _min_enemy_per_block = 10;
-        }
-
-        if (_max_enemy_per_block >= 20)
-        {
-            _max_enemy_per_block = 20;
         }
     }
 
@@ -155,7 +155,7 @@ public class GenerateLevel : MonoBehaviour
         float xpos = Random.Range(_minXpos, _maxXpos);
         _last_enemyZpos = _last_enemyZpos + _distanceBetweenTwoEnemy;
 
-        if (_last_enemyZpos > _currentFloorZpos)
+        if (_last_enemyZpos > _currentFloorZpos && floorNum >1)
         {
             _last_enemyZpos = _currentFloorZpos;
             return;

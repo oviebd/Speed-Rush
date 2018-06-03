@@ -4,12 +4,34 @@ using UnityEngine;
 
 public class PlayerMovementController : MonoBehaviour {
 
-    [SerializeField] private float _forwardSpeed=1.0f;
-    private float _moveX;
+    [SerializeField] private float playerSpeed = 2;
+    private float maxPlayerSpeed;
 
+    private float _forwardSpeed=10f;  //10
+   
+    public bool isPlayerMoved { get; set; }
 
-    int xDir = 2;
+    float xDir = 2; //2
     Vector3 movVector;
+   
+
+    private void Start()
+    {
+       // SetPlayerSpeed(playerSpeed);
+      //  isPlayerMoved = true;
+      
+    }
+
+    public void SetPlayerSpeed(LevelInfoClass level)
+    {
+        isPlayerMoved = true;
+        playerSpeed = level.playerInitSpeed;
+
+        Debug.Log("Init speed "+ playerSpeed);
+
+        maxPlayerSpeed = level.playerMaxSpeed;
+        movVector = new Vector3(xDir, 0, _forwardSpeed);
+    }
 
     private void Update()
     {
@@ -20,17 +42,6 @@ public class PlayerMovementController : MonoBehaviour {
         }
     }
 
-    private Rigidbody _rb;
-
-    private void Start()
-    {
-        movVector = new Vector3(xDir, 0, 10.0f);
-        _rb = GetComponent<Rigidbody>();
-    }
-
-
-
-
     void FixedUpdate()
     {
         MoveForward();
@@ -38,10 +49,27 @@ public class PlayerMovementController : MonoBehaviour {
 
     private void MoveForward()
     {
-        Vector3 velocity =movVector * _forwardSpeed * Time.deltaTime;
-        transform.Translate(velocity);
+       
+        if (isPlayerMoved)
+        {
+            Vector3 velocity = movVector * playerSpeed * Time.deltaTime;
+           // Debug.Log("Player Mov Vector : " + velocity);
+            transform.Translate(velocity);
+            SpeedUpGradually();
+        }
+       
     }
 
+    void SpeedUpGradually()
+    {
+        float factor = .001f;
+        playerSpeed = playerSpeed + factor;
 
+        if (playerSpeed >= maxPlayerSpeed )
+            playerSpeed = maxPlayerSpeed ;
+
+        Debug.Log("Player speed : "+ playerSpeed);
+
+    }
    
 }

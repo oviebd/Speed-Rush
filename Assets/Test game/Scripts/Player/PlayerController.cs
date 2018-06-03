@@ -4,12 +4,26 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-    public int currentLife = 1;
+    [SerializeField] GameObject explosionEffect;
+   // public int currentLife = 1;
 
     private bool _isPlayerDamageable;
     private float _cooldownTime;
 
+
+     GameManager gameManager;
+     HealthController healthControler;
+     UiManager uiManager;
+
+
     void Start () {
+
+        // gameManager = FindObjectOfType<GameManager>();
+        gameManager = GameManager.instance;
+        healthControler = FindObjectOfType<HealthController>();
+        uiManager = FindObjectOfType<UiManager>();
+
+        explosionEffect.SetActive(false);
         _isPlayerDamageable = false;
 
         _cooldownTime = 1.0f;
@@ -25,7 +39,7 @@ public class PlayerController : MonoBehaviour {
 	void Update () {
 		if(gameObject.transform.localPosition.y < 0)
         {
-            FindObjectOfType<GameManager>().Restart();
+            FindObjectOfType<GameManager>().EndGame();
         }
 	}
 
@@ -43,17 +57,48 @@ public class PlayerController : MonoBehaviour {
             // Debug.Log("Destroy game");
             if (_isPlayerDamageable)
             {
-                FindObjectOfType<GameManager>().Restart();
+                other.gameObject.SetActive(false);
+               // FindObjectOfType<GameManager>().Restart();
+                EnemyHitEffect();
             }
            
         }
 
-        if (other.gameObject.tag == "Life")
+        if (other.gameObject.tag == "Heart")
         {
+            other.gameObject.SetActive(false);
             Debug.Log("Life game");
-            currentLife++;
-            FindObjectOfType<UiManager>().UpdateLifeText(currentLife);
+            FindObjectOfType<HealthController>().AddLife();
         }
+    }
+
+
+    void EnemyHitEffect()
+    {
+        gameObject.GetComponent<PlayerMovementController>().isPlayerMoved = false;
+
+        if (healthControler.IsHealthRemains())
+        {
+            healthControler.ShowUseLifePanel();
+        }
+        else
+        {
+            Die();
+        }
+
+       
+    }
+
+    public void Die()
+    {
+        Debug.Log("Die in Player C");
+        explosionEffect.SetActive(true);
+        Invoke("CallEndGame", 1f);
+    }
+
+    void CallEndGame()
+    {
+        gameManager.EndGame();
     }
 
   
