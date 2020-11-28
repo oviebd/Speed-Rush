@@ -9,7 +9,12 @@ public class CameraFollower : MonoBehaviour {
 	public float smoothSpeed = 0.125f;
 	public Vector3 offset;
 
-    public void SetCameraTarget()
+	private void Start()
+	{
+		SetCameraTarget();
+	}
+
+	public void SetCameraTarget()
     {
      target= GameObject.FindGameObjectWithTag("Player").transform;
     }

@@ -17,8 +17,8 @@ public class PlayerMovementController : MonoBehaviour {
 
     private void Start()
     {
-       // SetPlayerSpeed(playerSpeed);
-      //  isPlayerMoved = true;
+     //  SetPlayerSpeed(5.0f);
+        isPlayerMoved = true;
       
     }
 
