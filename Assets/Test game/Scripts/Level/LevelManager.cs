@@ -4,11 +4,18 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour {
 
+	public static LevelManager instance;
 	public int levelNo { get; set; }
     List<LevelInfoClass> levelInfosList;
 
-   
-    void Start () {
+
+	private void Awake()
+	{
+		if (instance == null)
+			instance = this;
+	}
+
+	void Start () {
         levelInfosList = new List<LevelInfoClass>();
         levelNo = 1;
         SetLevels();
@@ -68,7 +75,7 @@ public class LevelManager : MonoBehaviour {
             max_enemy = max_enemy +( (i-1) * 2);
             playerSpeed = playerSpeed + 0.5f;
 
-            if(max_enemy > 18)
+            if(max_enemy > 20)
             {
                 max_enemy = 20;
             }

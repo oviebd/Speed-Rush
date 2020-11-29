@@ -9,19 +9,7 @@ public class PlayerController : MonoBehaviour {
 
     private bool _isPlayerDamageable;
     private float _cooldownTime;
-
-
-     GameManager gameManager;
-     HealthController healthControler;
-     UiManager uiManager;
-
-
     void Start () {
-
-        // gameManager = FindObjectOfType<GameManager>();
-        gameManager = GameManager.instance;
-        healthControler = FindObjectOfType<HealthController>();
-        uiManager = FindObjectOfType<UiManager>();
 
         explosionEffect.SetActive(false);
         _isPlayerDamageable = false;
@@ -29,21 +17,25 @@ public class PlayerController : MonoBehaviour {
         _cooldownTime = 1.0f;
         Invoke("MakePlayerDamageable", _cooldownTime);
     }
-	
 
     void MakePlayerDamageable()
     {
         _isPlayerDamageable = true;
     }
+
+	public Vector3 GetPlayerCurrentPosition()
+	{
+		return transform.position;
+	}
 	
 	void Update () {
-		if(gameObject.transform.localPosition.y < 0)
+	/*	if(gameObject.transform.localPosition.y < 0)
         {
             FindObjectOfType<GameManager>().EndGame();
-        }
+        }*/
 	}
 
-    private void OnTriggerEnter(Collider other)
+  /*  private void OnTriggerEnter(Collider other)
     {
         // Debug.Log("Collided "+ collision.gameObject.name);
         if (other.gameObject.tag == "instantiate_collider")
@@ -70,10 +62,10 @@ public class PlayerController : MonoBehaviour {
             Debug.Log("Life game");
             FindObjectOfType<HealthController>().AddLife();
         }
-    }
+    }*/
 
 
-    void EnemyHitEffect()
+  /*  void EnemyHitEffect()
     {
         gameObject.GetComponent<PlayerMovementController>().isPlayerMoved = false;
 
@@ -87,7 +79,7 @@ public class PlayerController : MonoBehaviour {
         }
 
        
-    }
+    }*/
 
     public void Die()
     {
@@ -96,10 +88,10 @@ public class PlayerController : MonoBehaviour {
         Invoke("CallEndGame", 1f);
     }
 
-    void CallEndGame()
+   /* void CallEndGame()
     {
         gameManager.EndGame();
-    }
+    }*/
 
   
 }
