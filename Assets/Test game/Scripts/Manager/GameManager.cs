@@ -51,6 +51,8 @@ public class GameManager : MonoBehaviour {
 	}
 
    
+
+
    
     void StrtGame()
     {

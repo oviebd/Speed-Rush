@@ -7,7 +7,7 @@ public class EnemyGenerator : MonoBehaviour
 	[HideInInspector]
 	public static EnemyGenerator instance;
 
-	[SerializeField] private GameObject enemyPrefab;
+	[SerializeField] private List<GameObject> enemyPrefabList;
 	[SerializeField] private GameObject enemyParent;
 
 	[SerializeField] private List<int> enemyNumberListInPerSession;
@@ -36,6 +36,7 @@ public class EnemyGenerator : MonoBehaviour
 	}
 	private GameObject InstantiateEnemy()
 	{
+		GameObject enemyPrefab = GetRandomEnemyPrefab();
 		GameObject enemyObj = Instantiate(enemyPrefab, enemyParent.transform);
 		enemyObj.name = "Enemy " + enemyNumber;
 		enemyObj.transform.parent = null;
@@ -58,5 +59,13 @@ public class EnemyGenerator : MonoBehaviour
 
 		lastEnemyZpos = (int) randomPosition.z;
 		return randomPosition;
+	}
+
+	private GameObject GetRandomEnemyPrefab()
+	{
+		int length = enemyPrefabList.Count;
+		int randomIndex = Random.Range(0, length);
+		GameObject platformPrefab = enemyPrefabList[randomIndex];
+		return platformPrefab;
 	}
 }
