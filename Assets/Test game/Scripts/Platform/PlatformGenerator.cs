@@ -76,6 +76,7 @@ public class PlatformGenerator : MonoBehaviour
 		platformQueue.Enqueue(platformObj);
 
 		EnemyGenerator.instance.GenerateEnemy();
+		RewardGenerator.instance.GenerateReward();
 	}
 
 	private GameObject GetRandomPlatformPrefab()
