@@ -23,7 +23,7 @@ public class PlayerMissonHandler : MonoBehaviour {
 	
     public void GetCurrentMisson()
     {
-      currentMisson = _gameManager.currentMisson;
+   //   currentMisson = _gameManager.currentMisson;
 
         Debug.Log("Player Controller Name :" + currentMisson.name + "  target : " + currentMisson.targetedValue);
         if (currentMisson.id == 1)

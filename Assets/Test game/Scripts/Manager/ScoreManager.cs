@@ -46,7 +46,7 @@ public class ScoreManager : MonoBehaviour {
 
 	void Update () {
 
-        if (_gameManager._isGameRunning && isCalculationStarted)
+      /*  if (_gameManager._isGameRunning && isCalculationStarted)
         {
             score++;
             _uiManager.UpdateScoreText(score);
@@ -55,6 +55,6 @@ public class ScoreManager : MonoBehaviour {
             _uiManager.UpdateDistanceText(distance);
          //   Debug.Log("Distance : " + distance + " Init pos : " + playerInitPosition + "  Curr Pos : " + playerObj.transform.position);
 
-        }
+        }*/
 	}
 }

@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class EnemyBehaviour : MonoBehaviour
 {
-    // Start is called before the first frame update
+	GameManager _gameManeger;
+
     void Start()
     {
-        
-    }
+		_gameManeger = GameManager.instance;
+	}
 
-    // Update is called once per frame
+  
     void Update()
     {
-        
+        if(_gameManeger.GetPlayerController().GetPlayerCurrentPosition().z > (this.transform.position.z + 10.0f))
+		{
+			Destroy(this.gameObject);
+		}
     }
 }

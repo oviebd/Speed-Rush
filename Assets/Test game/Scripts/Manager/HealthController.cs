@@ -40,23 +40,23 @@ public class HealthController : MonoBehaviour {
     public void ShowUseLifePanel()
     {
         uiManager.ShowUseLifePanel();
-        gameManager._isGameRunning = false;
-        gameManager.PauseGame();
+      //  gameManager._isGameRunning = false;
+      //  gameManager.PauseGame();
     }
 
     public void UseLife()
     {
         remainingLife--;
         FindObjectOfType<PlayerMovementController>().isPlayerMoved = true;
-        gameManager._isGameRunning = true;
+     //   gameManager._isGameRunning = true;
         uiManager.ShowInGamePanel();
-        gameManager.ResumeGame();
+      //  gameManager.ResumeGame();
       
     }
 
     public void DoNotUseLife()
     {
-        gameManager.ResumeGame();
+      //  gameManager.ResumeGame();
         Debug.Log("Do not use Life in Health C");
         FindObjectOfType<PlayerController>().Die();
     }

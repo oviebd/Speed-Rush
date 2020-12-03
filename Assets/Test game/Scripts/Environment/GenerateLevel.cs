@@ -165,8 +165,8 @@ public class GenerateLevel : MonoBehaviour
 
         Vector3 instantiatePos = new Vector3(xpos, _enemyPrefab.transform.localPosition.y, _last_enemyZpos);
 
-        _enemyPrefab.GetComponent<EnemyHandler>().enemyPool = _enemyObjectPool;
-        _enemyPrefab.GetComponent<EnemyHandler>().ResetEnemy();
+      //  _enemyPrefab.GetComponent<EnemyHandler>().enemyPool = _enemyObjectPool;
+       // _enemyPrefab.GetComponent<EnemyHandler>().ResetEnemy();
 
         _enemyPrefab.transform.localPosition = instantiatePos;
         _enemyPrefab.transform.SetParent(_floorParent.transform, true);
