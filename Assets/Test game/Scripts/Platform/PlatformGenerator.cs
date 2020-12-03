@@ -27,15 +27,16 @@ public class PlatformGenerator : MonoBehaviour
 		_lastPlatformPosition = _startPosition;
 		lastGenerateTime = Time.time;
 
-		for (int i = 0; i < 1; i++)
+		for (int i = 0; i < 6; i++)
 		{
-			GeneratePlatforms();
+			InstantiatePlatform();
 		}
 	}
 
 	private void Update()
 	{
-		if (((int)_pllayerController.GetPlayerCurrentPosition().z % 20) == 0)
+		int playerZPos = (int)_pllayerController.GetPlayerCurrentPosition().z;
+		if ( playerZPos > 0 &&  (playerZPos % 30) == 0)
 		{
 			GeneratePlatforms();
 		}
@@ -44,15 +45,12 @@ public class PlatformGenerator : MonoBehaviour
 	public void GeneratePlatforms()
 	{
 
-		if (platformNumber > 5 && Time.time - lastGenerateTime < 0.5f)
+		if ( (Time.time - lastGenerateTime) < 1.0f)
 			return;
-		EnemyGenerator.instance.GenerateEnemy();
+		
 
 		lastGenerateTime = Time.time;
-		for (int i = 0; i < 1; i++)
-		{
-			InstantiatePlatform();
-		}
+		InstantiatePlatform();
 		//enemyGenerator.GenerateEnemy();
 		DestroyPlatform();
 	}
@@ -76,6 +74,8 @@ public class PlatformGenerator : MonoBehaviour
 		platformNumber = platformNumber + 1;
 
 		platformQueue.Enqueue(platformObj);
+
+		EnemyGenerator.instance.GenerateEnemy();
 	}
 
 	private GameObject GetRandomPlatformPrefab()
@@ -88,7 +88,7 @@ public class PlatformGenerator : MonoBehaviour
 
 	private void DestroyPlatform()
 	{
-		if (platformQueue.Count > 10)
+		if (platformQueue.Count > 6)
 		{
 			GameObject obj = platformQueue.Dequeue();
 			Destroy(obj);

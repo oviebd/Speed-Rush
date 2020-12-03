@@ -28,7 +28,6 @@ public class EnemyGenerator : MonoBehaviour
 
 	public void GenerateEnemy()
 	{
-		Debug.Log("Generate Enemy...");
 		for (int i = 0; i < 10; i++)
 		{
 			GameObject enemyObj = InstantiateEnemy();
