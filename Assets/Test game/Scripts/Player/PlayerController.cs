@@ -1,97 +1,72 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
+	[SerializeField] GameObject explosionEffect;
 
-    [SerializeField] GameObject explosionEffect;
-   // public int currentLife = 1;
+	private PlayerMovement _movement;
 
-    private bool _isPlayerDamageable;
-    private float _cooldownTime;
-    void Start () {
+	private bool _hasConsumedAnyItem;
 
-        explosionEffect.SetActive(false);
-        _isPlayerDamageable = false;
+	private ItemBehaviourData _currentConsumedItemData;
 
-        _cooldownTime = 1.0f;
-        Invoke("MakePlayerDamageable", _cooldownTime);
-    }
+	private bool _isPlayerDamageable;
 
-    void MakePlayerDamageable()
-    {
-        _isPlayerDamageable = true;
-    }
+	private float _cooldownTime;
+
+	void Start()
+	{
+		_currentConsumedItemData = new ItemBehaviourData();
+		_movement = this.gameObject.GetComponent<PlayerMovement>();
+		explosionEffect.SetActive(false);
+		_isPlayerDamageable = false;
+
+		_cooldownTime = 1.0f;
+		Invoke("MakePlayerDamageable", _cooldownTime);
+	}
+
+	void MakePlayerDamageable()
+	{
+		_isPlayerDamageable = true;
+	}
 
 	public Vector3 GetPlayerCurrentPosition()
 	{
 		return transform.position;
 	}
-	
-	void Update () {
-	/*	if(gameObject.transform.localPosition.y < 0)
-        {
-            FindObjectOfType<GameManager>().EndGame();
-        }*/
+
+	public void Die()
+	{
+		Debug.Log("Die in Player C");
+		explosionEffect.SetActive(true);
+		Invoke("CallEndGame", 1f);
 	}
 
-  /*  private void OnTriggerEnter(Collider other)
-    {
-        // Debug.Log("Collided "+ collision.gameObject.name);
-        if (other.gameObject.tag == "instantiate_collider")
-        {
-           // Debug.Log("He He");
-            FindObjectOfType<GenerateLevel>().GenerateNewFloor();
-        }
+	public void ActivateConsumedItem(ItemBehaviourData data)
+	{
+		_currentConsumedItemData = data;
+		_hasConsumedAnyItem = true;
 
-        if (other.gameObject.tag == "Enemy")
-        {
-            // Debug.Log("Destroy game");
-            if (_isPlayerDamageable)
-            {
-                other.gameObject.SetActive(false);
-               // FindObjectOfType<GameManager>().Restart();
-                EnemyHitEffect();
-            }
-           
-        }
+		if (_currentConsumedItemData.itemType == ItemTypeEnum.ItemType.Breaker)
+		{
+			_movement.SetExtremeSpeed();
+		}
+		CancelInvoke();
+		Invoke("DeactivateConsumedItem", data.activeTime);
+	}
 
-        if (other.gameObject.tag == "Heart")
-        {
-            other.gameObject.SetActive(false);
-            Debug.Log("Life game");
-            FindObjectOfType<HealthController>().AddLife();
-        }
-    }*/
+	private void DeactivateConsumedItem()
+	{
+		if (_currentConsumedItemData.itemType == ItemTypeEnum.ItemType.Breaker)
+		{
+			_movement.GoNormalSpeed();
+		}
+		_currentConsumedItemData = new ItemBehaviourData();
+		_hasConsumedAnyItem = false;
+	}
 
-
-  /*  void EnemyHitEffect()
-    {
-        gameObject.GetComponent<PlayerMovementController>().isPlayerMoved = false;
-
-        if (healthControler.IsHealthRemains())
-        {
-            healthControler.ShowUseLifePanel();
-        }
-        else
-        {
-            Die();
-        }
-
-       
-    }*/
-
-    public void Die()
-    {
-        Debug.Log("Die in Player C");
-        explosionEffect.SetActive(true);
-        Invoke("CallEndGame", 1f);
-    }
-
-   /* void CallEndGame()
-    {
-        gameManager.EndGame();
-    }*/
-
-  
+	public ItemBehaviourData GetCurrentConsumedItemData()
+	{
+		return _currentConsumedItemData;
+	}
 }

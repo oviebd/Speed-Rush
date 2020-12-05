@@ -5587,8 +5587,8 @@ GameObject:
   m_Component:
   - component: {fileID: 482667906}
   - component: {fileID: 482667904}
-  - component: {fileID: 482667903}
   - component: {fileID: 482667908}
+  - component: {fileID: 482667903}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -5611,7 +5611,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 126
+  m_Constraints: 122
   m_CollisionDetection: 0
 --- !u!114 &482667904
 MonoBehaviour:

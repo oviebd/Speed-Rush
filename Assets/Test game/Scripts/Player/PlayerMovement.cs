@@ -3,7 +3,10 @@
 public class PlayerMovement : MonoBehaviour
 {
 	[SerializeField] private float playerSpeed = 2;
+
 	[SerializeField] private float maxPlayerSpeed = 5.0f;
+
+	private float extremeSpeedUpDactor = 2.0f;
 
 	private enum MovingDirection { Forward = 0, Right = 1, Left = -1 };
 
@@ -18,6 +21,18 @@ public class PlayerMovement : MonoBehaviour
 		//  SetPlayerSpeed(5.0f);
 		ResetMoveData();
 		_canMove = true;
+	}
+
+	public void SetExtremeSpeed()
+	{
+		playerSpeed = playerSpeed * extremeSpeedUpDactor;
+		maxPlayerSpeed = maxPlayerSpeed * extremeSpeedUpDactor;
+	}
+
+	public void GoNormalSpeed()
+	{
+		playerSpeed = playerSpeed / extremeSpeedUpDactor;
+		maxPlayerSpeed = maxPlayerSpeed / extremeSpeedUpDactor;
 	}
 
 	public void ResetMoveData()
@@ -72,7 +87,5 @@ public class PlayerMovement : MonoBehaviour
 
 		if (playerSpeed >= maxPlayerSpeed)
 			playerSpeed = maxPlayerSpeed;
-
-		//Debug.Log("Player speed : " + playerSpeed);
 	}
 }

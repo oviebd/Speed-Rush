@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class ItemTypeEnum 
+﻿public class ItemTypeEnum
 {
-    public enum ItemType { Breaker = 1}
+	public enum ItemType { None = 0, Breaker = 1 }
 }
