@@ -132,7 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 59622760}
   - component: {fileID: 59622761}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Line Renderer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -727,73 +727,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312805693}
   m_CullTransparentMesh: 0
---- !u!1001 &333148982
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1599247334}
-    m_Modifications:
-    - target: {fileID: 1298040943078468, guid: 63ece056ac51b3d4eb2d65a18e41694b, type: 3}
-      propertyPath: m_Name
-      value: Reward 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1298040943078468, guid: 63ece056ac51b3d4eb2d65a18e41694b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4088017754131920, guid: 63ece056ac51b3d4eb2d65a18e41694b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4088017754131920, guid: 63ece056ac51b3d4eb2d65a18e41694b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4088017754131920, guid: 63ece056ac51b3d4eb2d65a18e41694b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4088017754131920, guid: 63ece056ac51b3d4eb2d65a18e41694b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4088017754131920, guid: 63ece056ac51b3d4eb2d65a18e41694b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4088017754131920, guid: 63ece056ac51b3d4eb2d65a18e41694b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4088017754131920, guid: 63ece056ac51b3d4eb2d65a18e41694b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4088017754131920, guid: 63ece056ac51b3d4eb2d65a18e41694b, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4088017754131920, guid: 63ece056ac51b3d4eb2d65a18e41694b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4088017754131920, guid: 63ece056ac51b3d4eb2d65a18e41694b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4088017754131920, guid: 63ece056ac51b3d4eb2d65a18e41694b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 63ece056ac51b3d4eb2d65a18e41694b, type: 3}
---- !u!4 &333148983 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4088017754131920, guid: 63ece056ac51b3d4eb2d65a18e41694b,
-    type: 3}
-  m_PrefabInstance: {fileID: 333148982}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &340653671
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,7 +859,7 @@ GameObject:
   - component: {fileID: 853522355}
   - component: {fileID: 393321703}
   - component: {fileID: 393321702}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FX_Fireworks_Blue_Large 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5653,12 +5586,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 482667906}
-  - component: {fileID: 482667905}
   - component: {fileID: 482667904}
   - component: {fileID: 482667903}
-  - component: {fileID: 482667907}
   - component: {fileID: 482667908}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -5680,7 +5611,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!114 &482667904
 MonoBehaviour:
@@ -5696,20 +5627,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionEffect: {fileID: 925422782}
---- !u!114 &482667905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114897014122879544, guid: 2d20b314f8c5b9246aa6ec48d461bf18,
-    type: 3}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482667902}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fef3241a87f01d8479a90a1040193ee7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerSpeed: 2
 --- !u!4 &482667906
 Transform:
   m_ObjectHideFlags: 0
@@ -5728,19 +5645,6 @@ Transform:
   m_Father: {fileID: 2122702720}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &482667907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114580730640968780, guid: 2d20b314f8c5b9246aa6ec48d461bf18,
-    type: 3}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 482667902}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89e2e142eefacaf4a996cb7053d6e2cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &482667908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6216,7 +6120,7 @@ GameObject:
   - component: {fileID: 780899488}
   - component: {fileID: 780899489}
   m_Layer: 0
-  m_Name: Reward Generator
+  m_Name: Item Generator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6543,7 +6447,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 925422783}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: explosion particle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7250,7 +7154,7 @@ GameObject:
   - component: {fileID: 1468952056}
   - component: {fileID: 1468952055}
   - component: {fileID: 1468952054}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7542,7 +7446,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1599247334}
   m_Layer: 0
-  m_Name: 'Reward Parent '
+  m_Name: 'Item Parent '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7558,8 +7462,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 333148983}
+  m_Children: []
   m_Father: {fileID: 2122702720}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8443,6 +8346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97d33fda03cf0044b832b85006e137df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
   smoothSpeed: 0.125
   offset: {x: 0, y: 0, z: -8}
 --- !u!114 &2059474965

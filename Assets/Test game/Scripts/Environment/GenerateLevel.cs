@@ -59,7 +59,7 @@ public class GenerateLevel : MonoBehaviour
     void ActivePlayer()
     {
         _player.SetActive(true);
-        Camera.main.gameObject.GetComponent<CameraFollower>().SetCameraTarget();
+       // Camera.main.gameObject.GetComponent<CameraFollower>().SetCameraTarget();
     }
 
     void MakeCalculation()
@@ -123,8 +123,8 @@ public class GenerateLevel : MonoBehaviour
         float xpos = Random.Range(_minXpos, _maxXpos);
         Vector3 instantiatePos = new Vector3(xpos, _rewardPrefab.transform.localPosition.y, _last_RewardZpos);
        
-        _rewardPrefab.GetComponent<RewardController>().rewardPool = _rewardObjectPool;
-        _rewardPrefab.GetComponent<RewardController>().ResetReward();
+      //  _rewardPrefab.GetComponent<ItemBehaviour>().rewardPool = _rewardObjectPool;
+       // _rewardPrefab.GetComponent<ItemBehaviour>().ResetReward();
 
         _rewardPrefab.transform.localPosition = instantiatePos;
         _rewardPrefab.transform.SetParent(_floorParent.transform, true);

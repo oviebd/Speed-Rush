@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RewardGenerator : MonoBehaviour
+public class ItemGenerator : MonoBehaviour
 {
 	[HideInInspector]
-	public static RewardGenerator instance;
+	public static ItemGenerator instance;
 
 	[SerializeField] private List<GameObject> rewardPrefabList;
 	[SerializeField] private GameObject rewardParent;
