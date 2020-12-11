@@ -59,10 +59,8 @@ public class PlatformGenerator : MonoBehaviour
 	{
 		GameObject platformPrefab = GetRandomPlatformPrefab();
 		Platform platformScript = platformPrefab.GetComponent<Platform>();
-		//	Vector3 platformSize = platformScript.GetPlatformSize();
 		if (platformNumber > 1)
 		{
-			//_lastPlatformPosition.z = platformSize.y + _lastPlatformPosition.z;
 			_lastPlatformPosition.z = platformScript.GetPlatformZaxisSize() + _lastPlatformPosition.z;
 		}
 		GameObject platformObj = Instantiate(platformPrefab, platformParent.transform);
