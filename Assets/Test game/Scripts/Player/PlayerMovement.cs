@@ -3,10 +3,11 @@
 public class PlayerMovement : MonoBehaviour
 {
 	[SerializeField] private float playerSpeed = 2;
-
 	[SerializeField] private float maxPlayerSpeed = 5.0f;
 
-	private float extremeSpeedUpDactor = 2.0f;
+	private float _currentPlayerSpeed;
+	private float _currentMaxSpeed;
+	private float _previousSpeed;
 
 	private enum MovingDirection { Forward = 0, Right = 1, Left = -1 };
 
@@ -18,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
 
 	private void Start()
 	{
+		_currentMaxSpeed = maxPlayerSpeed;
+		_currentPlayerSpeed = playerSpeed;
 		//  SetPlayerSpeed(5.0f);
 		ResetMoveData();
 		_canMove = true;
@@ -25,14 +28,15 @@ public class PlayerMovement : MonoBehaviour
 
 	public void SetExtremeSpeed()
 	{
-		playerSpeed = playerSpeed * extremeSpeedUpDactor;
-		maxPlayerSpeed = maxPlayerSpeed * extremeSpeedUpDactor;
+		_previousSpeed = _currentPlayerSpeed;
+		_currentPlayerSpeed = _currentPlayerSpeed * 2.0f;
+		_currentMaxSpeed = maxPlayerSpeed * 2.0f;
 	}
 
 	public void GoNormalSpeed()
 	{
-		playerSpeed = playerSpeed / extremeSpeedUpDactor;
-		maxPlayerSpeed = maxPlayerSpeed / extremeSpeedUpDactor;
+		_currentPlayerSpeed = _previousSpeed;
+		_currentMaxSpeed = maxPlayerSpeed;
 	}
 
 	public void ResetMoveData()
@@ -75,7 +79,7 @@ public class PlayerMovement : MonoBehaviour
 
 	private void Move()
 	{
-		Vector3 velocity = _moveDirectionVector * playerSpeed * Time.deltaTime;
+		Vector3 velocity = _moveDirectionVector * _currentPlayerSpeed * Time.deltaTime;
 		transform.Translate(velocity);
 		SpeedUpGradually();
 	}
@@ -83,9 +87,9 @@ public class PlayerMovement : MonoBehaviour
 	void SpeedUpGradually()
 	{
 		float factor = .01f;
-		playerSpeed = playerSpeed + factor;
+		_currentPlayerSpeed = _currentPlayerSpeed + factor;
 
-		if (playerSpeed >= maxPlayerSpeed)
-			playerSpeed = maxPlayerSpeed;
+		if (_currentPlayerSpeed >= _currentMaxSpeed)
+			_currentPlayerSpeed = _currentMaxSpeed;
 	}
 }
