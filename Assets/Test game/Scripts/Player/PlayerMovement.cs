@@ -21,7 +21,6 @@ public class PlayerMovement : MonoBehaviour
 	{
 		_currentMaxSpeed = maxPlayerSpeed;
 		_currentPlayerSpeed = playerSpeed;
-		//  SetPlayerSpeed(5.0f);
 		ResetMoveData();
 		_canMove = true;
 	}

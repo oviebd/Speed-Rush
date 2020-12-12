@@ -10,10 +10,8 @@ public class ItemGenerator : MonoBehaviour
 	[SerializeField] private List<GameObject> rewardPrefabList;
 	[SerializeField] private GameObject rewardParent;
 
-	
-
-	private int enemyNumber = 1;
-	private int lastEnemyZpos = 0;
+	private int itemNumber = 1;
+	private int lastItemZPos = 0;
 
 	private void Awake()
 	{
@@ -27,19 +25,17 @@ public class ItemGenerator : MonoBehaviour
 		{
 			GameObject enemyObj = InstantiateReward();
 		}
-
-	
 	}
 	private GameObject InstantiateReward()
 	{
 		GameObject enemyPrefab = GetRandomRewardPrefab();
 		GameObject enemyObj = Instantiate(enemyPrefab, rewardParent.transform);
-		enemyObj.name = "Reward " + enemyNumber;
+		enemyObj.name = "Reward " + itemNumber;
 		enemyObj.transform.parent = null;
 
 		enemyObj.transform.position = GetRandomEnemyPosition();
 		enemyObj.transform.SetParent(rewardParent.transform, false);
-		enemyNumber = enemyNumber + 1;
+		itemNumber = itemNumber + 1;
 		return enemyObj;
 	}
 
@@ -49,11 +45,11 @@ public class ItemGenerator : MonoBehaviour
 
 		float randomXpos = Random.Range(-4f, 4f);
 		int randomDistance = Random.Range(10, 20);
-		int zPos = lastEnemyZpos + randomDistance;
+		int zPos = lastItemZPos + randomDistance;
 
 		randomPosition = new Vector3(randomXpos, 0, zPos);
 
-		lastEnemyZpos = (int)randomPosition.z;
+		lastItemZPos = (int)randomPosition.z;
 		return randomPosition;
 	}
 

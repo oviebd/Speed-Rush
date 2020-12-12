@@ -12,6 +12,11 @@ public class ItemBehaviour : MonoBehaviour, ICollisionEnter
 			playerController?.ActivateConsumedItem(behaviourData);
 			//	Debug.Log("Player hit on Item");
 		}
+
+		if (collidedObj.tag.Equals(GameTagEnum.TAGS.Enemy.ToString()))
+		{
+			Destroy(collidedObj);
+		}
 	}
 }
 
