@@ -8,8 +8,8 @@ public class ItemBehaviour : MonoBehaviour, ICollisionEnter
 	{
 		if (collidedObj.tag.Equals(GameTagEnum.TAGS.Player.ToString()))
 		{
-			PlayerController playerController = collidedObj.GetComponent<PlayerController>();
-			playerController?.ActivateConsumedItem(behaviourData);
+			//PlayerController playerController = collidedObj.GetComponent<PlayerController>();
+			GameManager.instance.GetPlayerController()?.ActivateConsumedItem(behaviourData);
 			//	Debug.Log("Player hit on Item");
 		}
 

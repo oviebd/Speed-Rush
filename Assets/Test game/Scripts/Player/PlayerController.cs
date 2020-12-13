@@ -3,6 +3,7 @@
 public class PlayerController : MonoBehaviour
 {
 	[SerializeField] GameObject explosionEffect;
+	[SerializeField] GameObject playerGraphics;
 
 	private PlayerMovement _movement;
 
@@ -25,6 +26,16 @@ public class PlayerController : MonoBehaviour
 		Invoke("MakePlayerDamageable", _cooldownTime);
 	}
 
+
+	private void Update()
+	{
+		if(GetPlayerCurrentPosition().x >= 4.8 || GetPlayerCurrentPosition().x <= -4.8)
+		{
+			Debug.Log("Dead Player .................");
+		     Die();
+		}
+	}
+
 	void MakePlayerDamageable()
 	{
 		_isPlayerDamageable = true;
@@ -37,9 +48,17 @@ public class PlayerController : MonoBehaviour
 
 	public void Die()
 	{
-		Debug.Log("Die in Player C");
+		_movement.StopMovement();
+		playerGraphics.SetActive(false);
+		//Debug.Log("Die in Player C");
 		explosionEffect.SetActive(true);
+
 		Invoke("CallEndGame", 1f);
+	}
+
+	private void CallEndGame()
+	{
+		GameManager.instance.EndGame();
 	}
 
 	public void ActivateConsumedItem(ItemBehaviourData data)
@@ -68,5 +87,12 @@ public class PlayerController : MonoBehaviour
 	public ItemBehaviourData GetCurrentConsumedItemData()
 	{
 		return _currentConsumedItemData;
+	}
+
+	public PlayerMovement GetPlayerMovement()
+	{
+		if(_movement == null)
+			_movement = this.gameObject.GetComponent<PlayerMovement>();
+		return _movement;
 	}
 }

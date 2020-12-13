@@ -91,4 +91,14 @@ public class PlayerMovement : MonoBehaviour
 		if (_currentPlayerSpeed >= _currentMaxSpeed)
 			_currentPlayerSpeed = _currentMaxSpeed;
 	}
+
+	public void StopMovement()
+	{
+		_canMove = false;
+	}
+
+	public void StartMovement()
+	{
+		_canMove = true;
+	}
 }
