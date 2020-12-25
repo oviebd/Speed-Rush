@@ -12,7 +12,6 @@ public class EnemyBehaviour : MonoBehaviour, ICollisionEnter
 			if (playerController == null)
 				return;
 
-			playerController.Die();
 			ItemBehaviourData data = playerController?.GetCurrentConsumedItemData();
 			if (data.itemType == ItemTypeEnum.ItemType.None)
 			{

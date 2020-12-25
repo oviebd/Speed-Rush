@@ -31,7 +31,6 @@ public class PlayerController : MonoBehaviour
 	{
 		if(GetPlayerCurrentPosition().x >= 4.8 || GetPlayerCurrentPosition().x <= -4.8)
 		{
-			Debug.Log("Dead Player .................");
 		     Die();
 		}
 	}
@@ -71,6 +70,7 @@ public class PlayerController : MonoBehaviour
 			_movement.SetExtremeSpeed();
 		}
 		CancelInvoke();
+		Debug.Log("Consumed Item .................... " + data.activeTime);
 		Invoke("DeactivateConsumedItem", data.activeTime);
 	}
 
