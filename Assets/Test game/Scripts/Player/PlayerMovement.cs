@@ -23,6 +23,13 @@ public class PlayerMovement : MonoBehaviour
 		_currentPlayerSpeed = playerSpeed;
 		ResetMoveData();
 		_canMove = true;
+
+		InputClicked.onClickedTouchArea += ChangeDirection;
+	}
+
+	private void OnDestroy()
+	{
+		InputClicked.onClickedTouchArea -= ChangeDirection;
 	}
 
 	public void SetExtremeSpeed()
@@ -44,13 +51,13 @@ public class PlayerMovement : MonoBehaviour
 		currentDirection = MovingDirection.Forward;
 	}
 
-	private void Update()
+	/*private void Update()
 	{
 		if (Input.GetMouseButtonDown(0))
 		{
 			ChangeDirection();
 		}
-	}
+	}*/
 
 	private void ChangeDirection()
 	{
