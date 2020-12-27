@@ -10,7 +10,6 @@ public class InputClicked : MonoBehaviour
 
 	public void OnClickedButton()
 	{
-		Debug.Log("Clicked............");
 		onClickedTouchArea?.Invoke();
 	}
 

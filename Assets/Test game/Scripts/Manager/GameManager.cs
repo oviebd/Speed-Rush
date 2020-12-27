@@ -9,24 +9,26 @@ public class GameManager : MonoBehaviour
 
 	private void Start()
 	{
-		UIManager.instance.ShowInitialMenu();
+		UIManager.instance.ShowHomeUi();
 	}
 
 	public void StartNewGame()
 	{
 		EnvironmentController.instance.PrepareForNewGame();
 		GetPlayerController()?.GetPlayerMovement().StartMovement();
+		UIManager.instance.ShowOnGameMenu();
 	}
 
 	public void EndGame()
 	{
 		GetPlayerController()?.GetPlayerMovement().StopMovement();
-		UIManager.instance.ShowEndGamePanel();
+		UIManager.instance.ShowGameOverMenu();
 	}
 
 	public void PauseGame()
 	{
 		GetPlayerController()?.GetPlayerMovement().StopMovement();
+		UIManager.instance.ShowPauseGameMenu();
 	}
 
 	public void RestartGame()

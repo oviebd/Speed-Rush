@@ -19,46 +19,30 @@ public class UIManager : MonoBehaviour
 	}
 
 
-	public void ShowInitialMenu()
+	public void ShowHomeUi()
 	{
-		HideAllExceptOne(startGamePanel);
+		startGamePanel.Show();
+	}
+	public void ShowOnGameMenu()
+	{
+		gameRunningPanel.Show();
+	}
+	public void ShowPauseGameMenu()
+	{
+		pauseGamePanel.Show();
 	}
 
-	public void OnStartNewGameButtonClicked()
+	public void ShowGameOverMenu()
 	{
-		GameManager.instance.StartNewGame();
-		HideAllExceptOne(gameRunningPanel);
+		gameRunningPanel.Hide();
+		endGamePanel.Show();
 	}
-
-	public void OnPauseGameButtonClicked()
-	{
-		Debug.Log("Pause Game ");
-		GameManager.instance.PauseGame();
-		HideAllExceptOne(pauseGamePanel);
-	}
-
-	public void OnResumeButtonClicked()
-	{
-		GameManager.instance.RestartGame();
-		HideAllExceptOne(gameRunningPanel);
-	}
-
-	public void OnReStartGameButtonClicked()
-	{
-		OnStartNewGameButtonClicked();
-	}
-
-	public void ShowEndGamePanel()
-	{
-		HideAllExceptOne(endGamePanel);
-	}
-
 
 	private void HideAllExceptOne( Panel activePanel)
 	{
-		startGamePanel?.Hide();
+		//startGamePanel?.Hide();
 		endGamePanel?.Hide();
-		pauseGamePanel?.Hide();
+	//	pauseGamePanel?.Hide();
 		gameRunningPanel?.Hide();
 
 		activePanel?.Show();

@@ -9,7 +9,7 @@ public class Panel : MonoBehaviour
 		this.gameObject.SetActive(false);
 	}
 
-	public void Show()
+	public virtual void Show()
 	{
 		this.gameObject.SetActive(true);
 	}
