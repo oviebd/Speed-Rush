@@ -7,6 +7,5 @@ public class StartGameUIPanel : AnimatorPanel
 	public void OnStartNewGameButtonClicked()
 	{
 		GameManager.instance.StartNewGame();
-		Hide();
 	}	
 }

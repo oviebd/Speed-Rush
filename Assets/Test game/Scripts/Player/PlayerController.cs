@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
 	private bool _isPlayerDamageable;
 
 	private float _cooldownTime;
+	bool _isDie;
 
 	void Start()
 	{
@@ -31,7 +32,9 @@ public class PlayerController : MonoBehaviour
 	{
 		if(GetPlayerCurrentPosition().x >= 4.8 || GetPlayerCurrentPosition().x <= -4.8)
 		{
-		     Die();
+			if(_isDie == false)
+				Die();
+
 		}
 	}
 
@@ -47,6 +50,7 @@ public class PlayerController : MonoBehaviour
 
 	public void Die()
 	{
+		_isDie = true;
 		_movement.StopMovement();
 		playerGraphics.SetActive(false);
 		//Debug.Log("Die in Player C");
@@ -58,6 +62,7 @@ public class PlayerController : MonoBehaviour
 	private void CallEndGame()
 	{
 		GameManager.instance.EndGame();
+	//	Destroy(this.gameObject);
 	}
 
 	public void ActivateConsumedItem(ItemBehaviourData data)

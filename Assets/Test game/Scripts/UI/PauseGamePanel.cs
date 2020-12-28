@@ -6,19 +6,16 @@ public class PauseGamePanel : AnimatorPanel
 {
 	public void OnResumeButtonClicked()
 	{
-		GameManager.instance.RestartGame();
-		Hide();
+		GameManager.instance.ResumeGame();
 	}
 
 	public void OnReStartGameButtonClicked()
 	{
 		GameManager.instance.StartNewGame();
-		Hide();
 	}
 
 	public void OnHomeButtonClicked()
 	{
 		UIManager.instance.ShowHomeUi();
-		Hide();
 	}
 }

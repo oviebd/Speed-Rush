@@ -18,33 +18,38 @@ public class UIManager : MonoBehaviour
 			instance = this;
 	}
 
-
 	public void ShowHomeUi()
 	{
 		startGamePanel.Show();
+		HideAllExceptOne(startGamePanel);
 	}
 	public void ShowOnGameMenu()
 	{
 		gameRunningPanel.Show();
+		HideAllExceptOne(gameRunningPanel);
 	}
 	public void ShowPauseGameMenu()
 	{
 		pauseGamePanel.Show();
+		HideAllExceptOne(pauseGamePanel);
 	}
 
 	public void ShowGameOverMenu()
 	{
-		gameRunningPanel.Hide();
+		//gameRunningPanel.Hide();
 		endGamePanel.Show();
+		HideAllExceptOne(endGamePanel);
 	}
 
 	private void HideAllExceptOne( Panel activePanel)
 	{
-		//startGamePanel?.Hide();
-		endGamePanel?.Hide();
-	//	pauseGamePanel?.Hide();
-		gameRunningPanel?.Hide();
-
-		activePanel?.Show();
+		if(activePanel != startGamePanel && startGamePanel.isActiveAndEnabled)
+			startGamePanel?.Hide();
+		if (activePanel != endGamePanel && endGamePanel.isActiveAndEnabled )
+			endGamePanel.Hide();
+		if (activePanel != pauseGamePanel && pauseGamePanel.isActiveAndEnabled)
+			pauseGamePanel.Hide();
+		if (activePanel != gameRunningPanel && gameRunningPanel.isActiveAndEnabled)
+			gameRunningPanel.Hide();
 	}
 }

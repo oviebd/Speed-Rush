@@ -6,8 +6,6 @@ public class OnGameUiPanel : AnimatorPanel
 {
 	public void OnPauseGameButtonClicked()
 	{
-		//Debug.Log("Pause Game ");
 		GameManager.instance.PauseGame();
-		Hide();
 	}
 }

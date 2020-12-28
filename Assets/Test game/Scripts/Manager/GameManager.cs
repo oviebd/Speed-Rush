@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
 	public void ResumeGame()
 	{
 		GetPlayerController()?.GetPlayerMovement().StartMovement();
+		UIManager.instance.ShowOnGameMenu();
 	}
 
 	void Awake()

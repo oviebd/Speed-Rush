@@ -16,6 +16,7 @@ public class AnimatorPanel : Panel
 	public override void Hide()
 	{
 		animator.SetBool(anim_identifier_Appearing, false);
+		CancelInvoke();
 		Invoke("HidePanel", 1.0f);
 	}
 	private void HidePanel()
