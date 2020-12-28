@@ -75,7 +75,6 @@ public class PlayerController : MonoBehaviour
 			_movement.SetExtremeSpeed();
 		}
 		CancelInvoke();
-		Debug.Log("Consumed Item .................... " + data.activeTime);
 		Invoke("DeactivateConsumedItem", data.activeTime);
 	}
 

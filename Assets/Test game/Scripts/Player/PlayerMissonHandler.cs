@@ -47,13 +47,13 @@ public class PlayerMissonHandler : MonoBehaviour {
 
     private void Update()
     {
-        if (isItScoreMisson)
+       /* if (isItScoreMisson)
         {
             if(currentMisson.targetedValue<= _scoreManager.score)
             {
                // Debug.Log("Score Misson Complete");
             }
-        }
+        }*/
     }
 
     private void OnTriggerEnter(Collider other)
