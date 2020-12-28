@@ -18,6 +18,8 @@ public class EnvironmentController : MonoBehaviour
 	public void PrepareForNewGame()
 	{
 		PlatformGenerator.instance.ResetData();
+		EnemyGenerator.instance.ResetData();
+		ItemGenerator.instance.ResetData();
 		InstantiatePlayer();
 	}
 

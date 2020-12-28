@@ -17,6 +17,33 @@ public class ItemGenerator : MonoBehaviour
 	{
 		if (instance == null)
 			instance = this;
+
+		ResetData();
+	}
+
+	private void Update()
+	{
+		if (GameManager.instance.GetPlayerController() == null)
+			return;
+		int playerZPos = (int)GameManager.instance.GetPlayerController()?.GetPlayerCurrentPosition().z;
+		if ((playerZPos - 10) > this.gameObject.transform.position.z)
+		{
+			Destroy(this.gameObject);
+		}
+	}
+
+
+	public void ResetData()
+	{
+		itemNumber = 1;
+		lastItemZPos = 0;
+
+		ItemBehaviour[] previousItems = FindObjectsOfType<ItemBehaviour>();
+		for (int i = 0; i < previousItems.Length; i++)
+		{
+			Destroy(previousItems[i].gameObject);
+		}
+		GenerateReward();
 	}
 
 	public void GenerateReward()

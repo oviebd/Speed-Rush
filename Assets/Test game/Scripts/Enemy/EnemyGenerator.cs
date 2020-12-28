@@ -12,18 +12,38 @@ public class EnemyGenerator : MonoBehaviour
 
 	[SerializeField] private List<int> enemyNumberListInPerSession;
 
-	private int enemyNumber = 1;
-	private int lastEnemyZpos = 0;
+	private int enemyNumber ;
+	private int lastEnemyZpos;
 
 	private void Awake()
 	{
 		if (instance == null)
 			instance = this;
+		ResetData();
+	}
+	private void Update()
+	{
+		if (GameManager.instance.GetPlayerController() == null)
+			return;
+		int playerZPos = (int)GameManager.instance.GetPlayerController()?.GetPlayerCurrentPosition().z;
+		if ((playerZPos - 10) > this.gameObject.transform.position.z)
+		{
+			Destroy(this.gameObject);
+		}
 	}
 
-	void Start()
+
+	public void ResetData()
 	{
-		//GenerateEnemy();
+		enemyNumber = 1;
+		lastEnemyZpos = 0;
+
+		EnemyBehaviour[] previousItems = FindObjectsOfType<EnemyBehaviour>();
+		for (int i = 0; i < previousItems.Length; i++)
+		{
+			Destroy(previousItems[i].gameObject);
+		}
+		GenerateEnemy();
 	}
 
 	public void GenerateEnemy()
