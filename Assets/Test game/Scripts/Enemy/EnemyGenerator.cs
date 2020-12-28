@@ -82,9 +82,17 @@ public class EnemyGenerator : MonoBehaviour
 
 	private GameObject GetRandomEnemyPrefab()
 	{
-		int length = enemyPrefabList.Count;
-		int randomIndex = Random.Range(0, length);
-		GameObject platformPrefab = enemyPrefabList[randomIndex];
-		return platformPrefab;
+		GameObject enemyPrefab;
+	    int length = enemyPrefabList.Count;
+		if (length <= 0)
+			return null;
+
+		int randomPercentage = Random.Range(1, 100);
+
+		if(randomPercentage >= 80 && length > 1)
+			enemyPrefab =  enemyPrefabList[1];
+		else
+			enemyPrefab = enemyPrefabList[0];
+		return enemyPrefab;
 	}
 }
