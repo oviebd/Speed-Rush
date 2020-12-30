@@ -48,7 +48,7 @@ public class ItemGenerator : MonoBehaviour
 
 	public void GenerateReward()
 	{
-		for (int i = 0; i < 1; i++)
+		for (int i = 0; i < 4; i++)
 		{
 			GameObject enemyObj = InstantiateReward();
 		}
@@ -70,8 +70,8 @@ public class ItemGenerator : MonoBehaviour
 	{
 		Vector3 randomPosition = Vector3.zero;
 
-		float randomXpos = Random.Range(-4f, 4f);
-		int randomDistance = Random.Range(20, 40);
+		float randomXpos = Random.Range(-3f, 3f);
+		int randomDistance = Random.Range(100, 300);
 		int zPos = lastItemZPos + randomDistance;
 
 		randomPosition = new Vector3(randomXpos, 0, zPos);
