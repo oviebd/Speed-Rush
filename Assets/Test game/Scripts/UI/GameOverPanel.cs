@@ -26,4 +26,18 @@ public class GameOverPanel : AnimatorPanel
 	public void OnLeaderboardButtonClicked()
 	{
 	}
+
+	public void OnRateButtonClicked()
+	{
+		Application.OpenURL("https://play.google.com/store/apps/details?id=com.AshToy.ImmuneSystem");
+	}
+	public void OnMoreGameButtonClicked()
+	{
+		Application.OpenURL("https://play.google.com/store/apps/developer?id=Ash+Toy" );
+	}
+
+	public void OnShareButtonClicked()
+	{
+
+	}
 }
