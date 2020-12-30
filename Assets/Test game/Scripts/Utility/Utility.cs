@@ -12,4 +12,21 @@ public class Utility : MonoBehaviour
 			Destroy(previousItems[i]);
 		}
 	}
+
+	public static bool isNetworkAvilable()
+	{
+		bool isNetworkAvilable = false;
+		if (Application.internetReachability == NetworkReachability.NotReachable)
+		{
+			isNetworkAvilable = false;
+			// Debug.Log("Error. Check internet connection!");
+		}
+		else
+		{
+			isNetworkAvilable = true;
+			// Debug.Log("Internet ase!");
+		}
+
+		return isNetworkAvilable;
+	}
 }
