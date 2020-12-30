@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class MoveObject : MonoBehaviour
 {
-
     [SerializeField] private float lerpTime;
     [SerializeField] private float leftMostPosition;
     [SerializeField] private float rightMostPosition;
 
-    private float _lerpingStartTime;
+	private float topMostPosition;
+	 private float bottomMostPosition;
+
+	private float _lerpingStartTime;
 
     float _learpValueX = 0;
-    private enum MoveDirection { MoveLeft, MoveRight }
+	float _learpValueY = 0;
+
+	private enum MovingAxis { XAxis,YAxis}
+	[SerializeField] private MovingAxis movingAxis;
+
+    private enum MoveDirection { MoveLeft, MoveRight,MoveUp,MoveDown }
     private MoveDirection _currentMoveDirection;
 
     private bool canMove;
@@ -21,11 +28,22 @@ public class MoveObject : MonoBehaviour
     private void Start()
     {
 		canMove = false;
-		_currentMoveDirection = MoveDirection.MoveRight;
-		Invoke("StartMove", 1.0f);
-		/*	canMove = false;
+	
+		if(movingAxis == MovingAxis.XAxis)
 			_currentMoveDirection = MoveDirection.MoveRight;
-			Invoke("StartMove",1.0f);*/
+		else
+		{
+			if( (Random.Range(0, 10) %2) ==0 )
+				_currentMoveDirection = MoveDirection.MoveUp;
+			else
+				_currentMoveDirection = MoveDirection.MoveDown;
+
+			topMostPosition = Random.Range(-18, -14);
+			bottomMostPosition = Random.Range(-20, -24);
+			lerpTime = Random.Range(1.0f,3.0f);
+		}
+
+		StartMove();
 	}
 
     public void StartMove()
@@ -59,52 +77,61 @@ public class MoveObject : MonoBehaviour
         if (canMove == false)
             return;
 
-        if (_currentMoveDirection == MoveDirection.MoveLeft)
-        {
-            _learpValueX = LearpValue(rightMostPosition, leftMostPosition, _lerpingStartTime, lerpTime);
-        }
-        if (_currentMoveDirection == MoveDirection.MoveRight)
-        {
-            _learpValueX = LearpValue(leftMostPosition, rightMostPosition, _lerpingStartTime, lerpTime);
-        }
+		Vector3 currenrPos = transform.position;
 
-        Vector3 currenrPos = transform.position;
-        currenrPos.x = _learpValueX;
+		if(movingAxis == MovingAxis.XAxis)
+		{
+			if (_currentMoveDirection == MoveDirection.MoveLeft)
+				_learpValueX = LearpValue(rightMostPosition, leftMostPosition, _lerpingStartTime, lerpTime);
 
+			if (_currentMoveDirection == MoveDirection.MoveRight)
+				_learpValueX = LearpValue(leftMostPosition, rightMostPosition, _lerpingStartTime, lerpTime);
+
+			currenrPos.x = _learpValueX;
+		}
+		else
+		{
+			if (_currentMoveDirection == MoveDirection.MoveUp)
+				_learpValueY = LearpValue(bottomMostPosition, topMostPosition, _lerpingStartTime, lerpTime);
+
+			if (_currentMoveDirection == MoveDirection.MoveDown)
+				_learpValueY = LearpValue(topMostPosition, bottomMostPosition, _lerpingStartTime, lerpTime);
+
+			currenrPos.y = _learpValueY;
+		}
+		
         this.transform.position = currenrPos;
 
     }
     private void LerpingComplete()
     {
-        if (_currentMoveDirection == MoveDirection.MoveRight)
-        {
-            _currentMoveDirection = MoveDirection.MoveLeft;
-        }
-        else
-        {
-            _currentMoveDirection = MoveDirection.MoveRight;
-        }
+		if(movingAxis == MovingAxis.XAxis)
+		{
+			if (_currentMoveDirection == MoveDirection.MoveRight)
+				_currentMoveDirection = MoveDirection.MoveLeft;
+			else
+				_currentMoveDirection = MoveDirection.MoveRight;
+		}
+		else
+		{
+			if (_currentMoveDirection == MoveDirection.MoveUp)
+				_currentMoveDirection = MoveDirection.MoveDown;
+			else
+				_currentMoveDirection = MoveDirection.MoveUp;
+		}
 
         StartMove();
     }
 
     public float LearpValue(float start, float end, float timeStartedLearping, float learpTime)
     {
-
         float timeSinceStarted = Time.time - timeStartedLearping;
         float percentageComplete = timeSinceStarted / learpTime;
-
         float result = 0;
-
         result = Mathf.SmoothStep(start, end, percentageComplete);
-//        Debug.Log("Resiult " + result);
-
         if (timeSinceStarted >= learpTime)
-        {
-
             LerpingComplete();
-        }
-
+   
         return result;
     }
 }

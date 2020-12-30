@@ -18,7 +18,7 @@ GameObject:
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4088017754131920
 Transform:
@@ -90,6 +90,7 @@ MonoBehaviour:
   lerpTime: 2
   leftMostPosition: -4
   rightMostPosition: 4
+  movingAxis: 0
 --- !u!1 &1367600054394332
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,7 +107,7 @@ GameObject:
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4256474208395518
 Transform:
