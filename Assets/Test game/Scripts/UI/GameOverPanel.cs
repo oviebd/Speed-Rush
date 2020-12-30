@@ -11,6 +11,7 @@ public class GameOverPanel : AnimatorPanel
 	{
 		base.Show();
 		currenrScoreText.text = ScoreManager.instance.GetScore() + "";
+		GooglePlayServiceManager.instance.AddScoreToLeaderBoard(ScoreManager.instance.GetScore());
 	}
 
 	public void OnHomeButtonClicked()
@@ -25,6 +26,7 @@ public class GameOverPanel : AnimatorPanel
 
 	public void OnLeaderboardButtonClicked()
 	{
+		GooglePlayServiceManager.instance.ShowLeaderboardUi();
 	}
 
 	public void OnRateButtonClicked()

@@ -6,7 +6,7 @@ public class StartGameUIPanel : AnimatorPanel
 {
 	public void OnClickedLeaderBoardButton()
 	{
-
+		GooglePlayServiceManager.instance.ShowLeaderboardUi();
 	}
 
 	public void OnStartNewGameButtonClicked()
