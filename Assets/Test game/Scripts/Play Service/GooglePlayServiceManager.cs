@@ -8,6 +8,6 @@ public class GooglePlayServiceManager : MonoBehaviour
 
 	private void Start()
 	{
-		PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder().Build();
+		//PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder().Build();
 	}
 }
