@@ -26,7 +26,6 @@ public class DummyAdBehaviour : MonoBehaviour
     public void ResumeGame()
     {
         Time.timeScale = 1;
-        Debug.Log("Resume Game");
     }
 
     public GameObject ShowAd(GameObject dummyAd, Vector3 position)

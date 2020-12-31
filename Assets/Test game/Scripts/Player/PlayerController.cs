@@ -54,6 +54,7 @@ public class PlayerController : MonoBehaviour
 		_movement.StopMovement();
 		playerGraphics.SetActive(false);
 		//Debug.Log("Die in Player C");
+		GameAudioManager.instance.PlayPlayerDieSound();
 		explosionEffect.SetActive(true);
 
 		Invoke("CallEndGame", 1f);

@@ -18,4 +18,8 @@ public class PauseGamePanel : AnimatorPanel
 	{
 		UIManager.instance.ShowHomeUi();
 	}
+	public void OnLeaderboardButtonClicked()
+	{
+		GooglePlayServiceManager.instance.ShowLeaderboardUi();
+	}
 }

@@ -35,7 +35,6 @@ public class GooglePlayServiceManager : MonoBehaviour
 	{
 		string leaderBordId = GPGSIds.leaderboard_hall_of_honor;
 		Social.ReportScore(score, leaderBordId,success => {
-			Debug.Log("Unity>>  Score Updated .... " + score);
 		});
 	}
 

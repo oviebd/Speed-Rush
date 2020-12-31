@@ -31,6 +31,11 @@ public class AudioPlayerControler : MonoBehaviour,IAudio
         PlaySound(clip, GetAudioSource());
     }
 
+	public void SetAudioClip(AudioClip audioClip)
+	{
+		GetAudioSource().clip = audioClip;
+	}
+
     public void PlaySound(AudioClip clip, AudioSource source)
     {
         if (source != null && clip != null)
