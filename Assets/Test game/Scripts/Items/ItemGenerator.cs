@@ -71,7 +71,8 @@ public class ItemGenerator : MonoBehaviour
 		Vector3 randomPosition = Vector3.zero;
 
 		float randomXpos = Random.Range(-3f, 3f);
-		int randomDistance = Random.Range(100, 300);
+		int randomDistance = Random.Range(10, 20);
+		//int randomDistance = Random.Range(100, 300);
 		int zPos = lastItemZPos + randomDistance;
 
 		randomPosition = new Vector3(randomXpos, 0, zPos);

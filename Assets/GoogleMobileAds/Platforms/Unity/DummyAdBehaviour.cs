@@ -20,7 +20,6 @@ public class DummyAdBehaviour : MonoBehaviour
     public void PauseGame()
     {
         Time.timeScale = 0;
-        Debug.Log("Pause Game");
     }
 
     public void ResumeGame()

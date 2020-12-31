@@ -5,6 +5,8 @@ public class PlayerMovement : MonoBehaviour
 	[SerializeField] private float playerSpeed = 2;
 	[SerializeField] private float maxPlayerSpeed = 5.0f;
 
+	private PlayerController _playerController;
+
 	private float _currentPlayerSpeed;
 	private float _currentMaxSpeed;
 	private float _previousSpeed;
@@ -14,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
 	private MovingDirection currentDirection;
 
 	private bool _canMove;
+	private bool _canChangeDirection;
 
 	private Vector3 _moveDirectionVector;
 
@@ -23,7 +26,9 @@ public class PlayerMovement : MonoBehaviour
 		_currentPlayerSpeed = playerSpeed;
 		ResetMoveData();
 		_canMove = true;
+		_canChangeDirection = true;
 
+		_playerController = this.gameObject.GetComponent<PlayerController>();
 		InputClicked.onClickedTouchArea += ChangeDirection;
 	}
 
@@ -34,6 +39,8 @@ public class PlayerMovement : MonoBehaviour
 
 	public void SetExtremeSpeed()
 	{
+		currentDirection = MovingDirection.Forward;
+		_canChangeDirection = false;
 		_previousSpeed = _currentPlayerSpeed;
 		_currentPlayerSpeed = _currentPlayerSpeed * 2.0f;
 		_currentMaxSpeed = maxPlayerSpeed * 2.0f;
@@ -41,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
 
 	public void GoNormalSpeed()
 	{
+		_canChangeDirection = true; 
 		_currentPlayerSpeed = _previousSpeed;
 		_currentMaxSpeed = maxPlayerSpeed;
 	}
@@ -61,6 +69,9 @@ public class PlayerMovement : MonoBehaviour
 
 	private void ChangeDirection()
 	{
+		if (_canChangeDirection == false)
+			return;
+
 		switch (currentDirection)
 		{
 			case MovingDirection.Forward:
@@ -73,8 +84,8 @@ public class PlayerMovement : MonoBehaviour
 				currentDirection = MovingDirection.Left;
 				break;
 		}
-
-		_moveDirectionVector.x = (float)currentDirection;
+		Debug.Log("Current Direction = " + currentDirection);
+	
 	}
 
 	private void FixedUpdate()
@@ -85,6 +96,8 @@ public class PlayerMovement : MonoBehaviour
 
 	private void Move()
 	{
+		_moveDirectionVector.x = (float)currentDirection;
+
 		Vector3 velocity = _moveDirectionVector * _currentPlayerSpeed * Time.deltaTime;
 		transform.Translate(velocity);
 		SpeedUpGradually();
