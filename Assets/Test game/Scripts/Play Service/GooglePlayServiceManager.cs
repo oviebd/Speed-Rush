@@ -41,7 +41,28 @@ public class GooglePlayServiceManager : MonoBehaviour
 
 	public void ShowLeaderboardUi()
 	{
-		Debug.Log("Unity>>  Try to show  LeaderBoard .... " );
-		Social.ShowLeaderboardUI();
+		bool isNetworkAvilable = Utility.isNetworkAvilable();
+		if(isNetworkAvilable == true)
+		{
+			Social.ShowLeaderboardUI();
+		}
+		else
+		{
+			DialogClass alertDialogClass = new DialogBuilder().
+						 Title("Failed to connect with server").
+						 Message(" Please check your network connection.").
+						 PositiveButtonText("Ok").
+						 PositiveButtonAction(ShowLeaderBoard).
+						 build();
+
+			DialogManager.instance.SpawnDialogBasedOnDialogType(DialogTypeEnum.DialogType.AlertDialog, alertDialogClass);
+		}
 	}
+
+	private void ShowLeaderBoard(IDialog iDialog)
+	{
+		iDialog.HideDialog();
+	}
+
+
 }

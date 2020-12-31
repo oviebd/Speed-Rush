@@ -875,6 +875,7 @@ MonoBehaviour:
   _dialogParent: {fileID: 253075675}
   _dialogPrefabList:
   - {fileID: 6001427928444850845, guid: 6b14be846c3b5405db8747358b3a96a2, type: 3}
+  - {fileID: 50587859, guid: 947b1abfc22cf4e48b19e6ae187eaa5b, type: 3}
 --- !u!1 &198438072
 GameObject:
   m_ObjectHideFlags: 0
@@ -3828,18 +3829,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1472912788}
-        m_MethodName: OnHomeButtonClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: OnReStartGameButtonClicked
+        m_MethodName: OnLeaderboardButtonClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
