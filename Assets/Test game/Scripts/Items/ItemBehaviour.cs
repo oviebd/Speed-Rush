@@ -18,6 +18,14 @@ public class ItemBehaviour : MonoBehaviour, ICollisionEnter
 			Destroy(collidedObj);
 		}
 	}
+
+	void Update()
+	{
+		if (GameManager.instance.GetPlayerController()?.GetPlayerCurrentPosition().z > (this.transform.position.z + 10.0f))
+		{
+			Destroy(this.gameObject);
+		}
+	}
 }
 
 [System.Serializable]

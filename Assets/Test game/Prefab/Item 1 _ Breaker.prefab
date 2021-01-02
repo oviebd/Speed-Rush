@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6168889984503225685}
   - component: {fileID: 3202631943192876309}
   - component: {fileID: 1339587493851960809}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Item 1 _ Breaker
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 4256474208395518}
   - component: {fileID: 33633461915631000}
   - component: {fileID: 23309534824100066}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cube
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 4155574319172387252}
   - component: {fileID: 4156359329526237348}
   - component: {fileID: 4250486103333078428}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: ColorParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -342,7 +342,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: -0.5
+      scalar: -1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -458,8 +458,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.5
-      minScalar: 0.1
+      scalar: 1.5
+      minScalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -774,7 +774,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 500
+    maxNumParticles: 100
     size3D: 0
     rotation3D: 1
     gravityModifier:
@@ -1039,7 +1039,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 200
+      scalar: 50
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -4956,7 +4956,7 @@ GameObject:
   - component: {fileID: 4155028029490207002}
   - component: {fileID: 4250630999831062204}
   - component: {fileID: 4250778396736253494}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: ColorTrails
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5229,8 +5229,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.5
-      minScalar: 0.1
+      scalar: 1
+      minScalar: 0.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -5545,7 +5545,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 500
+    maxNumParticles: 100
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -5810,7 +5810,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 150
+      scalar: 40
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -9740,7 +9740,7 @@ GameObject:
   - component: {fileID: 4155128408443246560}
   - component: {fileID: 4250613329757697730}
   - component: {fileID: 4250548989617659726}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: BlackTrails
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14520,7 +14520,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4286228071670775326}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: TargetPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14551,7 +14551,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4279660031018302654}
   - component: {fileID: 4245550610698005418}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14621,7 +14621,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4096
   m_RenderingLayerMask: 1
   m_Lightmapping: 2
   m_LightShadowCasterMode: 0
@@ -14642,7 +14642,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4279823246087396316}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Portal1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14681,7 +14681,7 @@ GameObject:
   - component: {fileID: 4167445743156480032}
   - component: {fileID: 4156583672191527316}
   - component: {fileID: 4250829534081185822}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: BlackTrails2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19448,7 +19448,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8009321642164532798}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Graphice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19481,7 +19481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1320022224955649787}
   - component: {fileID: 6488069062135248702}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: New Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

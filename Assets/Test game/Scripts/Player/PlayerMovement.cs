@@ -84,7 +84,6 @@ public class PlayerMovement : MonoBehaviour
 				currentDirection = MovingDirection.Left;
 				break;
 		}
-		Debug.Log("Current Direction = " + currentDirection);
 	
 	}
 

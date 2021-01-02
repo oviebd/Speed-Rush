@@ -43,12 +43,16 @@ public class EnemyGenerator : MonoBehaviour
 		{
 			Destroy(previousItems[i].gameObject);
 		}
-		GenerateEnemy();
+
+		for (int i = 0; i < 10; i++)
+		{
+			InstantiateEnemy();
+		}
 	}
 
 	public void GenerateEnemy()
 	{
-		for (int i = 0; i < 10; i++)
+		for (int i = 0; i < 3; i++)
 		{
 			GameObject enemyObj = InstantiateEnemy();
 		}	

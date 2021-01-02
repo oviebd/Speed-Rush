@@ -69,7 +69,10 @@ public class PlatformGenerator : MonoBehaviour
 
 		lastGenerateTime = Time.time;
 		InstantiatePlatform();
-		//enemyGenerator.GenerateEnemy();
+
+		EnemyGenerator.instance.GenerateEnemy();
+		ItemGenerator.instance.GenerateReward();
+
 		DestroyPlatform();
 	}
 
@@ -91,8 +94,7 @@ public class PlatformGenerator : MonoBehaviour
 
 		platformQueue.Enqueue(platformObj);
 
-		EnemyGenerator.instance.GenerateEnemy();
-		ItemGenerator.instance.GenerateReward();
+		
 	}
 
 	private GameObject GetRandomPlatformPrefab()
@@ -105,7 +107,7 @@ public class PlatformGenerator : MonoBehaviour
 
 	private void DestroyPlatform()
 	{
-		if (platformQueue.Count > 6)
+		if ( GameManager.instance.GetCurrentGameState() == GameStateEnum.GAME_STATE.RUNNING &&  platformQueue.Count > 6)
 		{
 			GameObject obj = platformQueue.Dequeue();
 			Destroy(obj);
