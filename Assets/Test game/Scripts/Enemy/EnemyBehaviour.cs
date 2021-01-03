@@ -2,7 +2,15 @@
 
 public class EnemyBehaviour : MonoBehaviour, ICollisionEnter
 {
-	GameManager _gameManeger;
+	[SerializeField] private GameObject breakEffectObj;
+	[SerializeField] private GameObject graphicsObject;
+	private GameManager _gameManeger;
+
+	private void Awake()
+	{
+		if(breakEffectObj != null)
+			breakEffectObj.SetActive(false);
+	}
 
 	public void onCollisionEnter(GameObject collidedObj)
 	{
@@ -16,6 +24,11 @@ public class EnemyBehaviour : MonoBehaviour, ICollisionEnter
 			if (data.itemType == ItemTypeEnum.ItemType.None)
 			{
 				playerController.Die();
+			}
+			if (data.itemType == ItemTypeEnum.ItemType.Breaker)
+			{
+				graphicsObject.SetActive(false);
+				breakEffectObj.SetActive(true);
 			}
 		}
 	}
