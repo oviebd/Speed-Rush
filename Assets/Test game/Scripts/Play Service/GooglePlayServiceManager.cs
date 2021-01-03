@@ -3,10 +3,15 @@ using System.Collections.Generic;
 using GooglePlayGames.BasicApi;
 using GooglePlayGames;
 using UnityEngine;
+using SaveSystem;
 
 public class GooglePlayServiceManager : MonoBehaviour
 {
 	public static GooglePlayServiceManager instance;
+
+	public delegate void OnPlayServiceSuccessfullyAuthenticated(PlayerDataModel userData);
+	public static event OnPlayServiceSuccessfullyAuthenticated onAuthenticatedSuccessfully;
+
 
 	private void Awake()
 	{
@@ -26,14 +31,20 @@ public class GooglePlayServiceManager : MonoBehaviour
 	void SignIn()
 	{
 		Social.localUser.Authenticate(success => {
+			PlayerDataModel data = new PlayerDataModel();
+			data.playerName = Social.localUser.userName;
+			data.playerID = Social.localUser.id;
+			data.highScore = GetHighScoreFromLeaderBoard(Social.localUser.id);
+
+			onAuthenticatedSuccessfully?.Invoke(data);
 			Debug.Log("Unity>> Login Succed.... ");
 		});
 	}
 
-
 	public  void AddScoreToLeaderBoard(long score)
 	{
 		string leaderBordId = GPGSIds.leaderboard_hall_of_honor;
+	
 		Social.ReportScore(score, leaderBordId,success => {
 		});
 	}
@@ -61,6 +72,30 @@ public class GooglePlayServiceManager : MonoBehaviour
 	private void ShowLeaderBoard(IDialog iDialog)
 	{
 		iDialog.HideDialog();
+	}
+
+	public long GetHighScoreFromLeaderBoard( string userId)
+	{
+		long highScore = -1;
+		Social.LoadScores(GPGSIds.leaderboard_hall_of_honor, scores =>
+		{
+			if (scores.Length > 0)
+			{
+				Debug.Log("Unity>> Retrieved " + scores.Length + " scores");
+				for (int i = 0; i < scores.Length; i++)
+				{
+					if (userId == userId)
+					{
+						highScore = scores[i].value;
+						break;
+					}
+				}
+			}
+			else
+				Debug.Log("Unity>> Failed to retrieved score");
+		});
+
+		return highScore;
 	}
 
 

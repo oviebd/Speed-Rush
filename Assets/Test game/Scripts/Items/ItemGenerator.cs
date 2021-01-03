@@ -19,7 +19,10 @@ public class ItemGenerator : MonoBehaviour
 	{
 		if (instance == null)
 			instance = this;
+	}
 
+	private void Start()
+	{
 		ResetData();
 	}
 
@@ -86,7 +89,9 @@ public class ItemGenerator : MonoBehaviour
 		//int randomDistance = Random.Range(100, 300);
 		int zPos = lastItemZPos + randomDistance;
 
-		if (GameManager.instance.GetPlayerController() != null && zPos <= GameManager.instance.GetPlayerController()?.GetPlayerCurrentPosition().z + 100.0f)
+		if (GameManager.instance.GetCurrentGameState() == GameStateEnum.GAME_STATE.RUNNING &&
+			GameManager.instance.GetPlayerController() != null &&
+			zPos <= GameManager.instance.GetPlayerController()?.GetPlayerCurrentPosition().z + 100.0f)
 		{
 			randomPosition = new Vector3(randomXpos, 0, zPos);
 			lastItemZPos = (int)randomPosition.z;

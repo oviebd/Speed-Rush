@@ -15,7 +15,15 @@ namespace SaveSystem
         public int collectedCoinNumber = 0;
     }
 
-    [System.Serializable]
+	[System.Serializable]
+	public class PlayerDataModel
+	{
+		public string playerName = "";
+		public string playerID = "";
+		public long highScore = 0;
+	}
+
+	[System.Serializable]
     public class GameAudioSavedData
     {
         public bool isGameAudioOn = true;

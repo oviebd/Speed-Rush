@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using SaveSystem;
+using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,6 +10,14 @@ public class GameManager : MonoBehaviour
 
 	private PlayerController _pllayerController;
 	private GameStateEnum.GAME_STATE _currentGameState;
+
+	void Awake()
+	{
+		if (instance == null)
+			instance = this;
+
+		
+	}
 
 	private void Start()
 	{
@@ -63,11 +72,7 @@ public class GameManager : MonoBehaviour
 		return _currentGameState;
 	}
 
-	void Awake()
-	{
-		if (instance == null)
-			instance = this;
-	}
+
 
 	public void SetPlayerController(PlayerController controller)
 	{
@@ -77,5 +82,12 @@ public class GameManager : MonoBehaviour
 	public PlayerController GetPlayerController()
 	{
 		return this._pllayerController;
+	}
+
+	private void OnPlayServiceSuccessfullyAuthenticated()
+	{
+	//	long serverScore = GooglePlayServiceManager.instance.GetHighScoreFromLeaderBoard();
+		PlayerDataModel savedPlayerData =  PlayerDataSaver.instance.GetPlayerData();
+
 	}
 }

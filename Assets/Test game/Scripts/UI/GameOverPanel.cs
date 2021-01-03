@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using SaveSystem;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,12 +7,29 @@ using UnityEngine.UI;
 public class GameOverPanel : AnimatorPanel
 {
 	[SerializeField] private Text currenrScoreText;
+	[SerializeField] private Text highScoreText;
+
+	private void Awake()
+	{
+		PlayerDataSaver.onPlayerDataUpdated += OnPlayerUpdated;
+	}
+
+	private void OnDestroy()
+	{
+		PlayerDataSaver.onPlayerDataUpdated -= OnPlayerUpdated;
+	}
 
 	public override void Show()
 	{
 		base.Show();
 		currenrScoreText.text = ScoreManager.instance.GetScore() + "";
 		GooglePlayServiceManager.instance.AddScoreToLeaderBoard(ScoreManager.instance.GetScore());
+		PlayerDataSaver.instance.SetHighScore(ScoreManager.instance.GetScore());
+	}
+
+	private void OnPlayerUpdated(PlayerDataModel data)
+	{
+		highScoreText.text = data.highScore.ToString();
 	}
 
 	public void OnHomeButtonClicked()
