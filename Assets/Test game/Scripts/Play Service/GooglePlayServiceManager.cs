@@ -34,10 +34,7 @@ public class GooglePlayServiceManager : MonoBehaviour
 			PlayerDataModel data = new PlayerDataModel();
 			data.playerName = Social.localUser.userName;
 			data.playerID = Social.localUser.id;
-			data.highScore = GetHighScoreFromLeaderBoard(Social.localUser.id);
-
-			onAuthenticatedSuccessfully?.Invoke(data);
-			Debug.Log("Unity>> Login Succed.... ");
+		   UpdateUserWithHighScoreFromLeaderBoard(data);
 		});
 	}
 
@@ -74,19 +71,20 @@ public class GooglePlayServiceManager : MonoBehaviour
 		iDialog.HideDialog();
 	}
 
-	public long GetHighScoreFromLeaderBoard( string userId)
+	public long UpdateUserWithHighScoreFromLeaderBoard( PlayerDataModel user)
 	{
 		long highScore = -1;
 		Social.LoadScores(GPGSIds.leaderboard_hall_of_honor, scores =>
 		{
 			if (scores.Length > 0)
 			{
-				Debug.Log("Unity>> Retrieved " + scores.Length + " scores");
 				for (int i = 0; i < scores.Length; i++)
 				{
-					if (userId == userId)
+					if (scores[i].userID == user.playerID)
 					{
 						highScore = scores[i].value;
+						user.highScore = highScore;
+						onAuthenticatedSuccessfully?.Invoke(user);
 						break;
 					}
 				}

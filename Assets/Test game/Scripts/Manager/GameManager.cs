@@ -15,8 +15,6 @@ public class GameManager : MonoBehaviour
 	{
 		if (instance == null)
 			instance = this;
-
-		
 	}
 
 	private void Start()
@@ -82,12 +80,5 @@ public class GameManager : MonoBehaviour
 	public PlayerController GetPlayerController()
 	{
 		return this._pllayerController;
-	}
-
-	private void OnPlayServiceSuccessfullyAuthenticated()
-	{
-	//	long serverScore = GooglePlayServiceManager.instance.GetHighScoreFromLeaderBoard();
-		PlayerDataModel savedPlayerData =  PlayerDataSaver.instance.GetPlayerData();
-
 	}
 }

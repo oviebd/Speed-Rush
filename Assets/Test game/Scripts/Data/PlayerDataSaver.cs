@@ -52,8 +52,7 @@ public class PlayerDataSaver : MonoBehaviour
 	private void OnPlayServiceSuccessfullyAuthenticated(PlayerDataModel authenticateUserData)
 	{
 		PlayerDataModel savedPlayerData = PlayerDataSaver.instance.GetPlayerData();
-
-		if(savedPlayerData.playerID == authenticateUserData.playerID)
+		if (savedPlayerData.playerID == authenticateUserData.playerID)
 		{
 			//Same User
 			if (savedPlayerData.highScore > authenticateUserData.highScore)
