@@ -132,8 +132,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2717265}
   - component: {fileID: 2717266}
+  - component: {fileID: 2717267}
   m_Layer: 0
-  m_Name: Data Save
+  m_Name: Data
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -165,6 +166,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5a65afe8f7f20647bd94e6eeb0561e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2717267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2717264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64de4ca6be92c4d4f8b32e4636538597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorSet:
+  - colors:
+    - {r: 1, g: 1, b: 1, a: 1}
+    - {r: 0, g: 0, b: 0, a: 1}
+  - colors:
+    - {r: 0.040939845, g: 0.3773585, b: 0.06380062, a: 1}
+    - {r: 0, g: 0, b: 0, a: 1}
+  - colors:
+    - {r: 0, g: 0.0042738914, b: 1, a: 1}
+    - {r: 0.8207547, g: 0, b: 0.5842321, a: 1}
 --- !u!1 &35256533
 GameObject:
   m_ObjectHideFlags: 0
@@ -3299,7 +3322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c41c6fa811d24181810871af8753cec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _clip: {fileID: 8300000, guid: 401a0f26e13d9426aa7c52e9c98e20fa, type: 3}
+  _clip: {fileID: 8300000, guid: 6dbdb648325806444b33eda1ebf4f273, type: 3}
   _isBackgroundSound: 1
 --- !u!82 &967058607
 AudioSource:
@@ -5476,11 +5499,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 23359609527229498, guid: e7942f3b6a22c904c991a8c0cc5b77e5,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 977812ebcf17e414f944b3a7da72d7b6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7942f3b6a22c904c991a8c0cc5b77e5, type: 3}
 --- !u!4 &1670850787 stripped
