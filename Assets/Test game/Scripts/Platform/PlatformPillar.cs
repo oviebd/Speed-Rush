@@ -9,12 +9,16 @@ public class PlatformPillar : MonoBehaviour
 
 	private void Start()
 	{
-		ChangeMaterialColor();
+		ChangeMaterial();
 	}
 
-	private void ChangeMaterialColor()
+	private void ChangeMaterial()
 	{
-		Color materialColor = PillarColorData.instance.GetPillarColor();
-		renderer.material.color = materialColor;
+		Texture materialTexture = PillarSpriteData.instance.GetPillarTexture();
+		renderer.material.SetTexture("_MainTex", materialTexture); 
+		//Color materialColor = PillarColorData.instance.GetPillarColor();
+		//renderer.material.color = materialColor;
 	}
+
+	
 }

@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 2717265}
   - component: {fileID: 2717266}
   - component: {fileID: 2717267}
+  - component: {fileID: 2717268}
   m_Layer: 0
   m_Name: Data
   m_TagString: Untagged
@@ -191,6 +192,25 @@ MonoBehaviour:
     - {r: 0.454902, g: 0.93333334, b: 0.78401655, a: 1}
     - {r: 0.7529412, g: 0.3019608, b: 0.3273885, a: 1}
     - {r: 0.5019608, g: 0.20392156, b: 0.3712709, a: 1}
+--- !u!114 &2717268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2717264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ade5b34bd057744b9cdaeec6905ad36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texeureSet:
+  - textures:
+    - {fileID: 2800000, guid: 43196aa34dd7cf54fa695f2fc5fd46c2, type: 3}
+    - {fileID: 2800000, guid: 44e69bd6691975f46afe8eb40e94634a, type: 3}
+  - textures:
+    - {fileID: 2800000, guid: f75cf641a8753564988edf800f944ded, type: 3}
+    - {fileID: 2800000, guid: 7fe0d9d5322bac348813448d6f955d96, type: 3}
 --- !u!1 &35256533
 GameObject:
   m_ObjectHideFlags: 0
