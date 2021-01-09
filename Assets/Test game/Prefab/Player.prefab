@@ -383,6 +383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionEffect: {fileID: 4373091275140466420}
   playerGraphics: {fileID: 1684025983997462009}
+  trailRenderer: {fileID: 6236357755101597880}
 --- !u!114 &6107124279608306643
 MonoBehaviour:
   m_ObjectHideFlags: 0

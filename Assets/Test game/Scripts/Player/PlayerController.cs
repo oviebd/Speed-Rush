@@ -4,6 +4,7 @@ public class PlayerController : MonoBehaviour
 {
 	[SerializeField] GameObject explosionEffect;
 	[SerializeField] GameObject playerGraphics;
+	[SerializeField] TrailRenderer trailRenderer;
 
 	private PlayerMovement _movement;
 
@@ -46,6 +47,11 @@ public class PlayerController : MonoBehaviour
 	public Vector3 GetPlayerCurrentPosition()
 	{
 		return transform.position;
+	}
+
+	public TrailRenderer GetTrailRenderer()
+	{
+		return trailRenderer;
 	}
 
 	public void Die()

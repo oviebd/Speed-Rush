@@ -8,6 +8,7 @@ public class AudioSyncColor : AudioSyncer {
 
 	[SerializeField] private Light light;
 	[SerializeField] private Camera camera;
+	//[SerializeField] private TrailRenderer trail;
 	private IEnumerator MoveToColor(Color _target)
 	{
 		Color _curr = m_img.color;
@@ -43,6 +44,14 @@ public class AudioSyncColor : AudioSyncer {
 		camera.backgroundColor = Color.Lerp(m_img.color, restColor, restSmoothTime * Time.deltaTime);
 		light.color = Color.Lerp(m_img.color, restColor, restSmoothTime * Time.deltaTime);
 		m_img.color = Color.Lerp(m_img.color, restColor, restSmoothTime * Time.deltaTime);
+
+		if(GameManager.instance.GetPlayerController() != null)
+		{
+			Debug.Log("Change Trail");
+			TrailRenderer trail = GameManager.instance.GetPlayerController().GetTrailRenderer();
+			trail.startColor = Color.Lerp(m_img.color, restColor, restSmoothTime * Time.deltaTime); 
+			trail.endColor = Color.Lerp(m_img.color, restColor, restSmoothTime * Time.deltaTime);
+		}
 	}
 
 	public override void OnBeat()
