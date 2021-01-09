@@ -69,9 +69,6 @@ public class GameManager : MonoBehaviour
 	{
 		return _currentGameState;
 	}
-
-
-
 	public void SetPlayerController(PlayerController controller)
 	{
 		this._pllayerController = controller;
