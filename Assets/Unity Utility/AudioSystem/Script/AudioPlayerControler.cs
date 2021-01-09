@@ -18,7 +18,7 @@ public class AudioPlayerControler : MonoBehaviour,IAudio
     private void OnDestroy()
     {
         AudioManager.onAudioStateChange -= AudioStateChanged;
-    }
+	}
 
 
     public void PlaySound()
@@ -110,5 +110,7 @@ public class AudioPlayerControler : MonoBehaviour,IAudio
             PauseSound();
         }
     } 
+
+
     
 }

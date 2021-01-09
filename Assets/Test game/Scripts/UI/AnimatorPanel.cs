@@ -10,11 +10,6 @@ public class AnimatorPanel : Panel
 
 	private Image _backgroundImage;
 
-	private void Awake()
-	{
-		
-	}
-
 	private Image GetBackgroundImage()
 	{
 		if(_backgroundImage == null)
@@ -26,14 +21,14 @@ public class AnimatorPanel : Panel
 	public override void Show()
 	{
 		base.Show();
-		GetBackgroundImage().enabled =true;
+		//GetBackgroundImage().enabled =true;
 		animator.SetBool(anim_identifier_Appearing, true);
 	}
 
 	public override void Hide()
 	{
 		animator.SetBool(anim_identifier_Appearing, false);
-		GetBackgroundImage().enabled = false;
+		//GetBackgroundImage().enabled = false;
 		CancelInvoke();
 		Invoke("HidePanel", 1.0f);
 	}

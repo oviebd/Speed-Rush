@@ -9,7 +9,7 @@ public class GameAudioManager : MonoBehaviour
 	[SerializeField] private AudioPlayerControler backgroundAudioPlayer;
 	[SerializeField] private AudioPlayerControler playerAudioPlayer;
 
-
+	[SerializeField] private List<AudioClip> backgroundSoundClipList;
 	[SerializeField] private AudioClip playerDieClip;
 
 	private void Awake()
@@ -29,4 +29,29 @@ public class GameAudioManager : MonoBehaviour
 		playerAudioPlayer.PlaySound();
 	}
 
+	public void PlayBackgroundSound()
+	{
+		AudioClip clip = GetRandomBackgroundAudioClip();
+		if(clip != null)
+		{
+			backgroundAudioPlayer.PlaySound(clip);
+		}
+	}
+
+	public void StopBackgroundSound()
+	{
+		backgroundAudioPlayer.StopSound();
+	}
+
+	private AudioClip GetRandomBackgroundAudioClip()
+	{
+		AudioClip clip = null;
+		if(backgroundSoundClipList != null && backgroundSoundClipList.Count > 0)
+		{
+			int index = Random.Range(0, backgroundSoundClipList.Count);
+			Debug.Log("index - " + index);
+			clip = backgroundSoundClipList[index];
+		}
+		return clip;
+	}
 }

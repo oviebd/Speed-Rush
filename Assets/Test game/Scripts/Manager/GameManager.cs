@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
 		EnvironmentController.instance.PrepareForNewGame();
 		GetPlayerController()?.GetPlayerMovement().StartMovement();
 		UIManager.instance.ShowOnGameMenu();
+		GameAudioManager.instance.PlayBackgroundSound();
 
 		SetGameState(GameStateEnum.GAME_STATE.RUNNING);
 	}
@@ -36,6 +37,7 @@ public class GameManager : MonoBehaviour
 	{
 		GetPlayerController()?.GetPlayerMovement().StopMovement();
 		UIManager.instance.ShowGameOverMenu();
+		GameAudioManager.instance.StopBackgroundSound();
 
 		SetGameState(GameStateEnum.GAME_STATE.GAME_OVER);
 	}

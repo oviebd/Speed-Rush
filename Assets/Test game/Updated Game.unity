@@ -345,7 +345,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 98677392}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -1312,7 +1312,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 240850715}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -2070,6 +2070,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backgroundAudioPlayer: {fileID: 967058606}
   playerAudioPlayer: {fileID: 2103170506}
+  backgroundSoundClipList:
+  - {fileID: 8300000, guid: 5660e505580091f4eab620320fadd86d, type: 3}
+  - {fileID: 8300000, guid: 401a0f26e13d9426aa7c52e9c98e20fa, type: 3}
+  - {fileID: 8300000, guid: 6dbdb648325806444b33eda1ebf4f273, type: 3}
   playerDieClip: {fileID: 8300000, guid: f9098c9caef96440a838dbe899422954, type: 3}
 --- !u!222 &699960234
 CanvasRenderer:
@@ -3406,7 +3410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c41c6fa811d24181810871af8753cec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _clip: {fileID: 8300000, guid: 6dbdb648325806444b33eda1ebf4f273, type: 3}
+  _clip: {fileID: 8300000, guid: 5660e505580091f4eab620320fadd86d, type: 3}
   _isBackgroundSound: 1
 --- !u!82 &967058607
 AudioSource:
@@ -4776,7 +4780,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1472912784}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -5973,7 +5977,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -337.7}
+  m_AnchoredPosition: {x: 0, y: -337.69922}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1720579381
