@@ -440,6 +440,7 @@ MonoBehaviour:
   enemyPrefabList:
   - {fileID: 1298040943078468, guid: d567f25e25ad9474aaa461e654e6d32a, type: 3}
   - {fileID: 1298040943078468, guid: 71de493dc474ccd4ab3f48c2bee57713, type: 3}
+  - {fileID: 2064996150263177292, guid: 8eddb7d524619c44992ff64fccbd2ff0, type: 3}
   enemyParent: {fileID: 810910457}
   enemyNumberListInPerSession: 
 --- !u!1 &148183109
@@ -3999,7 +4000,7 @@ PrefabInstance:
     - target: {fileID: 6695419069599187469, guid: 24ff2df24c5c381488943ec951a584cc,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24ff2df24c5c381488943ec951a584cc, type: 3}
