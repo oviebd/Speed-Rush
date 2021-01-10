@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
 	private MovingDirection currentDirection;
 
 	private bool _canMove;
-	//private bool _canChangeDirection;
+	private bool _canChangeDirection;
 
 	private Vector3 _moveDirectionVector;
 
@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
 		_currentPlayerSpeed = playerSpeed;
 		ResetMoveData();
 		_canMove = true;
-		//_canChangeDirection = true;
+		_canChangeDirection = true;
 
 		_playerController = this.gameObject.GetComponent<PlayerController>();
 		InputClicked.onClickedTouchArea += ChangeDirection;
@@ -40,15 +40,15 @@ public class PlayerMovement : MonoBehaviour
 	public void SetExtremeSpeed()
 	{
 		currentDirection = MovingDirection.Forward;
-	//	_canChangeDirection = false;
+	    _canChangeDirection = false;
 		_previousSpeed = _currentPlayerSpeed;
-		_currentPlayerSpeed = _currentPlayerSpeed * 2.0f;
-		_currentMaxSpeed = maxPlayerSpeed * 2.0f;
+		_currentPlayerSpeed = _currentPlayerSpeed * 3.0f;
+		_currentMaxSpeed = maxPlayerSpeed * 3.0f;
 	}
 
 	public void GoNormalSpeed()
 	{
-	//	_canChangeDirection = true; 
+		_canChangeDirection = true; 
 		_currentPlayerSpeed = _previousSpeed;
 		_currentMaxSpeed = maxPlayerSpeed;
 	}
@@ -59,18 +59,10 @@ public class PlayerMovement : MonoBehaviour
 		currentDirection = MovingDirection.Forward;
 	}
 
-	/*private void Update()
-	{
-		if (Input.GetMouseButtonDown(0))
-		{
-			ChangeDirection();
-		}
-	}*/
-
 	private void ChangeDirection()
 	{
-		/*if (_canChangeDirection == false)
-			return;*/
+		if (_canChangeDirection == false)
+			return;
 
 		switch (currentDirection)
 		{
@@ -115,7 +107,6 @@ public class PlayerMovement : MonoBehaviour
 	{
 		_canMove = false;
 	}
-
 	public void StartMovement()
 	{
 		_canMove = true;

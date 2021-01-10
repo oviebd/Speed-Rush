@@ -47,7 +47,6 @@ public class AudioSyncColor : AudioSyncer {
 
 		if(GameManager.instance.GetPlayerController() != null)
 		{
-			Debug.Log("Change Trail");
 			TrailRenderer trail = GameManager.instance.GetPlayerController().GetTrailRenderer();
 			trail.startColor = Color.Lerp(m_img.color, restColor, restSmoothTime * Time.deltaTime); 
 			trail.endColor = Color.Lerp(m_img.color, restColor, restSmoothTime * Time.deltaTime);

@@ -39,6 +39,8 @@ public class GameManager : MonoBehaviour
 		UIManager.instance.ShowGameOverMenu();
 		GameAudioManager.instance.StopBackgroundSound();
 
+		_pllayerController = null;
+
 		SetGameState(GameStateEnum.GAME_STATE.GAME_OVER);
 	}
 
