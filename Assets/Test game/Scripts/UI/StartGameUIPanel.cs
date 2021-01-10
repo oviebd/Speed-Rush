@@ -99,20 +99,16 @@ public class StartGameUIPanel : AnimatorPanel
 
 	public void OnDiscoModeButtonClicked()
 	{
+		PlayerDataModel data = PlayerDataSaver.instance.ToggleGameMode();
 		bool isDiscoMode =  PlayerDataSaver.instance.IsInDiscoMode();
-		PlayerDataModel data = PlayerDataSaver.instance.GetPlayerData();
 
 		if (isDiscoMode)
-			data.GameMode = GameModeEnum.GAME_MODE.MODE_NORMAL;
-		else
 		{
-			data.GameMode = GameModeEnum.GAME_MODE.MODE_DISCO;
-			if(AudioManager.instance.IsGameAudioOn() == false)
+			if (AudioManager.instance.IsGameAudioOn() == false)
 			{
 				ToggleAudioState();
 			}
 		}
-		PlayerDataSaver.instance.StorePlayerData(data);
 		SetDiscoButtonUI();
 	}
 

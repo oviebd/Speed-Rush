@@ -8,6 +8,9 @@ public class PlayerDataSaver : MonoBehaviour
 	public delegate void OnPlayerDataUpdated(PlayerDataModel data);
 	public static event OnPlayerDataUpdated onPlayerDataUpdated;
 
+	public delegate void OnGameModeChanged(GameModeEnum.GAME_MODE gameMode);
+	public static event OnGameModeChanged onGameModeChanged;
+
 	private string fileName = "PlayerData.json";
 
 	private void Awake()
@@ -28,6 +31,22 @@ public class PlayerDataSaver : MonoBehaviour
 		return FileHandler.GetPersistantFilePath(fileName);
 	}
 
+	public PlayerDataModel ToggleGameMode()
+	{
+		PlayerDataModel data = GetPlayerData();
+
+		if (data.GameMode == GameModeEnum.GAME_MODE.MODE_DISCO)
+			data.GameMode = GameModeEnum.GAME_MODE.MODE_NORMAL;
+		else
+		{
+			data.GameMode = GameModeEnum.GAME_MODE.MODE_DISCO;
+		}
+		StorePlayerData(data);
+
+		onGameModeChanged?.Invoke(data.GameMode);
+
+		return data;
+	}
 	public bool IsInDiscoMode()
 	{
 		if (GetPlayerData().GameMode == GameModeEnum.GAME_MODE.MODE_DISCO)

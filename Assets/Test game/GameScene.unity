@@ -1320,7 +1320,7 @@ MonoBehaviour:
   - {r: 0.49105504, g: 0.050980374, b: 0.90588236, a: 1}
   - {r: 0.050980374, g: 0.4456892, b: 0.90588236, a: 1}
   - {r: 0.25743148, g: 0.6294405, b: 0.8396226, a: 1}
-  restColor: {r: 0.2588235, g: 0.84313726, b: 0.528819, a: 1}
+  restColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &240850718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3596,7 +3596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c41c6fa811d24181810871af8753cec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _clip: {fileID: 8300000, guid: 5660e505580091f4eab620320fadd86d, type: 3}
+  _clip: {fileID: 8300000, guid: 6dbdb648325806444b33eda1ebf4f273, type: 3}
   _isBackgroundSound: 1
 --- !u!82 &967058607
 AudioSource:
@@ -4181,6 +4181,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1046495200}
   m_CullTransparentMesh: 0
+--- !u!114 &1055030650 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6932182912387917704, guid: e7942f3b6a22c904c991a8c0cc5b77e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1670850786}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e914253465b2efc4d90954b103806933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1055030654 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7084670145877290302, guid: e7942f3b6a22c904c991a8c0cc5b77e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1670850786}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c7c6a438c1276748b770e7335b107cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1067543265
 GameObject:
   m_ObjectHideFlags: 0
@@ -6037,6 +6061,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2099511139}
     m_Modifications:
+    - target: {fileID: 1529339335, guid: e7942f3b6a22c904c991a8c0cc5b77e5, type: 3}
+      propertyPath: moveObject
+      value: 
+      objectReference: {fileID: 1055030650}
+    - target: {fileID: 1529339335, guid: e7942f3b6a22c904c991a8c0cc5b77e5, type: 3}
+      propertyPath: audioSyncScale
+      value: 
+      objectReference: {fileID: 1055030654}
     - target: {fileID: 1582978711653166, guid: e7942f3b6a22c904c991a8c0cc5b77e5, type: 3}
       propertyPath: m_Name
       value: Auto generated floor

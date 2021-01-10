@@ -2,12 +2,55 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 /// <summary>
 /// Parent class responsible for extracting beats from..
 /// ..spectrum value given by AudioSpectrum.cs
 /// </summary>
+/// 
 public class AudioSyncer : MonoBehaviour {
 
+	private bool _isDiscoModeEnabled ;
+	private PlayerDataSaver _playerDataSaver = null;
+	private void Awake()
+	{
+		PlayerDataSaver.onGameModeChanged += OnGameModeChanges;
+	}
+	private void OnDestroy()
+	{
+		PlayerDataSaver.onGameModeChanged -= OnGameModeChanges;
+	}
+
+	private void Update()
+	{
+		if (_playerDataSaver == null)
+		{
+			_isDiscoModeEnabled = GetPlayerDataSaver().IsInDiscoMode();
+		}
+		else
+		{
+			if (_isDiscoModeEnabled == true)
+				OnUpdate();
+		}
+
+	}
+
+
+	PlayerDataSaver GetPlayerDataSaver()
+	{
+		if (_playerDataSaver == null)
+			_playerDataSaver = PlayerDataSaver.instance;
+
+		return _playerDataSaver;
+	}
+
+	private void OnGameModeChanges(GameModeEnum.GAME_MODE gameMode)
+	{
+		if(gameMode == GameModeEnum.GAME_MODE.MODE_DISCO)
+			_isDiscoModeEnabled = true;
+		else
+			_isDiscoModeEnabled = false;
+	}
 	/// <summary>
 	/// Inherit this to cause some behavior on each beat
 	/// </summary>
@@ -50,11 +93,7 @@ public class AudioSyncer : MonoBehaviour {
 		m_timer += Time.deltaTime;
 	}
 
-	private void Update()
-	{
-		OnUpdate();
-	}
-
+	
 	public float bias;
 	public float timeStep;
 	public float timeToBeat;
