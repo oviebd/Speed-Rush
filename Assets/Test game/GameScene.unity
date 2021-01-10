@@ -2180,9 +2180,11 @@ MonoBehaviour:
   backgroundAudioPlayer: {fileID: 967058606}
   playerAudioPlayer: {fileID: 2103170506}
   backgroundSoundClipList:
-  - {fileID: 8300000, guid: 5660e505580091f4eab620320fadd86d, type: 3}
-  - {fileID: 8300000, guid: 401a0f26e13d9426aa7c52e9c98e20fa, type: 3}
-  - {fileID: 8300000, guid: 6dbdb648325806444b33eda1ebf4f273, type: 3}
+  - {fileID: 8300000, guid: c41cc4914c090e6419a8659dc214c197, type: 3}
+  - {fileID: 8300000, guid: 2ede545a1b3018c48b4b430efe8f5fac, type: 3}
+  - {fileID: 8300000, guid: 6199fbc4b41a403469aa99803c417c50, type: 3}
+  - {fileID: 8300000, guid: 3e933941de729604d92993c05102a01c, type: 3}
+  - {fileID: 8300000, guid: a7a530a0a12a4ab46a778970e8a3971b, type: 3}
   playerDieClip: {fileID: 8300000, guid: f9098c9caef96440a838dbe899422954, type: 3}
 --- !u!222 &699960234
 CanvasRenderer:
@@ -3596,7 +3598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c41c6fa811d24181810871af8753cec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _clip: {fileID: 8300000, guid: 6dbdb648325806444b33eda1ebf4f273, type: 3}
+  _clip: {fileID: 8300000, guid: a7a530a0a12a4ab46a778970e8a3971b, type: 3}
   _isBackgroundSound: 1
 --- !u!82 &967058607
 AudioSource:
@@ -6499,7 +6501,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 29aefb354c7bf5f44bdb6724d5d2bf04, type: 3}
-    m_FontSize: 70
+    m_FontSize: 65
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -6507,7 +6509,7 @@ MonoBehaviour:
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
+    m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: tap for change direction
