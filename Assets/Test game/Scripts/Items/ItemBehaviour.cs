@@ -10,6 +10,7 @@ public class ItemBehaviour : MonoBehaviour, ICollisionEnter
 		{
 			//PlayerController playerController = collidedObj.GetComponent<PlayerController>();
 			GameManager.instance.GetPlayerController()?.ActivateConsumedItem(behaviourData);
+			CountdownController.instance.SHowCountDown(behaviourData.activeTime);
 			//	Debug.Log("Player hit on Item");
 		}
 
