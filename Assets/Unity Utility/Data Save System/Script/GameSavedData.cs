@@ -21,6 +21,7 @@ namespace SaveSystem
 		public string playerName = "";
 		public string playerID = "";
 		public long highScore = 0;
+		public GameModeEnum.GAME_MODE GameMode = GameModeEnum.GAME_MODE.MODE_DISCO;
 	}
 
 	[System.Serializable]

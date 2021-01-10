@@ -28,6 +28,14 @@ public class PlayerDataSaver : MonoBehaviour
 		return FileHandler.GetPersistantFilePath(fileName);
 	}
 
+	public bool IsInDiscoMode()
+	{
+		if (GetPlayerData().GameMode == GameModeEnum.GAME_MODE.MODE_DISCO)
+			return true;
+
+		return false;
+	}
+
 	public PlayerDataModel GetPlayerData()
 	{
 		return SaveDataHandler.GetData<PlayerDataModel>(GetFilePath(), new PlayerDataModel());
