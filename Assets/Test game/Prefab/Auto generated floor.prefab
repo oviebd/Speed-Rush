@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 6337819210908144239}
   - component: {fileID: 4795881782154097916}
   - component: {fileID: 1347696902}
+  - component: {fileID: 5584481894126318162}
   m_Layer: 0
   m_Name: Cube (8)
   m_TagString: Untagged
@@ -212,7 +213,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1415474274097651853}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e914253465b2efc4d90954b103806933, type: 3}
   m_Name: 
@@ -234,6 +235,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderer: {fileID: 9115095628218922458}
+--- !u!114 &5584481894126318162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415474274097651853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c7c6a438c1276748b770e7335b107cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bias: 7
+  timeStep: 0.1
+  timeToBeat: 0.005
+  restSmoothTime: 3
+  beatScale: {x: 2, y: 50, z: 1}
+  restScale: {x: 2, y: 20, z: 1}
 --- !u!1 &1436076084300771751
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,6 +267,7 @@ GameObject:
   - component: {fileID: 9060091679062726134}
   - component: {fileID: 6932182912387917704}
   - component: {fileID: 1529339335}
+  - component: {fileID: 7084670145877290302}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -337,7 +357,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1436076084300771751}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e914253465b2efc4d90954b103806933, type: 3}
   m_Name: 
@@ -359,6 +379,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderer: {fileID: 7589454054891298330}
+--- !u!114 &7084670145877290302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436076084300771751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c7c6a438c1276748b770e7335b107cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bias: 7
+  timeStep: 0.1
+  timeToBeat: 0.005
+  restSmoothTime: 3
+  beatScale: {x: 2, y: 50, z: 1}
+  restScale: {x: 2, y: 20, z: 1}
 --- !u!1 &1674169301087349747
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,6 +411,7 @@ GameObject:
   - component: {fileID: 281713450462936431}
   - component: {fileID: 8840358136110333896}
   - component: {fileID: 1846666130}
+  - component: {fileID: 4895140309471912159}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -462,7 +501,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1674169301087349747}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e914253465b2efc4d90954b103806933, type: 3}
   m_Name: 
@@ -484,6 +523,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderer: {fileID: 6767334448201106472}
+--- !u!114 &4895140309471912159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674169301087349747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c7c6a438c1276748b770e7335b107cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bias: 7
+  timeStep: 0.1
+  timeToBeat: 0.005
+  restSmoothTime: 3
+  beatScale: {x: 2, y: 50, z: 1}
+  restScale: {x: 2, y: 20, z: 1}
 --- !u!1 &2964231325059616847
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,6 +923,7 @@ GameObject:
   - component: {fileID: 2026770011684682458}
   - component: {fileID: 1458027642025238618}
   - component: {fileID: 1522451073}
+  - component: {fileID: 6248917404640496981}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -955,7 +1013,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4322217369478293116}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e914253465b2efc4d90954b103806933, type: 3}
   m_Name: 
@@ -977,6 +1035,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderer: {fileID: 7907972862026931370}
+--- !u!114 &6248917404640496981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4322217369478293116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c7c6a438c1276748b770e7335b107cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bias: 7
+  timeStep: 0.1
+  timeToBeat: 0.005
+  restSmoothTime: 3
+  beatScale: {x: 2, y: 50, z: 1}
+  restScale: {x: 2, y: 20, z: 1}
 --- !u!1 &4644879647996023212
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,6 +1159,7 @@ GameObject:
   - component: {fileID: 8117354429426199313}
   - component: {fileID: 8530023410632432714}
   - component: {fileID: 859181113}
+  - component: {fileID: 7716534972507315885}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -1172,7 +1249,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4722667709106355641}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e914253465b2efc4d90954b103806933, type: 3}
   m_Name: 
@@ -1194,6 +1271,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderer: {fileID: 9215256005501191833}
+--- !u!114 &7716534972507315885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4722667709106355641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c7c6a438c1276748b770e7335b107cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bias: 7
+  timeStep: 0.1
+  timeToBeat: 0.005
+  restSmoothTime: 3
+  beatScale: {x: 2, y: 50, z: 1}
+  restScale: {x: 2, y: 20, z: 1}
 --- !u!1 &5399169672858750057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1392,6 +1487,7 @@ GameObject:
   - component: {fileID: 6791461464832499709}
   - component: {fileID: 8027859877202723329}
   - component: {fileID: 210829529}
+  - component: {fileID: 4400160189492510835}
   m_Layer: 0
   m_Name: Cube (7)
   m_TagString: Untagged
@@ -1481,7 +1577,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5825691937215389213}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e914253465b2efc4d90954b103806933, type: 3}
   m_Name: 
@@ -1503,6 +1599,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderer: {fileID: 3771339495454976857}
+--- !u!114 &4400160189492510835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5825691937215389213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c7c6a438c1276748b770e7335b107cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bias: 7
+  timeStep: 0.1
+  timeToBeat: 0.005
+  restSmoothTime: 3
+  beatScale: {x: 2, y: 50, z: 1}
+  restScale: {x: 2, y: 20, z: 1}
 --- !u!1 &6476825645185762929
 GameObject:
   m_ObjectHideFlags: 0
@@ -1517,6 +1631,7 @@ GameObject:
   - component: {fileID: 894203862861797577}
   - component: {fileID: 2906686819745368143}
   - component: {fileID: 1128462484}
+  - component: {fileID: 2886679754173341803}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Untagged
@@ -1606,7 +1721,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6476825645185762929}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e914253465b2efc4d90954b103806933, type: 3}
   m_Name: 
@@ -1628,6 +1743,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderer: {fileID: 3425681878771144984}
+--- !u!114 &2886679754173341803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6476825645185762929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c7c6a438c1276748b770e7335b107cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bias: 7
+  timeStep: 0.1
+  timeToBeat: 0.005
+  restSmoothTime: 3
+  beatScale: {x: 2, y: 50, z: 1}
+  restScale: {x: 2, y: 20, z: 1}
 --- !u!1 &7842593462129430439
 GameObject:
   m_ObjectHideFlags: 0

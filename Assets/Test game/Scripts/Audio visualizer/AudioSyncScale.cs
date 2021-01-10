@@ -4,6 +4,18 @@ using UnityEngine;
 
 public class AudioSyncScale : AudioSyncer {
 
+	private void Start()
+	{
+		restScale = this.gameObject.transform.localScale;
+		Vector3 tempScale = restScale;
+
+
+		tempScale.y = Random.Range( (tempScale.y -( tempScale.y/2)), (tempScale.y * 2));
+
+		beatScale = tempScale;
+		bias = Random.Range(1, 10);
+
+	}
 	private IEnumerator MoveToScale(Vector3 _target)
 	{
 		Vector3 _curr = transform.localScale;

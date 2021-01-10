@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
 	private void CallEndGame()
 	{
 		GameManager.instance.EndGame();
-	//	Destroy(this.gameObject);
+		Destroy(this.gameObject);
 	}
 
 	public void ActivateConsumedItem(ItemBehaviourData data)
