@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
 		UIManager.instance.ShowGameOverMenu();
 		GameAudioManager.instance.StopBackgroundSound();
 
-	//	_pllayerController = null;
+		_pllayerController = null;
 
 		SetGameState(GameStateEnum.GAME_STATE.GAME_OVER);
 	}
@@ -80,10 +80,10 @@ public class GameManager : MonoBehaviour
 
 	public PlayerController GetPlayerController()
 	{
-		if(GetCurrentGameState() != GameStateEnum.GAME_STATE.RUNNING)
+		/*if(GetCurrentGameState() != GameStateEnum.GAME_STATE.RUNNING)
 		{
 			return null;
-		}
+		}*/
 		return this._pllayerController;
 	}
 }
