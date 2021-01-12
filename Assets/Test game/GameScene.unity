@@ -229,7 +229,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &35256534
 Transform:
   m_ObjectHideFlags: 0
@@ -2183,7 +2183,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c41cc4914c090e6419a8659dc214c197, type: 3}
   - {fileID: 8300000, guid: 2ede545a1b3018c48b4b430efe8f5fac, type: 3}
   - {fileID: 8300000, guid: 6199fbc4b41a403469aa99803c417c50, type: 3}
-  - {fileID: 8300000, guid: 3e933941de729604d92993c05102a01c, type: 3}
   - {fileID: 8300000, guid: a7a530a0a12a4ab46a778970e8a3971b, type: 3}
   playerDieClip: {fileID: 8300000, guid: f9098c9caef96440a838dbe899422954, type: 3}
 --- !u!222 &699960234
@@ -6302,7 +6301,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1720579380
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6320,7 +6319,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -337.69922}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -996, y: 56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1720579381
 MonoBehaviour:

@@ -25,7 +25,7 @@ public class GooglePlayServiceManager : MonoBehaviour
 		PlayGamesPlatform.InitializeInstance(config);
 		PlayGamesPlatform.Activate();
 
-		SignIn();
+		//SignIn();
 	}
 
 	void SignIn()
