@@ -97,7 +97,7 @@ public class EnemyGenerator : MonoBehaviour
 			enemyPrefab = enemyPrefabList[0];
 		else
 		{
-			if (randomPercentage >= 40 && length > 1)
+			if (randomPercentage >= 70 && length > 1)
 			{
 				int index = Random.Range(1, length);
 				enemyPrefab = enemyPrefabList[index];
