@@ -47,7 +47,7 @@ PlayerSettings:
   defaultScreenWidthWeb: 960
   defaultScreenHeightWeb: 600
   m_StereoRenderingPath: 0
-  m_ActiveColorSpace: 0
+  m_ActiveColorSpace: 1
   m_MTRendering: 1
   m_StackTraceTypes: 010000000100000001000000010000000100000001000000
   iosShowActivityIndicatorOnLoading: -1
@@ -244,18 +244,18 @@ PlayerSettings:
   clonedFromGUID: 00000000000000000000000000000000
   templatePackageId: 
   templateDefaultScene: 
-  AndroidTargetArchitectures: 1
+  AndroidTargetArchitectures: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: '{inproject}: '
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: C:/Users/Nemo/Desktop/KeyStore_SpeedDash/speedDash.keystore
+  AndroidKeyaliasName: ashtoy
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 1
   AndroidIsGame: 1
   AndroidEnableTango: 0
   androidEnableBanner: 0
   androidUseLowAccuracyLocation: 0
-  androidUseCustomKeystore: 0
+  androidUseCustomKeystore: 1
   m_AndroidBanners:
   - width: 320
     height: 180
@@ -491,7 +491,10 @@ PlayerSettings:
     m_GraphicsJobMode: 0
   - m_BuildTarget: XboxOnePlayer
     m_GraphicsJobMode: 0
-  m_BuildTargetGraphicsAPIs: []
+  m_BuildTargetGraphicsAPIs:
+  - m_BuildTarget: AndroidPlayer
+    m_APIs: 0b00000015000000
+    m_Automatic: 0
   m_BuildTargetVRSettings: []
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
@@ -755,7 +758,8 @@ PlayerSettings:
     29: UNITY_POST_PROCESSING_STACK_V2
     30: UNITY_POST_PROCESSING_STACK_V2
   platformArchitecture: {}
-  scriptingBackend: {}
+  scriptingBackend:
+    Android: 1
   il2cppCompilerConfiguration: {}
   managedStrippingLevel: {}
   incrementalIl2cppBuild: {}
@@ -764,7 +768,8 @@ PlayerSettings:
   scriptingRuntimeVersion: 1
   gcIncremental: 0
   gcWBarrierValidation: 0
-  apiCompatibilityLevelPerPlatform: {}
+  apiCompatibilityLevelPerPlatform:
+    Android: 3
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: Fantasy world

@@ -4,18 +4,19 @@ using UnityEngine;
 
 public static class AdUtility
 {
-	public static string GetAppId()
+	public static string GetAppId(bool isPublished)
 	{
 		string appId = "";
 
+		if (isPublished == true)
+		{
 #if UNITY_ANDROID
-		//appId = "ca-app-pub-7034086702288798~4371294271";
-
+			appId = "ca-app-pub-7034086702288798~1780590578";
 #elif UNITY_IPHONE
-         //appId = "ca-app-pub-7034086702288798~4330291049";
+            appId = "ca-app-pub-7034086702288798/3479124249";    
 #endif
+		}
 		return appId;
-
 	}
 
 	public static string GetBannerAdId(bool isPublished)
@@ -25,7 +26,7 @@ public static class AdUtility
 		if (isPublished == true)
 		{
 #if UNITY_ANDROID
-			adUnitId = "ca-app-pub-7034086702288798/3619597188";
+			adUnitId = "ca-app-pub-7034086702288798/8919172974";
 #elif UNITY_IPHONE
             adUnitId = "ca-app-pub-7034086702288798/3479124249";    
 #endif
@@ -51,7 +52,7 @@ public static class AdUtility
 		if (isPublished == true)
 		{
 #if UNITY_ANDROID
-			adUnitId = "ca-app-pub-7034086702288798/7748266652";
+			adUnitId = "ca-app-pub-7034086702288798/9984024391";
 #elif UNITY_IPHONE
             adUnitId = "ca-app-pub-7034086702288798/8539879235";    
 #endif

@@ -30,7 +30,7 @@ public class AdManager : MonoBehaviour
 
 	public void Start()
 	{
-		string appId = AdUtility.GetAppId();
+		string appId = AdUtility.GetAppId(_isPublish);
 
 		MobileAds.Initialize(appId);
 
