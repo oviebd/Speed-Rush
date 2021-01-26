@@ -49,7 +49,9 @@ public class GameOverPanel : AnimatorPanel
 
 	public void OnRateButtonClicked()
 	{
-		Application.OpenURL("https://play.google.com/store/apps/details?id=com.AshToy.ImmuneSystem");
+		string appPackage = Application.identifier;
+		string url = "https://play.google.com/store/apps/details?id=" + appPackage;
+		Application.OpenURL(url);
 	}
 	public void OnMoreGameButtonClicked()
 	{
