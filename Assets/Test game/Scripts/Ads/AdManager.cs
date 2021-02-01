@@ -91,7 +91,7 @@ public class AdManager : MonoBehaviour
 	{
 		if (state == GameStateEnum.GAME_STATE.GAME_OVER)
 		{
-			if ((_currentGameOverStateNumber % _gameOverStateNumberForInterstitialAd) == 0)
+			if (_currentGameOverStateNumber != 0 && (_currentGameOverStateNumber % _gameOverStateNumberForInterstitialAd) == 0)
 			{
 				ShowInterstitialAd();
 			}

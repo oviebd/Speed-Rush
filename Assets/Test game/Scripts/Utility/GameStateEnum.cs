@@ -5,6 +5,7 @@
 		PREPARE = 0,
 		RUNNING = 1,
 		PAUSE = 2,
-		GAME_OVER = 3
+		GAME_OVER = 3,
+		PLAYER_DIED = 4
 	};
 }

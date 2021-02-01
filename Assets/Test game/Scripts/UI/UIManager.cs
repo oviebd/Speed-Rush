@@ -11,6 +11,7 @@ public class UIManager : MonoBehaviour
 	[SerializeField] private Panel endGamePanel;
 	[SerializeField] private Panel pauseGamePanel;
 	[SerializeField] private Panel gameRunningPanel;
+	[SerializeField] private Panel extraLifePanel;
 
 	private void Awake()
 	{
@@ -34,6 +35,12 @@ public class UIManager : MonoBehaviour
 		HideAllExceptOne(pauseGamePanel);
 	}
 
+    public void ShowExtraLifePanel()
+	{
+		HideAllExceptOne(extraLifePanel);
+		extraLifePanel.Show();
+	}
+
 	public void ShowGameOverMenu()
 	{
 		//gameRunningPanel.Hide();
@@ -51,5 +58,7 @@ public class UIManager : MonoBehaviour
 			pauseGamePanel.Hide();
 		if (activePanel != gameRunningPanel && gameRunningPanel.isActiveAndEnabled)
 			gameRunningPanel.Hide();
+		if (activePanel != extraLifePanel && extraLifePanel.isActiveAndEnabled)
+			extraLifePanel.Hide();
 	}
 }

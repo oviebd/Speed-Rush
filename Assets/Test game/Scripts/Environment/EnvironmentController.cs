@@ -20,11 +20,15 @@ public class EnvironmentController : MonoBehaviour
 		PlatformGenerator.instance.ResetData();
 		EnemyGenerator.instance.ResetData();
 		ItemGenerator.instance.ResetData();
-		InstantiatePlayer();
+		InstantiatePlayer(Vector3.zero);
 	}
 
+	public void RespawnPlayer(Vector3 playerPosition)
+	{
+		InstantiatePlayer(playerPosition);
+	}
 
-	private PlayerController InstantiatePlayer()
+	private PlayerController InstantiatePlayer(Vector3 playerPosition)
 	{
 
 		PlayerController previousPlayer = FindObjectOfType<PlayerController>();
@@ -37,6 +41,12 @@ public class EnvironmentController : MonoBehaviour
 		playerObj.name = "Player " ;
 		playerObj.transform.parent = null;
 		playerObj.transform.SetParent(environmentParent.transform, false);
+
+        if(playerPosition != Vector3.zero)
+        {
+			playerPosition.x = 0;
+			playerObj.transform.position = playerPosition;
+        }
 
 		PlayerController playerController = playerObj.GetComponent<PlayerController>();
 		GameManager.instance.SetPlayerController(playerController);

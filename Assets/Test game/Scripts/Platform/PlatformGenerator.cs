@@ -54,7 +54,8 @@ public class PlatformGenerator : MonoBehaviour
 		if (GameManager.instance.GetPlayerController() == null)
 			return;
 		int playerZPos = (int)GameManager.instance.GetPlayerController()?.GetPlayerCurrentPosition().z;
-		if ( playerZPos > 0 &&  (playerZPos % 30) == 0)
+
+        if ( playerZPos > 0 &&  (playerZPos % 30) == 0 && GameManager.instance.GetCurrentGameState() == GameStateEnum.GAME_STATE.RUNNING)
 		{
 			GeneratePlatforms();
 		}
@@ -65,7 +66,6 @@ public class PlatformGenerator : MonoBehaviour
 
 		if ( (Time.time - lastGenerateTime) < 1.0f)
 			return;
-		
 
 		lastGenerateTime = Time.time;
 		InstantiatePlatform();
@@ -105,12 +105,22 @@ public class PlatformGenerator : MonoBehaviour
 		return platformPrefab;
 	}
 
-	private void DestroyPlatform()
-	{
-		if ( GameManager.instance.GetCurrentGameState() == GameStateEnum.GAME_STATE.RUNNING &&  platformQueue.Count > 6)
-		{
-			GameObject obj = platformQueue.Dequeue();
-			Destroy(obj);
-		}
-	}
+    private void DestroyPlatform()
+    {
+        if (GameManager.instance.GetCurrentGameState() == GameStateEnum.GAME_STATE.RUNNING && platformQueue.Count > 6)
+        {
+            if (GameManager.instance.GetPlayerController() != null)
+            {
+                GameObject firstItem = platformQueue.Peek();
+
+                if ((firstItem.transform.position.z + 50) < GameManager.instance.GetPlayerController().transform.position.z)
+                {
+                    GameObject obj = platformQueue.Dequeue();
+                    Destroy(obj);
+                }
+
+            }
+
+        }
+    }
 }

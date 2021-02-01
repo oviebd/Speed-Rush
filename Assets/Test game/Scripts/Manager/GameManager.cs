@@ -33,6 +33,21 @@ public class GameManager : MonoBehaviour
 		SetGameState(GameStateEnum.GAME_STATE.RUNNING);
 	}
 
+    public void PlayerDied(Vector3 diedPosition)
+    {
+		GetPlayerController()?.GetPlayerMovement().StopMovement();
+		SetGameState(GameStateEnum.GAME_STATE.PLAYER_DIED);
+		UIManager.instance.ShowExtraLifePanel();
+		//RespawnPlayer();
+	}
+
+    public void RespawnPlayer()
+    {
+		Vector3 playerPosition = GetPlayerController().transform.position;
+		EnvironmentController.instance.RespawnPlayer(playerPosition);
+		ResumeGame();
+    }
+
 	public void EndGame()
 	{
 		GetPlayerController()?.GetPlayerMovement().StopMovement();
@@ -77,6 +92,11 @@ public class GameManager : MonoBehaviour
 	{
 		this._pllayerController = controller;
 	}
+
+    public void OnRewardAdCompleted()
+    {
+		RespawnPlayer();
+    }
 
 	public PlayerController GetPlayerController()
 	{

@@ -40,24 +40,28 @@ public class RewardAdController : MonoBehaviour
 
 	public void ShowRewardAd()
 	{
-		if (Utility.isNetworkAvilable() == false && rewardedAd.IsLoaded() == false)
-		{
-			/*IDialog dialog = DialogManager.instance.SpawnDialogBasedOnType(GameEnum.DialogType.ErrorDialog);
-			dialog.SetTitle("No Internet!");
-			dialog.SetMessage("Please check your Network connection..");*/
-		}
-		else
+
+		bool isNetworkAvilable = Utility.isNetworkAvilable();
+		if (isNetworkAvilable == true && rewardedAd.IsLoaded() == true)
 		{
 			if (IsRewardAdLoaded())
 			{
 				rewardedAd.Show();
 			}
-			/*else
-			{
-				IDialog dialog = DialogManager.instance.SpawnDialogBasedOnType(GameEnum.DialogType.ErrorDialog);
-				dialog.SetTitle("Sorry!");
-				dialog.SetMessage("Can not show ad right now \n Please try again later");
-			}*/
+		}
+		else
+		{
+			DialogClass alertDialogClass = new DialogBuilder().
+						 Title("Failed to connect with internet").
+						 Message(" Please check your network connection.").
+						 PositiveButtonText("Ok").
+						 NegativeButtonAction((IDialog dialog) =>
+						 {
+							 dialog.HideDialog();
+						 }).
+						 build();
+
+			DialogManager.instance.SpawnDialogBasedOnDialogType(DialogTypeEnum.DialogType.AlertDialog, alertDialogClass);
 		}
 	}
 
@@ -131,6 +135,9 @@ public class RewardAdController : MonoBehaviour
 
 	public void HandleUserEarnedReward(object sender, Reward args)
 	{
+
+		Debug.Log("Reward add showing done ... get Reward ");
+		GameManager.instance.OnRewardAdCompleted();
 		/* string type = args.Type;
 		 double amount = args.Amount;
 		 MonoBehaviour.print(

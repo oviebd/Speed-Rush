@@ -8,6 +8,7 @@ public class ScoreManager : MonoBehaviour
 	public static event OnScoreChanged onSCoreChanged;
 
 	private int distance = 0;
+	private int previousDistance = 0;
 	private Vector3 playerInitPosition;
 	private GameObject playerObj;
 	private bool isCalculationStarted;
@@ -40,6 +41,9 @@ public class ScoreManager : MonoBehaviour
 			case GameStateEnum.GAME_STATE.RUNNING:
 				StartCalculate();
 				break;
+			case GameStateEnum.GAME_STATE.PLAYER_DIED:
+				OnPlayerDied();
+				break;
 			default:
 				break;
 		}
@@ -53,9 +57,15 @@ public class ScoreManager : MonoBehaviour
 		isCalculationStarted = true;
 	}
 
-	void ResetCalculateData()
+    public void OnPlayerDied()
+    {
+		previousDistance = distance;
+    }
+
+	public void ResetCalculateData()
 	{
 		isCalculationStarted = false;
+		previousDistance = 0;
 	//	distance = 0;
 		playerInitPosition = Vector3.zero;
 		playerObj = null;
@@ -66,8 +76,8 @@ public class ScoreManager : MonoBehaviour
 
 		if (GameManager.instance.GetCurrentGameState() == GameStateEnum.GAME_STATE.RUNNING && isCalculationStarted)
 		{
-			distance = (int)Vector3.Distance(playerObj.transform.position, playerInitPosition);
-			onSCoreChanged?.Invoke(distance);
+			distance = (int)Vector3.Distance(playerObj.transform.position, playerInitPosition) + previousDistance;
+			onSCoreChanged?.Invoke(distance );
 			// distance = ( playerObj.transform.position - playerInitPosition.transform.position).magnitude;
 		//	Debug.Log("Distance : " + distance + " Init pos : " + playerInitPosition + "  Curr Pos : " + playerObj.transform.position);
 
