@@ -152,8 +152,6 @@ public class RewardAdController : MonoBehaviour
 
 	public void HandleUserEarnedReward(object sender, Reward args)
 	{
-
-		Debug.Log("Reward add showing done ... get Reward ");
 		GameManager.instance.OnRewardAdCompleted();
 		/* string type = args.Type;
 		 double amount = args.Amount;

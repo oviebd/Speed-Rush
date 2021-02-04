@@ -43,8 +43,8 @@ public class PlayerMovement : MonoBehaviour
 		currentDirection = MovingDirection.Forward;
 	    _canChangeDirection = false;
 		_previousSpeed = _currentPlayerSpeed;
-		_currentPlayerSpeed = _currentPlayerSpeed * 3.5f;
-		_currentMaxSpeed = maxPlayerSpeed * 3.5f;
+		_currentPlayerSpeed = _currentPlayerSpeed * 3f;
+		_currentMaxSpeed = maxPlayerSpeed * 3f;
 		isInMaxSpeedMode = true;
 	}
 
