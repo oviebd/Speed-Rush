@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
 	private bool _canChangeDirection;
 
 	private Vector3 _moveDirectionVector;
+	bool isInMaxSpeedMode = false;
 
 	private void Start()
 	{
@@ -42,8 +43,9 @@ public class PlayerMovement : MonoBehaviour
 		currentDirection = MovingDirection.Forward;
 	    _canChangeDirection = false;
 		_previousSpeed = _currentPlayerSpeed;
-		_currentPlayerSpeed = _currentPlayerSpeed * 3.0f;
-		_currentMaxSpeed = maxPlayerSpeed * 3.0f;
+		_currentPlayerSpeed = _currentPlayerSpeed * 3.5f;
+		_currentMaxSpeed = maxPlayerSpeed * 3.5f;
+		isInMaxSpeedMode = true;
 	}
 
 	public void GoNormalSpeed()
@@ -51,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
 		_canChangeDirection = true; 
 		_currentPlayerSpeed = _previousSpeed;
 		_currentMaxSpeed = maxPlayerSpeed;
+		isInMaxSpeedMode = false;
 	}
 
 	public void ResetMoveData()
@@ -67,7 +70,14 @@ public class PlayerMovement : MonoBehaviour
 		switch (currentDirection)
 		{
 			case MovingDirection.Forward:
-				currentDirection = MovingDirection.Right;
+				if(_playerController.GetPlayerCurrentPosition().x <=0)
+				{
+					currentDirection = MovingDirection.Right;
+				}
+				else
+				{
+					currentDirection = MovingDirection.Left;
+				}
 				break;
 			case MovingDirection.Left:
 				currentDirection = MovingDirection.Right;
@@ -96,9 +106,11 @@ public class PlayerMovement : MonoBehaviour
 
 	void SpeedUpGradually()
 	{
-		float factor = .01f;
-		_currentPlayerSpeed = _currentPlayerSpeed + factor;
-
+		if (isInMaxSpeedMode == true)
+			return;
+		//float factor = .01f;
+		float factor = .15f;
+		_currentPlayerSpeed = _currentPlayerSpeed + (factor * Time.deltaTime);
 		if (_currentPlayerSpeed >= _currentMaxSpeed)
 			_currentPlayerSpeed = _currentMaxSpeed;
 	}
@@ -111,4 +123,22 @@ public class PlayerMovement : MonoBehaviour
 	{
 		_canMove = true;
 	}
+
+    public float GetCurrentSpeed()
+    {
+		/* if(_currentPlayerSpeed > playerSpeed + 2)
+		 {
+			 return _currentPlayerSpeed - 2;
+		 }*/
+		//	return _currentPlayerSpeed;
+		return playerSpeed + 1.5f;
+
+	}
+
+    public void SetSpeedData(float speed)
+    {
+		playerSpeed = speed;
+		_currentPlayerSpeed = playerSpeed;
+	}
+
 }

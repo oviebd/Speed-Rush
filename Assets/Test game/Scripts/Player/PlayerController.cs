@@ -15,7 +15,9 @@ public class PlayerController : MonoBehaviour
 
     private bool _isPlayerDamageable;
 
-    private float _cooldownTime = 3.0f ;
+    private float _cooldownTime = 3.0f;
+
+    private float blinkStartTime;
     bool _isDie;
 
     void Start()
@@ -29,11 +31,23 @@ public class PlayerController : MonoBehaviour
         _isPlayerDamageable = false;
 
         Invoke("MakePlayerDamageable", _cooldownTime);
+        blinkStartTime = Time.time;
     }
 
 
     private void Update()
     {
+        if (_isPlayerDamageable == false)
+        {
+            // blink
+            if (Time.time - blinkStartTime >= .1f)
+            {
+                playerGraphics.SetActive(!playerGraphics.activeInHierarchy);
+                blinkStartTime = Time.time;
+            }
+        }
+
+
         if (GetPlayerCurrentPosition().x >= 4.8 || GetPlayerCurrentPosition().x <= -4.8)
         {
             if (_isDie == false)
@@ -46,6 +60,8 @@ public class PlayerController : MonoBehaviour
     {
         _collider.enabled = true;
         _isPlayerDamageable = true;
+
+        playerGraphics.SetActive(true);
     }
 
     public Vector3 GetPlayerCurrentPosition()
@@ -73,6 +89,7 @@ public class PlayerController : MonoBehaviour
     private void CallEndGame()
     {
         GameManager.instance.PlayerDied(transform.position);
+		_collider.enabled = false;
         //Destroy(this.gameObject);
     }
 
@@ -93,7 +110,12 @@ public class PlayerController : MonoBehaviour
     {
         if (_currentConsumedItemData.itemType == ItemTypeEnum.ItemType.Breaker)
         {
-            _movement.GoNormalSpeed();
+			_collider.enabled = false;
+			_isPlayerDamageable = false;
+			Invoke("MakePlayerDamageable", _cooldownTime);
+
+			_movement.GoNormalSpeed();
+
         }
         _currentConsumedItemData = new ItemBehaviourData();
         _hasConsumedAnyItem = false;

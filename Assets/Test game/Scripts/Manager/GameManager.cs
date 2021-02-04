@@ -43,9 +43,20 @@ public class GameManager : MonoBehaviour
 
     public void RespawnPlayer()
     {
-		Vector3 playerPosition = GetPlayerController().transform.position;
-		EnvironmentController.instance.RespawnPlayer(playerPosition);
-		ResumeGame();
+        if(GetPlayerController() != null)
+        {
+			float speed = GetPlayerController().GetPlayerMovement().GetCurrentSpeed();
+			Vector3 playerPosition = GetPlayerController().transform.position;
+			EnvironmentController.instance.RespawnPlayer(playerPosition);
+			ResumeGame();
+			GetPlayerController().GetPlayerMovement().SetSpeedData(speed);
+
+		}
+        else
+        {
+			EndGame();
+        }
+
     }
 
 	public void EndGame()

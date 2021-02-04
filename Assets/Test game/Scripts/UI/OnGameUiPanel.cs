@@ -25,4 +25,9 @@ public class OnGameUiPanel : AnimatorPanel
 	{
 		GameManager.instance.PauseGame();
 	}
+
+    public void OnShuffleButtonClicked()
+    {
+		GameAudioManager.instance.PlayBackgroundSound();
+    }
 }

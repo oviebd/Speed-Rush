@@ -22,4 +22,9 @@ public class PauseGamePanel : AnimatorPanel
 	{
 		GooglePlayServiceManager.instance.ShowLeaderboardUi();
 	}
+
+	public void OnShuffleButtonClicked()
+	{
+		GameAudioManager.instance.PlayBackgroundSound();
+	}
 }

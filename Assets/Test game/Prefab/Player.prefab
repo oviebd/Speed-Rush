@@ -359,7 +359,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6695419069599187469}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0.12, z: -3.7}
+  m_LocalPosition: {x: 0, y: 0.12, z: -3.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5191564633636923204}
@@ -397,7 +397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpeed: 3
-  maxPlayerSpeed: 10
+  maxPlayerSpeed: 7
 --- !u!54 &2932868948126871180
 Rigidbody:
   m_ObjectHideFlags: 0

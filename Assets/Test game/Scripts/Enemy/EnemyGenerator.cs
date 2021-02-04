@@ -75,7 +75,7 @@ public class EnemyGenerator : MonoBehaviour
 		Vector3 randomPosition = Vector3.zero;
 
 		float randomXpos = Random.Range(-3.5f, 3.5f);
-		int randomDistance = Random.Range(10,15);
+		int randomDistance = Random.Range(13,20);
 		int zPos = lastEnemyZpos + randomDistance;
 
 		randomPosition = new Vector3(randomXpos, 0, zPos);

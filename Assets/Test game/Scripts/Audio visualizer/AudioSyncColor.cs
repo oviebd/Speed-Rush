@@ -45,7 +45,7 @@ public class AudioSyncColor : AudioSyncer {
 		light.color = Color.Lerp(m_img.color, restColor, restSmoothTime * Time.deltaTime);
 		m_img.color = Color.Lerp(m_img.color, restColor, restSmoothTime * Time.deltaTime);
 
-		if(GameManager.instance.GetPlayerController() != null)
+		if(GameManager.instance.GetPlayerController() != null && GameManager.instance.GetCurrentGameState() == GameStateEnum.GAME_STATE.RUNNING)
 		{
 			TrailRenderer trail = GameManager.instance.GetPlayerController().GetTrailRenderer();
 			trail.startColor = Color.Lerp(m_img.color, restColor, restSmoothTime * Time.deltaTime); 
