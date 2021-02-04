@@ -282,7 +282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isPublish: 0
-  _gameOverStateNumberForInterstitialAd: 4
+  _gameOverStateNumberForInterstitialAd: 3
 --- !u!1 &98677392
 GameObject:
   m_ObjectHideFlags: 0

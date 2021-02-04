@@ -21,9 +21,9 @@ public class GooglePlayServiceManager : MonoBehaviour
 
 	private void Start()
 	{
-		/*PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder().Build();
+		PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder().Build();
 		PlayGamesPlatform.InitializeInstance(config);
-		PlayGamesPlatform.Activate();*/
+		PlayGamesPlatform.Activate();
 
 		SignIn();
 	}
@@ -57,7 +57,7 @@ public class GooglePlayServiceManager : MonoBehaviour
 		{
 			DialogClass alertDialogClass = new DialogBuilder().
 						 Title("Failed to connect with server").
-						 Message(" Please check your network connection.").
+						 Message("Please check your network connection.").
 						 PositiveButtonText("Ok").
 						 PositiveButtonAction(ShowLeaderBoard).
 						 build();

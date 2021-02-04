@@ -51,19 +51,36 @@ public class RewardAdController : MonoBehaviour
 		}
 		else
 		{
+			string title = "Failed to connect with internet";
+			string message = "Please check your network connection.";
+
+			if (isNetworkAvilable == false)
+			{
+				title = "Failed to connect with internet!";
+				message = "Please check your network connection.";
+			}
+			else
+			{
+				title = "Ad Server went wrong!";
+				message = "Currently we can not show any ads! Sorry.";
+			}
+			
 			DialogClass alertDialogClass = new DialogBuilder().
-						 Title("Failed to connect with internet").
-						 Message(" Please check your network connection.").
+						 Title(title).
+						 Message(message).
 						 PositiveButtonText("Ok").
-						 NegativeButtonAction((IDialog dialog) =>
+						 PositiveButtonAction((IDialog dialog) =>
 						 {
 							 dialog.HideDialog();
+							 GameManager.instance.EndGame();
 						 }).
 						 build();
 
 			DialogManager.instance.SpawnDialogBasedOnDialogType(DialogTypeEnum.DialogType.AlertDialog, alertDialogClass);
 		}
 	}
+
+
 
 	public bool IsRewardAdLoaded()
 	{
