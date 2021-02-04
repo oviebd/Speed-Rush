@@ -287,7 +287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88881b16557d72d4ab2c2fae03077d6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isPublish: 1
+  _isPublish: 0
   _gameOverStateNumberForInterstitialAd: 3
 --- !u!1 &98677392
 GameObject:
