@@ -56,7 +56,6 @@ public class GameAudioManager : MonoBehaviour
 			{
 				clip = backgroundSoundClipList[index];
 				_currentBackgroundAudioIndex = index;
-				Debug.Log("Current index - " + _currentBackgroundAudioIndex + "  clip index  " + index);
 			}
 		}
 		return clip;

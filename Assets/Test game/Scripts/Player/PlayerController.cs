@@ -110,9 +110,9 @@ public class PlayerController : MonoBehaviour
     {
         if (_currentConsumedItemData.itemType == ItemTypeEnum.ItemType.Breaker)
         {
-			_collider.enabled = false;
-			_isPlayerDamageable = false;
-			Invoke("MakePlayerDamageable", _cooldownTime);
+			//_collider.enabled = false;
+			//_isPlayerDamageable = false;
+			//Invoke("MakePlayerDamageable", _cooldownTime);
 
 			_movement.GoNormalSpeed();
 
