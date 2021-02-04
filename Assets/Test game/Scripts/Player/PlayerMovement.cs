@@ -70,14 +70,15 @@ public class PlayerMovement : MonoBehaviour
 		switch (currentDirection)
 		{
 			case MovingDirection.Forward:
-				if(_playerController.GetPlayerCurrentPosition().x <=0)
-				{
-					currentDirection = MovingDirection.Right;
-				}
-				else
-				{
-					currentDirection = MovingDirection.Left;
-				}
+				/*	if(_playerController.GetPlayerCurrentPosition().x <=0)
+					{
+						currentDirection = MovingDirection.Right;
+					}
+					else
+					{
+						currentDirection = MovingDirection.Left;
+					}*/
+				currentDirection = MovingDirection.Right;
 				break;
 			case MovingDirection.Left:
 				currentDirection = MovingDirection.Right;

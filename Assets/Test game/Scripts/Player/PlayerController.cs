@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (_isPlayerDamageable == false)
+       /* if (_isPlayerDamageable == false)
         {
             // blink
             if (Time.time - blinkStartTime >= .1f)
@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
                 playerGraphics.SetActive(!playerGraphics.activeInHierarchy);
                 blinkStartTime = Time.time;
             }
-        }
+        }*/
 
 
         if (GetPlayerCurrentPosition().x >= 4.8 || GetPlayerCurrentPosition().x <= -4.8)
