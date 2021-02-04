@@ -34,7 +34,6 @@ public class ItemGenerator : MonoBehaviour
 
 		lastGenerateTime = Time.time;
 		isFirstTimeCreated = true;
-		Debug.Log("Reset Data in itm Last time - " + lastGenerateTime);
 		ItemBehaviour[] previousItems = FindObjectsOfType<ItemBehaviour>();
 		for (int i = 0; i < previousItems.Length; i++)
 		{

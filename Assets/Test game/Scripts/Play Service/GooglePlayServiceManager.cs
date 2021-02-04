@@ -90,7 +90,8 @@ public class GooglePlayServiceManager : MonoBehaviour
 				}
 			}
 			else
-				Debug.Log("Unity>> Failed to retrieved score");
+			{
+			}
 		});
 
 		return highScore;

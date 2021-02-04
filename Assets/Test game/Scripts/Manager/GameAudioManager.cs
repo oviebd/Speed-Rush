@@ -12,6 +12,8 @@ public class GameAudioManager : MonoBehaviour
 	[SerializeField] private List<AudioClip> backgroundSoundClipList;
 	[SerializeField] private AudioClip playerDieClip;
 
+	int _currentBackgroundAudioIndex = -1;
+
 	private void Awake()
 	{
 		if (instance == null)
@@ -46,11 +48,16 @@ public class GameAudioManager : MonoBehaviour
 	private AudioClip GetRandomBackgroundAudioClip()
 	{
 		AudioClip clip = null;
-		if(backgroundSoundClipList != null && backgroundSoundClipList.Count > 0)
+
+		if (backgroundSoundClipList != null && backgroundSoundClipList.Count > 0)
 		{
 			int index = Random.Range(0, backgroundSoundClipList.Count);
-			Debug.Log("index - " + index);
-			clip = backgroundSoundClipList[index];
+			while (_currentBackgroundAudioIndex != index)
+			{
+				clip = backgroundSoundClipList[index];
+				_currentBackgroundAudioIndex = index;
+				Debug.Log("Current index - " + _currentBackgroundAudioIndex + "  clip index  " + index);
+			}
 		}
 		return clip;
 	}
