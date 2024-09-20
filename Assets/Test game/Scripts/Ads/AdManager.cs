@@ -1,5 +1,6 @@
 ﻿using System;
 using GoogleMobileAds.Api;
+using SmileSoft_Ads_Manager;
 using UnityEngine;
 
 public class AdManager : MonoBehaviour
@@ -10,7 +11,7 @@ public class AdManager : MonoBehaviour
 	[SerializeField] private int _gameOverStateNumberForInterstitialAd = 2;
 	private int _currentGameOverStateNumber = 0;
 
-	private BannerView bannerView;
+	
 
 	public static AdManager instance;
 
@@ -30,15 +31,17 @@ public class AdManager : MonoBehaviour
 
 	public void Start()
 	{
-		string appId = AdUtility.GetAppId(_isPublish);
+		//string appId = AdUtility.GetAppId(_isPublish);
 
-		MobileAds.Initialize(appId);
+		//MobileAds.Initialize(appId);
 
-		RequestBanner();
-		InterstitialAdController.instance.SetupAd();
-		RewardAdController.instance.SetupAd();
+		//	RequestBanner();
+		//	InterstitialAdController.instance.SetupAd();
+		//RewardAdController.instance.SetupAd();
 
 		ShowBannerAD();
+
+
 	}
 
 	public bool GetAppPublishMode()
@@ -48,28 +51,14 @@ public class AdManager : MonoBehaviour
 
 	#region Banner Ad
 
-	public void RequestBanner()
-	{
-		string adUnitId = AdUtility.GetBannerAdId(_isPublish);
-		bannerView = new BannerView(adUnitId, AdSize.SmartBanner, AdPosition.Bottom);
-		AdRequest request = new AdRequest.Builder().Build();
-		bannerView.LoadAd(request);
-	}
-
-	private void DestroyBanner()
-	{
-		if (bannerView != null)
-			bannerView.Destroy();
-	}
+	
 	private void HideBannerAD()
 	{
-		if (bannerView != null)
-			bannerView.Hide();
+		BannerAdsController.instance.HideAD();
 	}
 	private void ShowBannerAD()
 	{
-		if (bannerView != null)
-			bannerView.Show();
+		SmileSoftAdManager.instance.ShowBannerAd(AdSize.Banner, AdPosition.Bottom);
 	}
 
 	#endregion Banner Ad
@@ -78,16 +67,66 @@ public class AdManager : MonoBehaviour
 
 	public void ShowRewardAd()
 	{
-		RewardAdController.instance.ShowRewardAd();
+		bool isNetworkAvilable = Utility.isNetworkAvilable();
+		if (isNetworkAvilable == false)
+        {
+			ShowErrorDialogue("Failed to connect with internet",
+				"Please check your network connection.");
+			return;
+		}
+
+		SmileSoftAdManager.instance.ShowRewardAd((receivedRewardType, receivedRewardAmount, isSuccess) =>
+		{
+			if (isSuccess == false)
+            {
+				ShowErrorDialogue("Ad Server went wrong!",
+				"Currently we can not show any ads! Sorry.");
+            }
+            else
+            {
+				GameManager.instance.OnRewardAdCompleted();
+			}
+		});
+	}
+
+	public void ShowErrorDialogue(string title, string message)
+	{
+		DialogClass alertDialogClass = new DialogBuilder().
+						 Title(title).
+						 Message(message).
+						 PositiveButtonText("Ok").
+						 PositiveButtonAction((IDialog dialog) =>
+						 {
+							 dialog.HideDialog();
+							 GameManager.instance.EndGame();
+						 }).
+						 build();
+
+		DialogManager.instance.SpawnDialogBasedOnDialogType(DialogTypeEnum.DialogType.AlertDialog, alertDialogClass);
 	}
 
 	public void ShowInterstitialAd()
 	{
-		InterstitialAdController.instance.ShowInterstitialAd();
+		bool isNetworkAvilable = Utility.isNetworkAvilable();
+		if (isNetworkAvilable == false)
+		{
+			ShowErrorDialogue("Failed to connect with internet",
+				"Please check your network connection.");
+			return;
+		}
+
+		SmileSoftAdManager.instance.ShowInterstitialAd(isSuccess =>
+		{
+			if (isSuccess == false)
+			{
+				ShowErrorDialogue("Ad Server went wrong!",
+				"Currently we can not show any ads! Sorry.");
+			}
+		});
 	}
 
 
-	private void OnGameStateChange(GameStateEnum.GAME_STATE  state)
+	private void OnGameStateChange(GameStateEnum.GAME_STATE state)
 	{
 		if (state == GameStateEnum.GAME_STATE.GAME_OVER)
 		{

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using SmileSoft_Ads_Manager;
 
 public class GetLifePanel : AnimatorPanel
 {

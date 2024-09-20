@@ -1,0 +1,1546 @@
+Unity Editor version:    2022.3.39f1 (4e1b0f82c39a)
+Branch:                  2022.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 14.4 (Build 23E214)
+Darwin version:          23.4.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        18432 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2022.3.39f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+/Users/habiburrahman/Documents/Projects/Unity/Spped_Rush
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+53345
+Successfully changed project path to: /Users/habiburrahman/Documents/Projects/Unity/Spped_Rush
+/Users/habiburrahman/Documents/Projects/Unity/Spped_Rush
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8637119168]  Target information:
+
+Player connection [8637119168]  * "[IP] 172.20.10.5 [Port] 0 [Flags] 2 [Guid] 1467156929 [EditorId] 1467156929 [Version] 1048832 [Id] OSXEditor(0,Habiburs-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+
+Player connection [8637119168] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8637119168] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 6.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.39f1 (4e1b0f82c39a)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.39f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/habiburrahman/Documents/Projects/Unity/Spped_Rush/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M3 Pro (high power)
+Metal devices available: 1
+0: Apple M3 Pro (high power)
+Using device Apple M3 Pro (high power)
+Initializing Metal device caps: Apple M3 Pro
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.39f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.39f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2022.3.39f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56410
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.39f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.39f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.39f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.39f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Registered in 0.001884 seconds.
+- Loaded All Assemblies, in  0.163 seconds
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+[usbmuxd] Send listen message
+Native extension for iOS target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 50 ms
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.256 seconds
+Domain Reload Profiling: 420ms
+	BeginReloadAssembly (36ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (18ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (79ms)
+		LoadAssemblies (36ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (78ms)
+			TypeCache.Refresh (77ms)
+				TypeCache.ScanAssembly (71ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (256ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (227ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (158ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (48ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.317 seconds
+Refreshing native plugins compatible for Editor in 1.26 ms, found 2 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:119)
+
+(Filename: Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs:57)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:119)
+
+(Filename: Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs Line: 57)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.334 seconds
+Domain Reload Profiling: 651ms
+	BeginReloadAssembly (60ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (15ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (20ms)
+	LoadAllAssembliesAndSetupDomain (212ms)
+		LoadAssemblies (135ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (105ms)
+			TypeCache.Refresh (94ms)
+				TypeCache.ScanAssembly (86ms)
+			ScanForSourceGeneratedMonoScriptInfo (6ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (334ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (238ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (24ms)
+			ProcessInitializeOnLoadAttributes (185ms)
+			ProcessInitializeOnLoadMethodAttributes (9ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Launching external process: /Applications/Unity/Hub/Editor/2022.3.39f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Refreshing native plugins compatible for Editor in 1.22 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3440 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 69 unused Assets / (143.3 KB). Loaded Objects now: 3904.
+Memory consumption went from 137.9 MB to 137.8 MB.
+Total: 2.286167 ms (FindLiveObjects: 0.109000 ms CreateObjectMapping: 0.033125 ms MarkObjects: 2.061000 ms  DeleteObjects: 0.082791 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/ResponseInfo.cs: df49b6b2379ab325fc0b434afd3854f3 -> 
+  custom:scripting/monoscript/fileName/MaxAdContentRating.cs: b90c26761348f5d36cf290a64fc28f12 -> 
+  custom:scripting/monoscript/fileName/InitializationStatusDummyClient.cs: 9c2e6de2ca15de277095e1e1b6159ca7 -> 
+  custom:scripting/monoscript/fileName/RewardAdController.cs: ce1883bf9fc86193093ff1e2c8947497 -> b851ccdc7cfe0483490ece9950c23d25
+  custom:scripting/monoscript/fileName/DummyAdBehaviour.cs: cd4a6abaa8f2817cdb6636c3b2900c6b -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAdClient.cs: 8f22a136215db466bee837f1fecc8859 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/GoogleMobileAdsClientFactory.cs: 811b79505a6a9b194be5d803662fc18b -> 
+  custom:scripting/monoscript/fileName/Reward.cs: 20be682d1243e4088b456cd2157d7b26 -> 
+  custom:scripting/monoscript/fileName/RequestConfiguration.cs: f42bfe68bb19f837c77c999b9e578183 -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAdClient.cs: acfe4ea995d72bc9eb287232f64fb28e -> 
+  custom:scripting/monoscript/fileName/AdErrorEventArgs.cs: 31b35f2110975cc4830d23556f91b555 -> 
+  custom:scripting/monoscript/fileName/ResponseInfoClient.cs: e5d5abd24b00e36dd38dd86b2dc318e8 -> 
+  custom:scripting/monoscript/fileName/ServerSideVerificationOptions.cs: edcd274dfa9e60d6569455999ec51ddf -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAd.cs: eb427df501d3a4781d5ec15e0b22ebee -> 
+  custom:scripting/monoscript/fileName/AdLoader.cs: 6427d799a3b6e9742afd683a9715880b -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAdDummyClient.cs: 4f9231c66dd387ea12c36300c987c88f -> 
+  custom:scripting/monoscript/fileName/ICustomNativeTemplateClient.cs: fe6f3cf87bb6f3a3498b9726a55ee3b3 -> 
+  custom:scripting/monoscript/fileName/AdFailedToLoadEventArgs.cs: a2af71380444df3cdbd20ffdda4cf51c -> 
+  custom:scripting/monoscript/fileName/ResponseInfoDummyClient.cs: 513c05b56c0879cfd5fb75a355d49e1b -> 
+  custom:scripting/monoscript/fileName/AdSize.cs: db3da01e27728216ff17e248351b16a6 -> 
+  custom:scripting/monoscript/fileName/Utils.cs: 45404174bae8fa0f5cfd7aecbb1e8d6c -> 5c564ac13d86e84af98f88c5f288a6fa
+  custom:scripting/monoscript/fileName/InitializationStatusClient.cs: d92905fae8efd3b546f70f5885b3f6cb -> 
+  custom:scripting/monoscript/fileName/DummyClient.cs: 62621f939a01979c4c7d6678af2b3e4a -> 6806ba3b0cb3f44136d7f03e56ebd244
+  custom:scripting/monoscript/fileName/IBannerClient.cs: b9b61c2e35f8bd601fca9f1d63a4b923 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AdLoaderClientArgs.cs: 8af34dac53f12876d8ce8f1c010776a6 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/InterstitialAdController.cs: d35b8e015fd9bf24fb9d0666d755d507 -> d2867e5885d2be781197766bd1958f61
+  custom:scripting/monoscript/fileName/IAdLoaderClient.cs: 97b31d34586e7af8e857d799976e4117 -> 
+  custom:scripting/monoscript/fileName/IRewardedInterstitialAdClient.cs: c274f892b1704f3def52bc0ea1c44467 -> 
+  custom:scripting/monoscript/fileName/CustomNativeClientEventArgs.cs: f5ee0fc162a5716b162c5fc929e36a48 -> 
+  custom:scripting/monoscript/fileName/AdapterStatus.cs: b6469dcef7b29ccb0766e44273ea61fe -> 
+  custom:scripting/monoscript/fileName/IClientFactory.cs: 32d0a3fb0d9509b0e0a624efa714245b -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateAd.cs: f7a8e95bce211fc2f6406d2f60529de7 -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateClient.cs: 6036f2706a04721b096f4976fba102cf -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/IInterstitialClient.cs: 991d608191b78c8e7fd5db9be9f06978 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/AdValue.cs: a2f773d836e414a5c77ccf2d5027b1bc -> 
+  custom:scripting/monoscript/fileName/AndroidBuildPostProcessor.cs: 71e1f92e948bf8391e7f4c26e93e881b -> 
+  custom:scripting/monoscript/fileName/BannerClient.cs: bad0b4ec2e41d28268cab79e88aba753 -> 
+  custom:scripting/monoscript/fileName/MobileAdsEventExecutor.cs: 1b597c4859ae617ad2d4c9f54ef86b49 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/InterstitialAd.cs: 83a3085cffca8b95d59d6274a94727dd -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/CustomNativeEventArgs.cs: f666e5091b7f3e8b349100896254b062 -> 
+  custom:scripting/monoscript/fileName/MediationExtras.cs: 057f082e59198747a46c1014ff849a27 -> 
+  custom:scripting/monoscript/fileName/IInitializationStatusClient.cs: df8b75b120fe4efbe291413e3b704c86 -> 
+  custom:scripting/monoscript/fileName/IMobileAdsClient.cs: 7df80c835c7bd8f7f323271a22dc50c8 -> 
+  custom:scripting/monoscript/fileName/RequestConfigurationClient.cs: 69f620ca634ebb87c398184264f4e17a -> 
+  custom:scripting/monoscript/fileName/InterstitialClient.cs: 39c9d404634d36dd8b59af602dd7753c -> 
+  custom:scripting/monoscript/fileName/RewardedAdClient.cs: 597ddff81643a56a9dbc835c6d1903c7 -> 
+  custom:scripting/monoscript/fileName/BaseAdDummyClient.cs: 76d58b8e36c7ed680111e9e576e10125 -> 
+  custom:scripting/monoscript/fileName/IRewardedAdClient.cs: 427e261bf9d4b6054c2a2ac9dbbe86c3 -> 
+  custom:scripting/monoscript/fileName/RewardingAdBaseClient.cs: 76b9a3aea36ab822805db9605cb56a96 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/AdValueEventArgs.cs: 29b158b86fe1413913a4024ab6e42140 -> 
+  custom:scripting/monoscript/fileName/Countdown.cs: 9eaba8ef7236160695dec88ec67286ab -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ButtonBehaviour.cs: 30e81437968d9ce210f374d1db73cb02 -> 
+  custom:scripting/monoscript/fileName/DisplayMetrics.cs: eb1778554635eb1f3eeff5085e0774cb -> 
+  custom:scripting/monoscript/fileName/IResponseInfoClient.cs: e50c9c7984279f9dda18ae66debfe78f -> 
+  custom:scripting/monoscript/fileName/RewardedAd.cs: 324b35b8f4712f7a0584de9ced31d04e -> 
+  custom:scripting/monoscript/fileName/MobileAds.cs: a666d15faaffd38175b6ffa6d29e0f3b -> 
+  custom:scripting/monoscript/fileName/IRewardBasedVideoAdClient.cs: 52fe3776767f097f1bf32567a2909d91 -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAd.cs: b031cf7e56cdfe003c35f80a67cb9933 -> 
+  custom:scripting/monoscript/fileName/BannerView.cs: 1766d5de63319ff905aec1128d97054e -> 
+  custom:scripting/monoscript/fileName/InitializationStatus.cs: 99d4da5410dbc517bd7bf07953c485be -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/RewardedAdDummyClient.cs: 2319da624d00d206ec6d27569afdf64e -> 
+  custom:scripting/monoscript/fileName/AdLoaderClient.cs: 25e8a11a1b7948177c43756bf41a1444 -> 
+  custom:scripting/monoscript/fileName/MobileAdsClient.cs: 60650d23a1b3c4ef5b8dda3a18ff6e89 -> 
+  custom:scripting/monoscript/fileName/AdRequest.cs: dc16a1beb79301a69225b49d452e4757 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3481.158300 seconds.
+  path: Assets/GoogleMobileAds/Resources/GoogleMobileAdsSettings.asset
+  artifactKey: Guid(10772c63343504956aa417bec1c5fbe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GoogleMobileAds/Resources/GoogleMobileAdsSettings.asset using Guid(10772c63343504956aa417bec1c5fbe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: 'daf906b6a76dc7cbb688d3c8b35b6b67') in 0.004967 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x3248b7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.243 seconds
+Refreshing native plugins compatible for Editor in 1.34 ms, found 2 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:119)
+
+(Filename: Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs:57)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:119)
+
+(Filename: Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs Line: 57)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.531 seconds
+Domain Reload Profiling: 774ms
+	BeginReloadAssembly (81ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (119ms)
+		LoadAssemblies (138ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (14ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (531ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (208ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (22ms)
+			ProcessInitializeOnLoadAttributes (161ms)
+			ProcessInitializeOnLoadMethodAttributes (7ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (1ms)
+Refreshing native plugins compatible for Editor in 1.42 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3427 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 48 unused Assets / (120.8 KB). Loaded Objects now: 3920.
+Memory consumption went from 141.4 MB to 141.2 MB.
+Total: 2.108833 ms (FindLiveObjects: 0.114750 ms CreateObjectMapping: 0.037625 ms MarkObjects: 1.909958 ms  DeleteObjects: 0.045958 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/ResponseInfo.cs: df49b6b2379ab325fc0b434afd3854f3 -> 
+  custom:scripting/monoscript/fileName/MaxAdContentRating.cs: b90c26761348f5d36cf290a64fc28f12 -> 
+  custom:scripting/monoscript/fileName/InitializationStatusDummyClient.cs: 9c2e6de2ca15de277095e1e1b6159ca7 -> 
+  custom:scripting/monoscript/fileName/RewardAdController.cs: ce1883bf9fc86193093ff1e2c8947497 -> b851ccdc7cfe0483490ece9950c23d25
+  custom:scripting/monoscript/fileName/DummyAdBehaviour.cs: cd4a6abaa8f2817cdb6636c3b2900c6b -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAdClient.cs: 8f22a136215db466bee837f1fecc8859 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/GoogleMobileAdsClientFactory.cs: 811b79505a6a9b194be5d803662fc18b -> 
+  custom:scripting/monoscript/fileName/Reward.cs: 20be682d1243e4088b456cd2157d7b26 -> 
+  custom:scripting/monoscript/fileName/RequestConfiguration.cs: f42bfe68bb19f837c77c999b9e578183 -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAdClient.cs: acfe4ea995d72bc9eb287232f64fb28e -> 
+  custom:scripting/monoscript/fileName/AdErrorEventArgs.cs: 31b35f2110975cc4830d23556f91b555 -> 
+  custom:scripting/monoscript/fileName/ResponseInfoClient.cs: e5d5abd24b00e36dd38dd86b2dc318e8 -> 
+  custom:scripting/monoscript/fileName/ServerSideVerificationOptions.cs: edcd274dfa9e60d6569455999ec51ddf -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAd.cs: eb427df501d3a4781d5ec15e0b22ebee -> 
+  custom:scripting/monoscript/fileName/AdLoader.cs: 6427d799a3b6e9742afd683a9715880b -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAdDummyClient.cs: 4f9231c66dd387ea12c36300c987c88f -> 
+  custom:scripting/monoscript/fileName/ICustomNativeTemplateClient.cs: fe6f3cf87bb6f3a3498b9726a55ee3b3 -> 
+  custom:scripting/monoscript/fileName/AdFailedToLoadEventArgs.cs: a2af71380444df3cdbd20ffdda4cf51c -> 
+  custom:scripting/monoscript/fileName/ResponseInfoDummyClient.cs: 513c05b56c0879cfd5fb75a355d49e1b -> 
+  custom:scripting/monoscript/fileName/AdSize.cs: db3da01e27728216ff17e248351b16a6 -> 
+  custom:scripting/monoscript/fileName/Utils.cs: 45404174bae8fa0f5cfd7aecbb1e8d6c -> 5c564ac13d86e84af98f88c5f288a6fa
+  custom:scripting/monoscript/fileName/InitializationStatusClient.cs: d92905fae8efd3b546f70f5885b3f6cb -> 
+  custom:scripting/monoscript/fileName/DummyClient.cs: 62621f939a01979c4c7d6678af2b3e4a -> 6806ba3b0cb3f44136d7f03e56ebd244
+  custom:scripting/monoscript/fileName/IBannerClient.cs: b9b61c2e35f8bd601fca9f1d63a4b923 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AdLoaderClientArgs.cs: 8af34dac53f12876d8ce8f1c010776a6 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/InterstitialAdController.cs: d35b8e015fd9bf24fb9d0666d755d507 -> d2867e5885d2be781197766bd1958f61
+  custom:scripting/monoscript/fileName/IAdLoaderClient.cs: 97b31d34586e7af8e857d799976e4117 -> 
+  custom:scripting/monoscript/fileName/IRewardedInterstitialAdClient.cs: c274f892b1704f3def52bc0ea1c44467 -> 
+  custom:scripting/monoscript/fileName/CustomNativeClientEventArgs.cs: f5ee0fc162a5716b162c5fc929e36a48 -> 
+  custom:scripting/monoscript/fileName/AdapterStatus.cs: b6469dcef7b29ccb0766e44273ea61fe -> 
+  custom:scripting/monoscript/fileName/IClientFactory.cs: 32d0a3fb0d9509b0e0a624efa714245b -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateAd.cs: f7a8e95bce211fc2f6406d2f60529de7 -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateClient.cs: 6036f2706a04721b096f4976fba102cf -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/IInterstitialClient.cs: 991d608191b78c8e7fd5db9be9f06978 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/AdValue.cs: a2f773d836e414a5c77ccf2d5027b1bc -> 
+  custom:scripting/monoscript/fileName/AndroidBuildPostProcessor.cs: 71e1f92e948bf8391e7f4c26e93e881b -> 
+  custom:scripting/monoscript/fileName/BannerClient.cs: bad0b4ec2e41d28268cab79e88aba753 -> 
+  custom:scripting/monoscript/fileName/MobileAdsEventExecutor.cs: 1b597c4859ae617ad2d4c9f54ef86b49 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/InterstitialAd.cs: 83a3085cffca8b95d59d6274a94727dd -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/CustomNativeEventArgs.cs: f666e5091b7f3e8b349100896254b062 -> 
+  custom:scripting/monoscript/fileName/MediationExtras.cs: 057f082e59198747a46c1014ff849a27 -> 
+  custom:scripting/monoscript/fileName/IInitializationStatusClient.cs: df8b75b120fe4efbe291413e3b704c86 -> 
+  custom:scripting/monoscript/fileName/IMobileAdsClient.cs: 7df80c835c7bd8f7f323271a22dc50c8 -> 
+  custom:scripting/monoscript/fileName/RequestConfigurationClient.cs: 69f620ca634ebb87c398184264f4e17a -> 
+  custom:scripting/monoscript/fileName/InterstitialClient.cs: 39c9d404634d36dd8b59af602dd7753c -> 
+  custom:scripting/monoscript/fileName/RewardedAdClient.cs: 597ddff81643a56a9dbc835c6d1903c7 -> 
+  custom:scripting/monoscript/fileName/BaseAdDummyClient.cs: 76d58b8e36c7ed680111e9e576e10125 -> 
+  custom:scripting/monoscript/fileName/IRewardedAdClient.cs: 427e261bf9d4b6054c2a2ac9dbbe86c3 -> 
+  custom:scripting/monoscript/fileName/RewardingAdBaseClient.cs: 76b9a3aea36ab822805db9605cb56a96 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/AdValueEventArgs.cs: 29b158b86fe1413913a4024ab6e42140 -> 
+  custom:scripting/monoscript/fileName/Countdown.cs: 9eaba8ef7236160695dec88ec67286ab -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ButtonBehaviour.cs: 30e81437968d9ce210f374d1db73cb02 -> 
+  custom:scripting/monoscript/fileName/DisplayMetrics.cs: eb1778554635eb1f3eeff5085e0774cb -> 
+  custom:scripting/monoscript/fileName/IResponseInfoClient.cs: e50c9c7984279f9dda18ae66debfe78f -> 
+  custom:scripting/monoscript/fileName/RewardedAd.cs: 324b35b8f4712f7a0584de9ced31d04e -> 
+  custom:scripting/monoscript/fileName/MobileAds.cs: a666d15faaffd38175b6ffa6d29e0f3b -> 
+  custom:scripting/monoscript/fileName/IRewardBasedVideoAdClient.cs: 52fe3776767f097f1bf32567a2909d91 -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAd.cs: b031cf7e56cdfe003c35f80a67cb9933 -> 
+  custom:scripting/monoscript/fileName/BannerView.cs: 1766d5de63319ff905aec1128d97054e -> 
+  custom:scripting/monoscript/fileName/InitializationStatus.cs: 99d4da5410dbc517bd7bf07953c485be -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/RewardedAdDummyClient.cs: 2319da624d00d206ec6d27569afdf64e -> 
+  custom:scripting/monoscript/fileName/AdLoaderClient.cs: 25e8a11a1b7948177c43756bf41a1444 -> 
+  custom:scripting/monoscript/fileName/MobileAdsClient.cs: 60650d23a1b3c4ef5b8dda3a18ff6e89 -> 
+  custom:scripting/monoscript/fileName/AdRequest.cs: dc16a1beb79301a69225b49d452e4757 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x31828b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.241 seconds
+Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:119)
+
+(Filename: Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs:57)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:119)
+
+(Filename: Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs Line: 57)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.574 seconds
+Domain Reload Profiling: 816ms
+	BeginReloadAssembly (79ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (20ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (11ms)
+	LoadAllAssembliesAndSetupDomain (124ms)
+		LoadAssemblies (142ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (14ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (575ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (218ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (23ms)
+			ProcessInitializeOnLoadAttributes (169ms)
+			ProcessInitializeOnLoadMethodAttributes (8ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 1.78 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3428 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 48 unused Assets / (120.7 KB). Loaded Objects now: 3935.
+Memory consumption went from 147.9 MB to 147.8 MB.
+Total: 2.312209 ms (FindLiveObjects: 0.116292 ms CreateObjectMapping: 0.037583 ms MarkObjects: 2.107167 ms  DeleteObjects: 0.050667 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/ResponseInfo.cs: df49b6b2379ab325fc0b434afd3854f3 -> 
+  custom:scripting/monoscript/fileName/MaxAdContentRating.cs: b90c26761348f5d36cf290a64fc28f12 -> 
+  custom:scripting/monoscript/fileName/InitializationStatusDummyClient.cs: 9c2e6de2ca15de277095e1e1b6159ca7 -> 
+  custom:scripting/monoscript/fileName/RewardAdController.cs: ce1883bf9fc86193093ff1e2c8947497 -> b851ccdc7cfe0483490ece9950c23d25
+  custom:scripting/monoscript/fileName/DummyAdBehaviour.cs: cd4a6abaa8f2817cdb6636c3b2900c6b -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAdClient.cs: 8f22a136215db466bee837f1fecc8859 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/GoogleMobileAdsClientFactory.cs: 811b79505a6a9b194be5d803662fc18b -> 
+  custom:scripting/monoscript/fileName/Reward.cs: 20be682d1243e4088b456cd2157d7b26 -> 
+  custom:scripting/monoscript/fileName/RequestConfiguration.cs: f42bfe68bb19f837c77c999b9e578183 -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAdClient.cs: acfe4ea995d72bc9eb287232f64fb28e -> 
+  custom:scripting/monoscript/fileName/AdErrorEventArgs.cs: 31b35f2110975cc4830d23556f91b555 -> 
+  custom:scripting/monoscript/fileName/ResponseInfoClient.cs: e5d5abd24b00e36dd38dd86b2dc318e8 -> 
+  custom:scripting/monoscript/fileName/ServerSideVerificationOptions.cs: edcd274dfa9e60d6569455999ec51ddf -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAd.cs: eb427df501d3a4781d5ec15e0b22ebee -> 
+  custom:scripting/monoscript/fileName/AdLoader.cs: 6427d799a3b6e9742afd683a9715880b -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAdDummyClient.cs: 4f9231c66dd387ea12c36300c987c88f -> 
+  custom:scripting/monoscript/fileName/ICustomNativeTemplateClient.cs: fe6f3cf87bb6f3a3498b9726a55ee3b3 -> 
+  custom:scripting/monoscript/fileName/AdFailedToLoadEventArgs.cs: a2af71380444df3cdbd20ffdda4cf51c -> 
+  custom:scripting/monoscript/fileName/ResponseInfoDummyClient.cs: 513c05b56c0879cfd5fb75a355d49e1b -> 
+  custom:scripting/monoscript/fileName/AdSize.cs: db3da01e27728216ff17e248351b16a6 -> 
+  custom:scripting/monoscript/fileName/Utils.cs: 45404174bae8fa0f5cfd7aecbb1e8d6c -> 5c564ac13d86e84af98f88c5f288a6fa
+  custom:scripting/monoscript/fileName/InitializationStatusClient.cs: d92905fae8efd3b546f70f5885b3f6cb -> 
+  custom:scripting/monoscript/fileName/DummyClient.cs: 62621f939a01979c4c7d6678af2b3e4a -> 6806ba3b0cb3f44136d7f03e56ebd244
+  custom:scripting/monoscript/fileName/IBannerClient.cs: b9b61c2e35f8bd601fca9f1d63a4b923 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AdLoaderClientArgs.cs: 8af34dac53f12876d8ce8f1c010776a6 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/InterstitialAdController.cs: d35b8e015fd9bf24fb9d0666d755d507 -> d2867e5885d2be781197766bd1958f61
+  custom:scripting/monoscript/fileName/IAdLoaderClient.cs: 97b31d34586e7af8e857d799976e4117 -> 
+  custom:scripting/monoscript/fileName/IRewardedInterstitialAdClient.cs: c274f892b1704f3def52bc0ea1c44467 -> 
+  custom:scripting/monoscript/fileName/CustomNativeClientEventArgs.cs: f5ee0fc162a5716b162c5fc929e36a48 -> 
+  custom:scripting/monoscript/fileName/AdapterStatus.cs: b6469dcef7b29ccb0766e44273ea61fe -> 
+  custom:scripting/monoscript/fileName/IClientFactory.cs: 32d0a3fb0d9509b0e0a624efa714245b -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateAd.cs: f7a8e95bce211fc2f6406d2f60529de7 -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateClient.cs: 6036f2706a04721b096f4976fba102cf -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/IInterstitialClient.cs: 991d608191b78c8e7fd5db9be9f06978 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/AdValue.cs: a2f773d836e414a5c77ccf2d5027b1bc -> 
+  custom:scripting/monoscript/fileName/AndroidBuildPostProcessor.cs: 71e1f92e948bf8391e7f4c26e93e881b -> 
+  custom:scripting/monoscript/fileName/BannerClient.cs: bad0b4ec2e41d28268cab79e88aba753 -> 
+  custom:scripting/monoscript/fileName/MobileAdsEventExecutor.cs: 1b597c4859ae617ad2d4c9f54ef86b49 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/InterstitialAd.cs: 83a3085cffca8b95d59d6274a94727dd -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/CustomNativeEventArgs.cs: f666e5091b7f3e8b349100896254b062 -> 
+  custom:scripting/monoscript/fileName/MediationExtras.cs: 057f082e59198747a46c1014ff849a27 -> 
+  custom:scripting/monoscript/fileName/IInitializationStatusClient.cs: df8b75b120fe4efbe291413e3b704c86 -> 
+  custom:scripting/monoscript/fileName/IMobileAdsClient.cs: 7df80c835c7bd8f7f323271a22dc50c8 -> 
+  custom:scripting/monoscript/fileName/RequestConfigurationClient.cs: 69f620ca634ebb87c398184264f4e17a -> 
+  custom:scripting/monoscript/fileName/InterstitialClient.cs: 39c9d404634d36dd8b59af602dd7753c -> 
+  custom:scripting/monoscript/fileName/RewardedAdClient.cs: 597ddff81643a56a9dbc835c6d1903c7 -> 
+  custom:scripting/monoscript/fileName/BaseAdDummyClient.cs: 76d58b8e36c7ed680111e9e576e10125 -> 
+  custom:scripting/monoscript/fileName/IRewardedAdClient.cs: 427e261bf9d4b6054c2a2ac9dbbe86c3 -> 
+  custom:scripting/monoscript/fileName/RewardingAdBaseClient.cs: 76b9a3aea36ab822805db9605cb56a96 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/AdValueEventArgs.cs: 29b158b86fe1413913a4024ab6e42140 -> 
+  custom:scripting/monoscript/fileName/Countdown.cs: 9eaba8ef7236160695dec88ec67286ab -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ButtonBehaviour.cs: 30e81437968d9ce210f374d1db73cb02 -> 
+  custom:scripting/monoscript/fileName/DisplayMetrics.cs: eb1778554635eb1f3eeff5085e0774cb -> 
+  custom:scripting/monoscript/fileName/IResponseInfoClient.cs: e50c9c7984279f9dda18ae66debfe78f -> 
+  custom:scripting/monoscript/fileName/RewardedAd.cs: 324b35b8f4712f7a0584de9ced31d04e -> 
+  custom:scripting/monoscript/fileName/MobileAds.cs: a666d15faaffd38175b6ffa6d29e0f3b -> 
+  custom:scripting/monoscript/fileName/IRewardBasedVideoAdClient.cs: 52fe3776767f097f1bf32567a2909d91 -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAd.cs: b031cf7e56cdfe003c35f80a67cb9933 -> 
+  custom:scripting/monoscript/fileName/BannerView.cs: 1766d5de63319ff905aec1128d97054e -> 
+  custom:scripting/monoscript/fileName/InitializationStatus.cs: 99d4da5410dbc517bd7bf07953c485be -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/RewardedAdDummyClient.cs: 2319da624d00d206ec6d27569afdf64e -> 
+  custom:scripting/monoscript/fileName/AdLoaderClient.cs: 25e8a11a1b7948177c43756bf41a1444 -> 
+  custom:scripting/monoscript/fileName/MobileAdsClient.cs: 60650d23a1b3c4ef5b8dda3a18ff6e89 -> 
+  custom:scripting/monoscript/fileName/AdRequest.cs: dc16a1beb79301a69225b49d452e4757 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 489.911049 seconds.
+  path: Assets/Test game/Scripts/Ads/AdManager.cs
+  artifactKey: Guid(88881b16557d72d4ab2c2fae03077d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Test game/Scripts/Ads/AdManager.cs using Guid(88881b16557d72d4ab2c2fae03077d6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 11 workers.
+ -> (artifact id: '43e8265b57c57502c1ce4689c9840e04') in 0.000915 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x31828b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.235 seconds
+Refreshing native plugins compatible for Editor in 1.11 ms, found 2 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:119)
+
+(Filename: Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs:57)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:119)
+
+(Filename: Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs Line: 57)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.537 seconds
+Domain Reload Profiling: 772ms
+	BeginReloadAssembly (72ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (11ms)
+	LoadAllAssembliesAndSetupDomain (125ms)
+		LoadAssemblies (137ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (14ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (538ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (213ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (22ms)
+			ProcessInitializeOnLoadAttributes (165ms)
+			ProcessInitializeOnLoadMethodAttributes (8ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 1.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3427 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 48 unused Assets / (120.7 KB). Loaded Objects now: 3950.
+Memory consumption went from 154.1 MB to 154.0 MB.
+Total: 2.062333 ms (FindLiveObjects: 0.114583 ms CreateObjectMapping: 0.038042 ms MarkObjects: 1.858750 ms  DeleteObjects: 0.050167 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/ResponseInfo.cs: df49b6b2379ab325fc0b434afd3854f3 -> 
+  custom:scripting/monoscript/fileName/MaxAdContentRating.cs: b90c26761348f5d36cf290a64fc28f12 -> 
+  custom:scripting/monoscript/fileName/InitializationStatusDummyClient.cs: 9c2e6de2ca15de277095e1e1b6159ca7 -> 
+  custom:scripting/monoscript/fileName/RewardAdController.cs: ce1883bf9fc86193093ff1e2c8947497 -> b851ccdc7cfe0483490ece9950c23d25
+  custom:scripting/monoscript/fileName/DummyAdBehaviour.cs: cd4a6abaa8f2817cdb6636c3b2900c6b -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAdClient.cs: 8f22a136215db466bee837f1fecc8859 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/GoogleMobileAdsClientFactory.cs: 811b79505a6a9b194be5d803662fc18b -> 
+  custom:scripting/monoscript/fileName/Reward.cs: 20be682d1243e4088b456cd2157d7b26 -> 
+  custom:scripting/monoscript/fileName/RequestConfiguration.cs: f42bfe68bb19f837c77c999b9e578183 -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAdClient.cs: acfe4ea995d72bc9eb287232f64fb28e -> 
+  custom:scripting/monoscript/fileName/AdErrorEventArgs.cs: 31b35f2110975cc4830d23556f91b555 -> 
+  custom:scripting/monoscript/fileName/ResponseInfoClient.cs: e5d5abd24b00e36dd38dd86b2dc318e8 -> 
+  custom:scripting/monoscript/fileName/ServerSideVerificationOptions.cs: edcd274dfa9e60d6569455999ec51ddf -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAd.cs: eb427df501d3a4781d5ec15e0b22ebee -> 
+  custom:scripting/monoscript/fileName/AdLoader.cs: 6427d799a3b6e9742afd683a9715880b -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAdDummyClient.cs: 4f9231c66dd387ea12c36300c987c88f -> 
+  custom:scripting/monoscript/fileName/ICustomNativeTemplateClient.cs: fe6f3cf87bb6f3a3498b9726a55ee3b3 -> 
+  custom:scripting/monoscript/fileName/AdFailedToLoadEventArgs.cs: a2af71380444df3cdbd20ffdda4cf51c -> 
+  custom:scripting/monoscript/fileName/ResponseInfoDummyClient.cs: 513c05b56c0879cfd5fb75a355d49e1b -> 
+  custom:scripting/monoscript/fileName/AdSize.cs: db3da01e27728216ff17e248351b16a6 -> 
+  custom:scripting/monoscript/fileName/Utils.cs: 45404174bae8fa0f5cfd7aecbb1e8d6c -> 5c564ac13d86e84af98f88c5f288a6fa
+  custom:scripting/monoscript/fileName/InitializationStatusClient.cs: d92905fae8efd3b546f70f5885b3f6cb -> 
+  custom:scripting/monoscript/fileName/DummyClient.cs: 62621f939a01979c4c7d6678af2b3e4a -> 6806ba3b0cb3f44136d7f03e56ebd244
+  custom:scripting/monoscript/fileName/IBannerClient.cs: b9b61c2e35f8bd601fca9f1d63a4b923 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AdLoaderClientArgs.cs: 8af34dac53f12876d8ce8f1c010776a6 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/InterstitialAdController.cs: d35b8e015fd9bf24fb9d0666d755d507 -> d2867e5885d2be781197766bd1958f61
+  custom:scripting/monoscript/fileName/IAdLoaderClient.cs: 97b31d34586e7af8e857d799976e4117 -> 
+  custom:scripting/monoscript/fileName/IRewardedInterstitialAdClient.cs: c274f892b1704f3def52bc0ea1c44467 -> 
+  custom:scripting/monoscript/fileName/CustomNativeClientEventArgs.cs: f5ee0fc162a5716b162c5fc929e36a48 -> 
+  custom:scripting/monoscript/fileName/AdapterStatus.cs: b6469dcef7b29ccb0766e44273ea61fe -> 
+  custom:scripting/monoscript/fileName/IClientFactory.cs: 32d0a3fb0d9509b0e0a624efa714245b -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateAd.cs: f7a8e95bce211fc2f6406d2f60529de7 -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateClient.cs: 6036f2706a04721b096f4976fba102cf -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/IInterstitialClient.cs: 991d608191b78c8e7fd5db9be9f06978 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/AdValue.cs: a2f773d836e414a5c77ccf2d5027b1bc -> 
+  custom:scripting/monoscript/fileName/AndroidBuildPostProcessor.cs: 71e1f92e948bf8391e7f4c26e93e881b -> 
+  custom:scripting/monoscript/fileName/BannerClient.cs: bad0b4ec2e41d28268cab79e88aba753 -> 
+  custom:scripting/monoscript/fileName/MobileAdsEventExecutor.cs: 1b597c4859ae617ad2d4c9f54ef86b49 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/InterstitialAd.cs: 83a3085cffca8b95d59d6274a94727dd -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/CustomNativeEventArgs.cs: f666e5091b7f3e8b349100896254b062 -> 
+  custom:scripting/monoscript/fileName/MediationExtras.cs: 057f082e59198747a46c1014ff849a27 -> 
+  custom:scripting/monoscript/fileName/IInitializationStatusClient.cs: df8b75b120fe4efbe291413e3b704c86 -> 
+  custom:scripting/monoscript/fileName/IMobileAdsClient.cs: 7df80c835c7bd8f7f323271a22dc50c8 -> 
+  custom:scripting/monoscript/fileName/RequestConfigurationClient.cs: 69f620ca634ebb87c398184264f4e17a -> 
+  custom:scripting/monoscript/fileName/InterstitialClient.cs: 39c9d404634d36dd8b59af602dd7753c -> 
+  custom:scripting/monoscript/fileName/RewardedAdClient.cs: 597ddff81643a56a9dbc835c6d1903c7 -> 
+  custom:scripting/monoscript/fileName/BaseAdDummyClient.cs: 76d58b8e36c7ed680111e9e576e10125 -> 
+  custom:scripting/monoscript/fileName/IRewardedAdClient.cs: 427e261bf9d4b6054c2a2ac9dbbe86c3 -> 
+  custom:scripting/monoscript/fileName/RewardingAdBaseClient.cs: 76b9a3aea36ab822805db9605cb56a96 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/AdValueEventArgs.cs: 29b158b86fe1413913a4024ab6e42140 -> 
+  custom:scripting/monoscript/fileName/Countdown.cs: 9eaba8ef7236160695dec88ec67286ab -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ButtonBehaviour.cs: 30e81437968d9ce210f374d1db73cb02 -> 
+  custom:scripting/monoscript/fileName/DisplayMetrics.cs: eb1778554635eb1f3eeff5085e0774cb -> 
+  custom:scripting/monoscript/fileName/IResponseInfoClient.cs: e50c9c7984279f9dda18ae66debfe78f -> 
+  custom:scripting/monoscript/fileName/RewardedAd.cs: 324b35b8f4712f7a0584de9ced31d04e -> 
+  custom:scripting/monoscript/fileName/MobileAds.cs: a666d15faaffd38175b6ffa6d29e0f3b -> 
+  custom:scripting/monoscript/fileName/IRewardBasedVideoAdClient.cs: 52fe3776767f097f1bf32567a2909d91 -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAd.cs: b031cf7e56cdfe003c35f80a67cb9933 -> 
+  custom:scripting/monoscript/fileName/BannerView.cs: 1766d5de63319ff905aec1128d97054e -> 
+  custom:scripting/monoscript/fileName/InitializationStatus.cs: 99d4da5410dbc517bd7bf07953c485be -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/RewardedAdDummyClient.cs: 2319da624d00d206ec6d27569afdf64e -> 
+  custom:scripting/monoscript/fileName/AdLoaderClient.cs: 25e8a11a1b7948177c43756bf41a1444 -> 
+  custom:scripting/monoscript/fileName/MobileAdsClient.cs: 60650d23a1b3c4ef5b8dda3a18ff6e89 -> 
+  custom:scripting/monoscript/fileName/AdRequest.cs: dc16a1beb79301a69225b49d452e4757 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x31828b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.238 seconds
+Refreshing native plugins compatible for Editor in 1.32 ms, found 2 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:119)
+
+(Filename: Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs:57)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:119)
+
+(Filename: Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs Line: 57)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.538 seconds
+Domain Reload Profiling: 776ms
+	BeginReloadAssembly (75ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (12ms)
+	LoadAllAssembliesAndSetupDomain (125ms)
+		LoadAssemblies (138ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (14ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (538ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (218ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (22ms)
+			ProcessInitializeOnLoadAttributes (170ms)
+			ProcessInitializeOnLoadMethodAttributes (8ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 1.47 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3428 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 48 unused Assets / (120.7 KB). Loaded Objects now: 3965.
+Memory consumption went from 160.7 MB to 160.6 MB.
+Total: 2.393750 ms (FindLiveObjects: 0.112750 ms CreateObjectMapping: 0.035541 ms MarkObjects: 2.182250 ms  DeleteObjects: 0.062875 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/ResponseInfo.cs: df49b6b2379ab325fc0b434afd3854f3 -> 
+  custom:scripting/monoscript/fileName/MaxAdContentRating.cs: b90c26761348f5d36cf290a64fc28f12 -> 
+  custom:scripting/monoscript/fileName/InitializationStatusDummyClient.cs: 9c2e6de2ca15de277095e1e1b6159ca7 -> 
+  custom:scripting/monoscript/fileName/RewardAdController.cs: ce1883bf9fc86193093ff1e2c8947497 -> b851ccdc7cfe0483490ece9950c23d25
+  custom:scripting/monoscript/fileName/DummyAdBehaviour.cs: cd4a6abaa8f2817cdb6636c3b2900c6b -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAdClient.cs: 8f22a136215db466bee837f1fecc8859 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/GoogleMobileAdsClientFactory.cs: 811b79505a6a9b194be5d803662fc18b -> 
+  custom:scripting/monoscript/fileName/Reward.cs: 20be682d1243e4088b456cd2157d7b26 -> 
+  custom:scripting/monoscript/fileName/RequestConfiguration.cs: f42bfe68bb19f837c77c999b9e578183 -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAdClient.cs: acfe4ea995d72bc9eb287232f64fb28e -> 
+  custom:scripting/monoscript/fileName/AdErrorEventArgs.cs: 31b35f2110975cc4830d23556f91b555 -> 
+  custom:scripting/monoscript/fileName/ResponseInfoClient.cs: e5d5abd24b00e36dd38dd86b2dc318e8 -> 
+  custom:scripting/monoscript/fileName/ServerSideVerificationOptions.cs: edcd274dfa9e60d6569455999ec51ddf -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAd.cs: eb427df501d3a4781d5ec15e0b22ebee -> 
+  custom:scripting/monoscript/fileName/AdLoader.cs: 6427d799a3b6e9742afd683a9715880b -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAdDummyClient.cs: 4f9231c66dd387ea12c36300c987c88f -> 
+  custom:scripting/monoscript/fileName/ICustomNativeTemplateClient.cs: fe6f3cf87bb6f3a3498b9726a55ee3b3 -> 
+  custom:scripting/monoscript/fileName/AdFailedToLoadEventArgs.cs: a2af71380444df3cdbd20ffdda4cf51c -> 
+  custom:scripting/monoscript/fileName/ResponseInfoDummyClient.cs: 513c05b56c0879cfd5fb75a355d49e1b -> 
+  custom:scripting/monoscript/fileName/AdSize.cs: db3da01e27728216ff17e248351b16a6 -> 
+  custom:scripting/monoscript/fileName/Utils.cs: 45404174bae8fa0f5cfd7aecbb1e8d6c -> 5c564ac13d86e84af98f88c5f288a6fa
+  custom:scripting/monoscript/fileName/InitializationStatusClient.cs: d92905fae8efd3b546f70f5885b3f6cb -> 
+  custom:scripting/monoscript/fileName/DummyClient.cs: 62621f939a01979c4c7d6678af2b3e4a -> 6806ba3b0cb3f44136d7f03e56ebd244
+  custom:scripting/monoscript/fileName/IBannerClient.cs: b9b61c2e35f8bd601fca9f1d63a4b923 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AdLoaderClientArgs.cs: 8af34dac53f12876d8ce8f1c010776a6 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/InterstitialAdController.cs: d35b8e015fd9bf24fb9d0666d755d507 -> d2867e5885d2be781197766bd1958f61
+  custom:scripting/monoscript/fileName/IAdLoaderClient.cs: 97b31d34586e7af8e857d799976e4117 -> 
+  custom:scripting/monoscript/fileName/IRewardedInterstitialAdClient.cs: c274f892b1704f3def52bc0ea1c44467 -> 
+  custom:scripting/monoscript/fileName/CustomNativeClientEventArgs.cs: f5ee0fc162a5716b162c5fc929e36a48 -> 
+  custom:scripting/monoscript/fileName/AdapterStatus.cs: b6469dcef7b29ccb0766e44273ea61fe -> 
+  custom:scripting/monoscript/fileName/IClientFactory.cs: 32d0a3fb0d9509b0e0a624efa714245b -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateAd.cs: f7a8e95bce211fc2f6406d2f60529de7 -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateClient.cs: 6036f2706a04721b096f4976fba102cf -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/IInterstitialClient.cs: 991d608191b78c8e7fd5db9be9f06978 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/AdValue.cs: a2f773d836e414a5c77ccf2d5027b1bc -> 
+  custom:scripting/monoscript/fileName/AndroidBuildPostProcessor.cs: 71e1f92e948bf8391e7f4c26e93e881b -> 
+  custom:scripting/monoscript/fileName/BannerClient.cs: bad0b4ec2e41d28268cab79e88aba753 -> 
+  custom:scripting/monoscript/fileName/MobileAdsEventExecutor.cs: 1b597c4859ae617ad2d4c9f54ef86b49 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/InterstitialAd.cs: 83a3085cffca8b95d59d6274a94727dd -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/CustomNativeEventArgs.cs: f666e5091b7f3e8b349100896254b062 -> 
+  custom:scripting/monoscript/fileName/MediationExtras.cs: 057f082e59198747a46c1014ff849a27 -> 
+  custom:scripting/monoscript/fileName/IInitializationStatusClient.cs: df8b75b120fe4efbe291413e3b704c86 -> 
+  custom:scripting/monoscript/fileName/IMobileAdsClient.cs: 7df80c835c7bd8f7f323271a22dc50c8 -> 
+  custom:scripting/monoscript/fileName/RequestConfigurationClient.cs: 69f620ca634ebb87c398184264f4e17a -> 
+  custom:scripting/monoscript/fileName/InterstitialClient.cs: 39c9d404634d36dd8b59af602dd7753c -> 
+  custom:scripting/monoscript/fileName/RewardedAdClient.cs: 597ddff81643a56a9dbc835c6d1903c7 -> 
+  custom:scripting/monoscript/fileName/BaseAdDummyClient.cs: 76d58b8e36c7ed680111e9e576e10125 -> 
+  custom:scripting/monoscript/fileName/IRewardedAdClient.cs: 427e261bf9d4b6054c2a2ac9dbbe86c3 -> 
+  custom:scripting/monoscript/fileName/RewardingAdBaseClient.cs: 76b9a3aea36ab822805db9605cb56a96 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/AdValueEventArgs.cs: 29b158b86fe1413913a4024ab6e42140 -> 
+  custom:scripting/monoscript/fileName/Countdown.cs: 9eaba8ef7236160695dec88ec67286ab -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ButtonBehaviour.cs: 30e81437968d9ce210f374d1db73cb02 -> 
+  custom:scripting/monoscript/fileName/DisplayMetrics.cs: eb1778554635eb1f3eeff5085e0774cb -> 
+  custom:scripting/monoscript/fileName/IResponseInfoClient.cs: e50c9c7984279f9dda18ae66debfe78f -> 
+  custom:scripting/monoscript/fileName/RewardedAd.cs: 324b35b8f4712f7a0584de9ced31d04e -> 
+  custom:scripting/monoscript/fileName/MobileAds.cs: a666d15faaffd38175b6ffa6d29e0f3b -> 
+  custom:scripting/monoscript/fileName/IRewardBasedVideoAdClient.cs: 52fe3776767f097f1bf32567a2909d91 -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAd.cs: b031cf7e56cdfe003c35f80a67cb9933 -> 
+  custom:scripting/monoscript/fileName/BannerView.cs: 1766d5de63319ff905aec1128d97054e -> 
+  custom:scripting/monoscript/fileName/InitializationStatus.cs: 99d4da5410dbc517bd7bf07953c485be -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/RewardedAdDummyClient.cs: 2319da624d00d206ec6d27569afdf64e -> 
+  custom:scripting/monoscript/fileName/AdLoaderClient.cs: 25e8a11a1b7948177c43756bf41a1444 -> 
+  custom:scripting/monoscript/fileName/MobileAdsClient.cs: 60650d23a1b3c4ef5b8dda3a18ff6e89 -> 
+  custom:scripting/monoscript/fileName/AdRequest.cs: dc16a1beb79301a69225b49d452e4757 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x31828b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.204 seconds
+Refreshing native plugins compatible for Editor in 1.08 ms, found 2 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:119)
+
+(Filename: Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs:57)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:119)
+
+(Filename: Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs Line: 57)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.399 seconds
+Domain Reload Profiling: 603ms
+	BeginReloadAssembly (71ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (18ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (11ms)
+	LoadAllAssembliesAndSetupDomain (97ms)
+		LoadAssemblies (113ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (399ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (234ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (24ms)
+			ProcessInitializeOnLoadAttributes (182ms)
+			ProcessInitializeOnLoadMethodAttributes (9ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 1.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3428 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 48 unused Assets / (120.8 KB). Loaded Objects now: 3980.
+Memory consumption went from 167.0 MB to 166.9 MB.
+Total: 2.305042 ms (FindLiveObjects: 0.116542 ms CreateObjectMapping: 0.037375 ms MarkObjects: 2.093208 ms  DeleteObjects: 0.057583 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/ResponseInfo.cs: df49b6b2379ab325fc0b434afd3854f3 -> 
+  custom:scripting/monoscript/fileName/MaxAdContentRating.cs: b90c26761348f5d36cf290a64fc28f12 -> 
+  custom:scripting/monoscript/fileName/InitializationStatusDummyClient.cs: 9c2e6de2ca15de277095e1e1b6159ca7 -> 
+  custom:scripting/monoscript/fileName/RewardAdController.cs: ce1883bf9fc86193093ff1e2c8947497 -> b851ccdc7cfe0483490ece9950c23d25
+  custom:scripting/monoscript/fileName/DummyAdBehaviour.cs: cd4a6abaa8f2817cdb6636c3b2900c6b -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAdClient.cs: 8f22a136215db466bee837f1fecc8859 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/GoogleMobileAdsClientFactory.cs: 811b79505a6a9b194be5d803662fc18b -> 
+  custom:scripting/monoscript/fileName/Reward.cs: 20be682d1243e4088b456cd2157d7b26 -> 
+  custom:scripting/monoscript/fileName/RequestConfiguration.cs: f42bfe68bb19f837c77c999b9e578183 -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAdClient.cs: acfe4ea995d72bc9eb287232f64fb28e -> 
+  custom:scripting/monoscript/fileName/AdErrorEventArgs.cs: 31b35f2110975cc4830d23556f91b555 -> 
+  custom:scripting/monoscript/fileName/ResponseInfoClient.cs: e5d5abd24b00e36dd38dd86b2dc318e8 -> 
+  custom:scripting/monoscript/fileName/ServerSideVerificationOptions.cs: edcd274dfa9e60d6569455999ec51ddf -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAd.cs: eb427df501d3a4781d5ec15e0b22ebee -> 
+  custom:scripting/monoscript/fileName/AdLoader.cs: 6427d799a3b6e9742afd683a9715880b -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAdDummyClient.cs: 4f9231c66dd387ea12c36300c987c88f -> 
+  custom:scripting/monoscript/fileName/ICustomNativeTemplateClient.cs: fe6f3cf87bb6f3a3498b9726a55ee3b3 -> 
+  custom:scripting/monoscript/fileName/AdFailedToLoadEventArgs.cs: a2af71380444df3cdbd20ffdda4cf51c -> 
+  custom:scripting/monoscript/fileName/ResponseInfoDummyClient.cs: 513c05b56c0879cfd5fb75a355d49e1b -> 
+  custom:scripting/monoscript/fileName/AdSize.cs: db3da01e27728216ff17e248351b16a6 -> 
+  custom:scripting/monoscript/fileName/Utils.cs: 45404174bae8fa0f5cfd7aecbb1e8d6c -> 5c564ac13d86e84af98f88c5f288a6fa
+  custom:scripting/monoscript/fileName/InitializationStatusClient.cs: d92905fae8efd3b546f70f5885b3f6cb -> 
+  custom:scripting/monoscript/fileName/DummyClient.cs: 62621f939a01979c4c7d6678af2b3e4a -> 6806ba3b0cb3f44136d7f03e56ebd244
+  custom:scripting/monoscript/fileName/IBannerClient.cs: b9b61c2e35f8bd601fca9f1d63a4b923 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AdLoaderClientArgs.cs: 8af34dac53f12876d8ce8f1c010776a6 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/InterstitialAdController.cs: d35b8e015fd9bf24fb9d0666d755d507 -> d2867e5885d2be781197766bd1958f61
+  custom:scripting/monoscript/fileName/IAdLoaderClient.cs: 97b31d34586e7af8e857d799976e4117 -> 
+  custom:scripting/monoscript/fileName/IRewardedInterstitialAdClient.cs: c274f892b1704f3def52bc0ea1c44467 -> 
+  custom:scripting/monoscript/fileName/CustomNativeClientEventArgs.cs: f5ee0fc162a5716b162c5fc929e36a48 -> 
+  custom:scripting/monoscript/fileName/AdapterStatus.cs: b6469dcef7b29ccb0766e44273ea61fe -> 
+  custom:scripting/monoscript/fileName/IClientFactory.cs: 32d0a3fb0d9509b0e0a624efa714245b -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateAd.cs: f7a8e95bce211fc2f6406d2f60529de7 -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateClient.cs: 6036f2706a04721b096f4976fba102cf -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/IInterstitialClient.cs: 991d608191b78c8e7fd5db9be9f06978 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/AdValue.cs: a2f773d836e414a5c77ccf2d5027b1bc -> 
+  custom:scripting/monoscript/fileName/AndroidBuildPostProcessor.cs: 71e1f92e948bf8391e7f4c26e93e881b -> 
+  custom:scripting/monoscript/fileName/BannerClient.cs: bad0b4ec2e41d28268cab79e88aba753 -> 
+  custom:scripting/monoscript/fileName/MobileAdsEventExecutor.cs: 1b597c4859ae617ad2d4c9f54ef86b49 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/InterstitialAd.cs: 83a3085cffca8b95d59d6274a94727dd -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/CustomNativeEventArgs.cs: f666e5091b7f3e8b349100896254b062 -> 
+  custom:scripting/monoscript/fileName/MediationExtras.cs: 057f082e59198747a46c1014ff849a27 -> 
+  custom:scripting/monoscript/fileName/IInitializationStatusClient.cs: df8b75b120fe4efbe291413e3b704c86 -> 
+  custom:scripting/monoscript/fileName/IMobileAdsClient.cs: 7df80c835c7bd8f7f323271a22dc50c8 -> 
+  custom:scripting/monoscript/fileName/RequestConfigurationClient.cs: 69f620ca634ebb87c398184264f4e17a -> 
+  custom:scripting/monoscript/fileName/InterstitialClient.cs: 39c9d404634d36dd8b59af602dd7753c -> 
+  custom:scripting/monoscript/fileName/RewardedAdClient.cs: 597ddff81643a56a9dbc835c6d1903c7 -> 
+  custom:scripting/monoscript/fileName/BaseAdDummyClient.cs: 76d58b8e36c7ed680111e9e576e10125 -> 
+  custom:scripting/monoscript/fileName/IRewardedAdClient.cs: 427e261bf9d4b6054c2a2ac9dbbe86c3 -> 
+  custom:scripting/monoscript/fileName/RewardingAdBaseClient.cs: 76b9a3aea36ab822805db9605cb56a96 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/AdValueEventArgs.cs: 29b158b86fe1413913a4024ab6e42140 -> 
+  custom:scripting/monoscript/fileName/Countdown.cs: 9eaba8ef7236160695dec88ec67286ab -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ButtonBehaviour.cs: 30e81437968d9ce210f374d1db73cb02 -> 
+  custom:scripting/monoscript/fileName/DisplayMetrics.cs: eb1778554635eb1f3eeff5085e0774cb -> 
+  custom:scripting/monoscript/fileName/IResponseInfoClient.cs: e50c9c7984279f9dda18ae66debfe78f -> 
+  custom:scripting/monoscript/fileName/RewardedAd.cs: 324b35b8f4712f7a0584de9ced31d04e -> 
+  custom:scripting/monoscript/fileName/MobileAds.cs: a666d15faaffd38175b6ffa6d29e0f3b -> 
+  custom:scripting/monoscript/fileName/IRewardBasedVideoAdClient.cs: 52fe3776767f097f1bf32567a2909d91 -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAd.cs: b031cf7e56cdfe003c35f80a67cb9933 -> 
+  custom:scripting/monoscript/fileName/BannerView.cs: 1766d5de63319ff905aec1128d97054e -> 
+  custom:scripting/monoscript/fileName/InitializationStatus.cs: 99d4da5410dbc517bd7bf07953c485be -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/RewardedAdDummyClient.cs: 2319da624d00d206ec6d27569afdf64e -> 
+  custom:scripting/monoscript/fileName/AdLoaderClient.cs: 25e8a11a1b7948177c43756bf41a1444 -> 
+  custom:scripting/monoscript/fileName/MobileAdsClient.cs: 60650d23a1b3c4ef5b8dda3a18ff6e89 -> 
+  custom:scripting/monoscript/fileName/AdRequest.cs: dc16a1beb79301a69225b49d452e4757 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x3183c7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.223 seconds
+Refreshing native plugins compatible for Editor in 1.08 ms, found 2 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:119)
+
+(Filename: Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs:57)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:119)
+
+(Filename: Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs Line: 57)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.603 seconds
+Domain Reload Profiling: 826ms
+	BeginReloadAssembly (68ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (23ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (11ms)
+	LoadAllAssembliesAndSetupDomain (119ms)
+		LoadAssemblies (133ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (603ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (248ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (25ms)
+			ProcessInitializeOnLoadAttributes (194ms)
+			ProcessInitializeOnLoadMethodAttributes (9ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 1.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3428 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 48 unused Assets / (120.8 KB). Loaded Objects now: 3995.
+Memory consumption went from 173.3 MB to 173.2 MB.
+Total: 2.495833 ms (FindLiveObjects: 0.110250 ms CreateObjectMapping: 0.033958 ms MarkObjects: 2.286625 ms  DeleteObjects: 0.064625 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/ResponseInfo.cs: df49b6b2379ab325fc0b434afd3854f3 -> 
+  custom:scripting/monoscript/fileName/MaxAdContentRating.cs: b90c26761348f5d36cf290a64fc28f12 -> 
+  custom:scripting/monoscript/fileName/InitializationStatusDummyClient.cs: 9c2e6de2ca15de277095e1e1b6159ca7 -> 
+  custom:scripting/monoscript/fileName/RewardAdController.cs: ce1883bf9fc86193093ff1e2c8947497 -> b851ccdc7cfe0483490ece9950c23d25
+  custom:scripting/monoscript/fileName/DummyAdBehaviour.cs: cd4a6abaa8f2817cdb6636c3b2900c6b -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAdClient.cs: 8f22a136215db466bee837f1fecc8859 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/GoogleMobileAdsClientFactory.cs: 811b79505a6a9b194be5d803662fc18b -> 
+  custom:scripting/monoscript/fileName/Reward.cs: 20be682d1243e4088b456cd2157d7b26 -> 
+  custom:scripting/monoscript/fileName/RequestConfiguration.cs: f42bfe68bb19f837c77c999b9e578183 -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAdClient.cs: acfe4ea995d72bc9eb287232f64fb28e -> 
+  custom:scripting/monoscript/fileName/AdErrorEventArgs.cs: 31b35f2110975cc4830d23556f91b555 -> 
+  custom:scripting/monoscript/fileName/ResponseInfoClient.cs: e5d5abd24b00e36dd38dd86b2dc318e8 -> 
+  custom:scripting/monoscript/fileName/ServerSideVerificationOptions.cs: edcd274dfa9e60d6569455999ec51ddf -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAd.cs: eb427df501d3a4781d5ec15e0b22ebee -> 
+  custom:scripting/monoscript/fileName/AdLoader.cs: 6427d799a3b6e9742afd683a9715880b -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAdDummyClient.cs: 4f9231c66dd387ea12c36300c987c88f -> 
+  custom:scripting/monoscript/fileName/ICustomNativeTemplateClient.cs: fe6f3cf87bb6f3a3498b9726a55ee3b3 -> 
+  custom:scripting/monoscript/fileName/AdFailedToLoadEventArgs.cs: a2af71380444df3cdbd20ffdda4cf51c -> 
+  custom:scripting/monoscript/fileName/ResponseInfoDummyClient.cs: 513c05b56c0879cfd5fb75a355d49e1b -> 
+  custom:scripting/monoscript/fileName/AdSize.cs: db3da01e27728216ff17e248351b16a6 -> 
+  custom:scripting/monoscript/fileName/Utils.cs: 45404174bae8fa0f5cfd7aecbb1e8d6c -> 5c564ac13d86e84af98f88c5f288a6fa
+  custom:scripting/monoscript/fileName/InitializationStatusClient.cs: d92905fae8efd3b546f70f5885b3f6cb -> 
+  custom:scripting/monoscript/fileName/DummyClient.cs: 62621f939a01979c4c7d6678af2b3e4a -> 6806ba3b0cb3f44136d7f03e56ebd244
+  custom:scripting/monoscript/fileName/IBannerClient.cs: b9b61c2e35f8bd601fca9f1d63a4b923 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AdLoaderClientArgs.cs: 8af34dac53f12876d8ce8f1c010776a6 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/InterstitialAdController.cs: d35b8e015fd9bf24fb9d0666d755d507 -> d2867e5885d2be781197766bd1958f61
+  custom:scripting/monoscript/fileName/IAdLoaderClient.cs: 97b31d34586e7af8e857d799976e4117 -> 
+  custom:scripting/monoscript/fileName/IRewardedInterstitialAdClient.cs: c274f892b1704f3def52bc0ea1c44467 -> 
+  custom:scripting/monoscript/fileName/CustomNativeClientEventArgs.cs: f5ee0fc162a5716b162c5fc929e36a48 -> 
+  custom:scripting/monoscript/fileName/AdapterStatus.cs: b6469dcef7b29ccb0766e44273ea61fe -> 
+  custom:scripting/monoscript/fileName/IClientFactory.cs: 32d0a3fb0d9509b0e0a624efa714245b -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateAd.cs: f7a8e95bce211fc2f6406d2f60529de7 -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateClient.cs: 6036f2706a04721b096f4976fba102cf -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/IInterstitialClient.cs: 991d608191b78c8e7fd5db9be9f06978 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/AdValue.cs: a2f773d836e414a5c77ccf2d5027b1bc -> 
+  custom:scripting/monoscript/fileName/AndroidBuildPostProcessor.cs: 71e1f92e948bf8391e7f4c26e93e881b -> 
+  custom:scripting/monoscript/fileName/BannerClient.cs: bad0b4ec2e41d28268cab79e88aba753 -> 
+  custom:scripting/monoscript/fileName/MobileAdsEventExecutor.cs: 1b597c4859ae617ad2d4c9f54ef86b49 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/InterstitialAd.cs: 83a3085cffca8b95d59d6274a94727dd -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/CustomNativeEventArgs.cs: f666e5091b7f3e8b349100896254b062 -> 
+  custom:scripting/monoscript/fileName/MediationExtras.cs: 057f082e59198747a46c1014ff849a27 -> 
+  custom:scripting/monoscript/fileName/IInitializationStatusClient.cs: df8b75b120fe4efbe291413e3b704c86 -> 
+  custom:scripting/monoscript/fileName/IMobileAdsClient.cs: 7df80c835c7bd8f7f323271a22dc50c8 -> 
+  custom:scripting/monoscript/fileName/RequestConfigurationClient.cs: 69f620ca634ebb87c398184264f4e17a -> 
+  custom:scripting/monoscript/fileName/InterstitialClient.cs: 39c9d404634d36dd8b59af602dd7753c -> 
+  custom:scripting/monoscript/fileName/RewardedAdClient.cs: 597ddff81643a56a9dbc835c6d1903c7 -> 
+  custom:scripting/monoscript/fileName/BaseAdDummyClient.cs: 76d58b8e36c7ed680111e9e576e10125 -> 
+  custom:scripting/monoscript/fileName/IRewardedAdClient.cs: 427e261bf9d4b6054c2a2ac9dbbe86c3 -> 
+  custom:scripting/monoscript/fileName/RewardingAdBaseClient.cs: 76b9a3aea36ab822805db9605cb56a96 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/AdValueEventArgs.cs: 29b158b86fe1413913a4024ab6e42140 -> 
+  custom:scripting/monoscript/fileName/Countdown.cs: 9eaba8ef7236160695dec88ec67286ab -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ButtonBehaviour.cs: 30e81437968d9ce210f374d1db73cb02 -> 
+  custom:scripting/monoscript/fileName/DisplayMetrics.cs: eb1778554635eb1f3eeff5085e0774cb -> 
+  custom:scripting/monoscript/fileName/IResponseInfoClient.cs: e50c9c7984279f9dda18ae66debfe78f -> 
+  custom:scripting/monoscript/fileName/RewardedAd.cs: 324b35b8f4712f7a0584de9ced31d04e -> 
+  custom:scripting/monoscript/fileName/MobileAds.cs: a666d15faaffd38175b6ffa6d29e0f3b -> 
+  custom:scripting/monoscript/fileName/IRewardBasedVideoAdClient.cs: 52fe3776767f097f1bf32567a2909d91 -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAd.cs: b031cf7e56cdfe003c35f80a67cb9933 -> 
+  custom:scripting/monoscript/fileName/BannerView.cs: 1766d5de63319ff905aec1128d97054e -> 
+  custom:scripting/monoscript/fileName/InitializationStatus.cs: 99d4da5410dbc517bd7bf07953c485be -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/RewardedAdDummyClient.cs: 2319da624d00d206ec6d27569afdf64e -> 
+  custom:scripting/monoscript/fileName/AdLoaderClient.cs: 25e8a11a1b7948177c43756bf41a1444 -> 
+  custom:scripting/monoscript/fileName/MobileAdsClient.cs: 60650d23a1b3c4ef5b8dda3a18ff6e89 -> 
+  custom:scripting/monoscript/fileName/AdRequest.cs: dc16a1beb79301a69225b49d452e4757 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x3183c7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.233 seconds
+Refreshing native plugins compatible for Editor in 1.25 ms, found 2 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:119)
+
+(Filename: Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs:57)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:119)
+
+(Filename: Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs Line: 57)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.553 seconds
+Domain Reload Profiling: 786ms
+	BeginReloadAssembly (72ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (11ms)
+	LoadAllAssembliesAndSetupDomain (124ms)
+		LoadAssemblies (137ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (553ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (222ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (24ms)
+			ProcessInitializeOnLoadAttributes (172ms)
+			ProcessInitializeOnLoadMethodAttributes (8ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 1.44 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3428 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 48 unused Assets / (120.7 KB). Loaded Objects now: 4010.
+Memory consumption went from 179.6 MB to 179.5 MB.
+Total: 2.055250 ms (FindLiveObjects: 0.108416 ms CreateObjectMapping: 0.034000 ms MarkObjects: 1.863208 ms  DeleteObjects: 0.049125 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/ResponseInfo.cs: df49b6b2379ab325fc0b434afd3854f3 -> 
+  custom:scripting/monoscript/fileName/MaxAdContentRating.cs: b90c26761348f5d36cf290a64fc28f12 -> 
+  custom:scripting/monoscript/fileName/InitializationStatusDummyClient.cs: 9c2e6de2ca15de277095e1e1b6159ca7 -> 
+  custom:scripting/monoscript/fileName/RewardAdController.cs: ce1883bf9fc86193093ff1e2c8947497 -> b851ccdc7cfe0483490ece9950c23d25
+  custom:scripting/monoscript/fileName/DummyAdBehaviour.cs: cd4a6abaa8f2817cdb6636c3b2900c6b -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAdClient.cs: 8f22a136215db466bee837f1fecc8859 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/GoogleMobileAdsClientFactory.cs: 811b79505a6a9b194be5d803662fc18b -> 
+  custom:scripting/monoscript/fileName/Reward.cs: 20be682d1243e4088b456cd2157d7b26 -> 
+  custom:scripting/monoscript/fileName/RequestConfiguration.cs: f42bfe68bb19f837c77c999b9e578183 -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAdClient.cs: acfe4ea995d72bc9eb287232f64fb28e -> 
+  custom:scripting/monoscript/fileName/AdErrorEventArgs.cs: 31b35f2110975cc4830d23556f91b555 -> 
+  custom:scripting/monoscript/fileName/ResponseInfoClient.cs: e5d5abd24b00e36dd38dd86b2dc318e8 -> 
+  custom:scripting/monoscript/fileName/ServerSideVerificationOptions.cs: edcd274dfa9e60d6569455999ec51ddf -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAd.cs: eb427df501d3a4781d5ec15e0b22ebee -> 
+  custom:scripting/monoscript/fileName/AdLoader.cs: 6427d799a3b6e9742afd683a9715880b -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAdDummyClient.cs: 4f9231c66dd387ea12c36300c987c88f -> 
+  custom:scripting/monoscript/fileName/ICustomNativeTemplateClient.cs: fe6f3cf87bb6f3a3498b9726a55ee3b3 -> 
+  custom:scripting/monoscript/fileName/AdFailedToLoadEventArgs.cs: a2af71380444df3cdbd20ffdda4cf51c -> 
+  custom:scripting/monoscript/fileName/ResponseInfoDummyClient.cs: 513c05b56c0879cfd5fb75a355d49e1b -> 
+  custom:scripting/monoscript/fileName/AdSize.cs: db3da01e27728216ff17e248351b16a6 -> 
+  custom:scripting/monoscript/fileName/Utils.cs: 45404174bae8fa0f5cfd7aecbb1e8d6c -> 5c564ac13d86e84af98f88c5f288a6fa
+  custom:scripting/monoscript/fileName/InitializationStatusClient.cs: d92905fae8efd3b546f70f5885b3f6cb -> 
+  custom:scripting/monoscript/fileName/DummyClient.cs: 62621f939a01979c4c7d6678af2b3e4a -> 6806ba3b0cb3f44136d7f03e56ebd244
+  custom:scripting/monoscript/fileName/IBannerClient.cs: b9b61c2e35f8bd601fca9f1d63a4b923 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AdLoaderClientArgs.cs: 8af34dac53f12876d8ce8f1c010776a6 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/InterstitialAdController.cs: d35b8e015fd9bf24fb9d0666d755d507 -> d2867e5885d2be781197766bd1958f61
+  custom:scripting/monoscript/fileName/IAdLoaderClient.cs: 97b31d34586e7af8e857d799976e4117 -> 
+  custom:scripting/monoscript/fileName/IRewardedInterstitialAdClient.cs: c274f892b1704f3def52bc0ea1c44467 -> 
+  custom:scripting/monoscript/fileName/CustomNativeClientEventArgs.cs: f5ee0fc162a5716b162c5fc929e36a48 -> 
+  custom:scripting/monoscript/fileName/AdapterStatus.cs: b6469dcef7b29ccb0766e44273ea61fe -> 
+  custom:scripting/monoscript/fileName/IClientFactory.cs: 32d0a3fb0d9509b0e0a624efa714245b -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateAd.cs: f7a8e95bce211fc2f6406d2f60529de7 -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateClient.cs: 6036f2706a04721b096f4976fba102cf -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/IInterstitialClient.cs: 991d608191b78c8e7fd5db9be9f06978 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/AdValue.cs: a2f773d836e414a5c77ccf2d5027b1bc -> 
+  custom:scripting/monoscript/fileName/AndroidBuildPostProcessor.cs: 71e1f92e948bf8391e7f4c26e93e881b -> 
+  custom:scripting/monoscript/fileName/BannerClient.cs: bad0b4ec2e41d28268cab79e88aba753 -> 
+  custom:scripting/monoscript/fileName/MobileAdsEventExecutor.cs: 1b597c4859ae617ad2d4c9f54ef86b49 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/InterstitialAd.cs: 83a3085cffca8b95d59d6274a94727dd -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/CustomNativeEventArgs.cs: f666e5091b7f3e8b349100896254b062 -> 
+  custom:scripting/monoscript/fileName/MediationExtras.cs: 057f082e59198747a46c1014ff849a27 -> 
+  custom:scripting/monoscript/fileName/IInitializationStatusClient.cs: df8b75b120fe4efbe291413e3b704c86 -> 
+  custom:scripting/monoscript/fileName/IMobileAdsClient.cs: 7df80c835c7bd8f7f323271a22dc50c8 -> 
+  custom:scripting/monoscript/fileName/RequestConfigurationClient.cs: 69f620ca634ebb87c398184264f4e17a -> 
+  custom:scripting/monoscript/fileName/InterstitialClient.cs: 39c9d404634d36dd8b59af602dd7753c -> 
+  custom:scripting/monoscript/fileName/RewardedAdClient.cs: 597ddff81643a56a9dbc835c6d1903c7 -> 
+  custom:scripting/monoscript/fileName/BaseAdDummyClient.cs: 76d58b8e36c7ed680111e9e576e10125 -> 
+  custom:scripting/monoscript/fileName/IRewardedAdClient.cs: 427e261bf9d4b6054c2a2ac9dbbe86c3 -> 
+  custom:scripting/monoscript/fileName/RewardingAdBaseClient.cs: 76b9a3aea36ab822805db9605cb56a96 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/AdValueEventArgs.cs: 29b158b86fe1413913a4024ab6e42140 -> 
+  custom:scripting/monoscript/fileName/Countdown.cs: 9eaba8ef7236160695dec88ec67286ab -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ButtonBehaviour.cs: 30e81437968d9ce210f374d1db73cb02 -> 
+  custom:scripting/monoscript/fileName/DisplayMetrics.cs: eb1778554635eb1f3eeff5085e0774cb -> 
+  custom:scripting/monoscript/fileName/IResponseInfoClient.cs: e50c9c7984279f9dda18ae66debfe78f -> 
+  custom:scripting/monoscript/fileName/RewardedAd.cs: 324b35b8f4712f7a0584de9ced31d04e -> 
+  custom:scripting/monoscript/fileName/MobileAds.cs: a666d15faaffd38175b6ffa6d29e0f3b -> 
+  custom:scripting/monoscript/fileName/IRewardBasedVideoAdClient.cs: 52fe3776767f097f1bf32567a2909d91 -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAd.cs: b031cf7e56cdfe003c35f80a67cb9933 -> 
+  custom:scripting/monoscript/fileName/BannerView.cs: 1766d5de63319ff905aec1128d97054e -> 
+  custom:scripting/monoscript/fileName/InitializationStatus.cs: 99d4da5410dbc517bd7bf07953c485be -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/RewardedAdDummyClient.cs: 2319da624d00d206ec6d27569afdf64e -> 
+  custom:scripting/monoscript/fileName/AdLoaderClient.cs: 25e8a11a1b7948177c43756bf41a1444 -> 
+  custom:scripting/monoscript/fileName/MobileAdsClient.cs: 60650d23a1b3c4ef5b8dda3a18ff6e89 -> 
+  custom:scripting/monoscript/fileName/AdRequest.cs: dc16a1beb79301a69225b49d452e4757 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x3183c7000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.200 seconds
+Refreshing native plugins compatible for Editor in 1.27 ms, found 2 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+GPGSUpgrader start
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs:38)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:119)
+
+(Filename: Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs Line: 38)
+
+GPGSUpgrader done
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/build/output/unity/unity/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GooglePlayGames.Editor.GPGSUpgrader:.cctor () (at Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs:57)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/build/output/unity/unity/Editor/Mono/EditorAssemblies.cs:119)
+
+(Filename: Assets/GooglePlayGames/com.google.play.games/Editor/GPGSUpgrader.cs Line: 57)
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.383 seconds
+Domain Reload Profiling: 584ms
+	BeginReloadAssembly (68ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (11ms)
+	LoadAllAssembliesAndSetupDomain (96ms)
+		LoadAssemblies (110ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (383ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (227ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (23ms)
+			ProcessInitializeOnLoadAttributes (175ms)
+			ProcessInitializeOnLoadMethodAttributes (9ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 1.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3428 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 48 unused Assets / (120.7 KB). Loaded Objects now: 4025.
+Memory consumption went from 186.0 MB to 185.8 MB.
+Total: 2.212167 ms (FindLiveObjects: 0.120000 ms CreateObjectMapping: 0.035334 ms MarkObjects: 2.003667 ms  DeleteObjects: 0.052792 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/ResponseInfo.cs: df49b6b2379ab325fc0b434afd3854f3 -> 
+  custom:scripting/monoscript/fileName/MaxAdContentRating.cs: b90c26761348f5d36cf290a64fc28f12 -> 
+  custom:scripting/monoscript/fileName/InitializationStatusDummyClient.cs: 9c2e6de2ca15de277095e1e1b6159ca7 -> 
+  custom:scripting/monoscript/fileName/RewardAdController.cs: ce1883bf9fc86193093ff1e2c8947497 -> b851ccdc7cfe0483490ece9950c23d25
+  custom:scripting/monoscript/fileName/DummyAdBehaviour.cs: cd4a6abaa8f2817cdb6636c3b2900c6b -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAdClient.cs: 8f22a136215db466bee837f1fecc8859 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/GoogleMobileAdsClientFactory.cs: 811b79505a6a9b194be5d803662fc18b -> 
+  custom:scripting/monoscript/fileName/Reward.cs: 20be682d1243e4088b456cd2157d7b26 -> 
+  custom:scripting/monoscript/fileName/RequestConfiguration.cs: f42bfe68bb19f837c77c999b9e578183 -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAdClient.cs: acfe4ea995d72bc9eb287232f64fb28e -> 
+  custom:scripting/monoscript/fileName/AdErrorEventArgs.cs: 31b35f2110975cc4830d23556f91b555 -> 
+  custom:scripting/monoscript/fileName/ResponseInfoClient.cs: e5d5abd24b00e36dd38dd86b2dc318e8 -> 
+  custom:scripting/monoscript/fileName/ServerSideVerificationOptions.cs: edcd274dfa9e60d6569455999ec51ddf -> 
+  custom:scripting/monoscript/fileName/RewardBasedVideoAd.cs: eb427df501d3a4781d5ec15e0b22ebee -> 
+  custom:scripting/monoscript/fileName/AdLoader.cs: 6427d799a3b6e9742afd683a9715880b -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAdDummyClient.cs: 4f9231c66dd387ea12c36300c987c88f -> 
+  custom:scripting/monoscript/fileName/ICustomNativeTemplateClient.cs: fe6f3cf87bb6f3a3498b9726a55ee3b3 -> 
+  custom:scripting/monoscript/fileName/AdFailedToLoadEventArgs.cs: a2af71380444df3cdbd20ffdda4cf51c -> 
+  custom:scripting/monoscript/fileName/ResponseInfoDummyClient.cs: 513c05b56c0879cfd5fb75a355d49e1b -> 
+  custom:scripting/monoscript/fileName/AdSize.cs: db3da01e27728216ff17e248351b16a6 -> 
+  custom:scripting/monoscript/fileName/Utils.cs: 45404174bae8fa0f5cfd7aecbb1e8d6c -> 5c564ac13d86e84af98f88c5f288a6fa
+  custom:scripting/monoscript/fileName/InitializationStatusClient.cs: d92905fae8efd3b546f70f5885b3f6cb -> 
+  custom:scripting/monoscript/fileName/DummyClient.cs: 62621f939a01979c4c7d6678af2b3e4a -> 6806ba3b0cb3f44136d7f03e56ebd244
+  custom:scripting/monoscript/fileName/IBannerClient.cs: b9b61c2e35f8bd601fca9f1d63a4b923 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/AdLoaderClientArgs.cs: 8af34dac53f12876d8ce8f1c010776a6 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/InterstitialAdController.cs: d35b8e015fd9bf24fb9d0666d755d507 -> d2867e5885d2be781197766bd1958f61
+  custom:scripting/monoscript/fileName/IAdLoaderClient.cs: 97b31d34586e7af8e857d799976e4117 -> 
+  custom:scripting/monoscript/fileName/IRewardedInterstitialAdClient.cs: c274f892b1704f3def52bc0ea1c44467 -> 
+  custom:scripting/monoscript/fileName/CustomNativeClientEventArgs.cs: f5ee0fc162a5716b162c5fc929e36a48 -> 
+  custom:scripting/monoscript/fileName/AdapterStatus.cs: b6469dcef7b29ccb0766e44273ea61fe -> 
+  custom:scripting/monoscript/fileName/IClientFactory.cs: 32d0a3fb0d9509b0e0a624efa714245b -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateAd.cs: f7a8e95bce211fc2f6406d2f60529de7 -> 
+  custom:scripting/monoscript/fileName/CustomNativeTemplateClient.cs: 6036f2706a04721b096f4976fba102cf -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/IInterstitialClient.cs: 991d608191b78c8e7fd5db9be9f06978 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/AdValue.cs: a2f773d836e414a5c77ccf2d5027b1bc -> 
+  custom:scripting/monoscript/fileName/AndroidBuildPostProcessor.cs: 71e1f92e948bf8391e7f4c26e93e881b -> 
+  custom:scripting/monoscript/fileName/BannerClient.cs: bad0b4ec2e41d28268cab79e88aba753 -> 
+  custom:scripting/monoscript/fileName/MobileAdsEventExecutor.cs: 1b597c4859ae617ad2d4c9f54ef86b49 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/InterstitialAd.cs: 83a3085cffca8b95d59d6274a94727dd -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/CustomNativeEventArgs.cs: f666e5091b7f3e8b349100896254b062 -> 
+  custom:scripting/monoscript/fileName/MediationExtras.cs: 057f082e59198747a46c1014ff849a27 -> 
+  custom:scripting/monoscript/fileName/IInitializationStatusClient.cs: df8b75b120fe4efbe291413e3b704c86 -> 
+  custom:scripting/monoscript/fileName/IMobileAdsClient.cs: 7df80c835c7bd8f7f323271a22dc50c8 -> 
+  custom:scripting/monoscript/fileName/RequestConfigurationClient.cs: 69f620ca634ebb87c398184264f4e17a -> 
+  custom:scripting/monoscript/fileName/InterstitialClient.cs: 39c9d404634d36dd8b59af602dd7753c -> 
+  custom:scripting/monoscript/fileName/RewardedAdClient.cs: 597ddff81643a56a9dbc835c6d1903c7 -> 
+  custom:scripting/monoscript/fileName/BaseAdDummyClient.cs: 76d58b8e36c7ed680111e9e576e10125 -> 
+  custom:scripting/monoscript/fileName/IRewardedAdClient.cs: 427e261bf9d4b6054c2a2ac9dbbe86c3 -> 
+  custom:scripting/monoscript/fileName/RewardingAdBaseClient.cs: 76b9a3aea36ab822805db9605cb56a96 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/AdValueEventArgs.cs: 29b158b86fe1413913a4024ab6e42140 -> 
+  custom:scripting/monoscript/fileName/Countdown.cs: 9eaba8ef7236160695dec88ec67286ab -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ButtonBehaviour.cs: 30e81437968d9ce210f374d1db73cb02 -> 
+  custom:scripting/monoscript/fileName/DisplayMetrics.cs: eb1778554635eb1f3eeff5085e0774cb -> 
+  custom:scripting/monoscript/fileName/IResponseInfoClient.cs: e50c9c7984279f9dda18ae66debfe78f -> 
+  custom:scripting/monoscript/fileName/RewardedAd.cs: 324b35b8f4712f7a0584de9ced31d04e -> 
+  custom:scripting/monoscript/fileName/MobileAds.cs: a666d15faaffd38175b6ffa6d29e0f3b -> 
+  custom:scripting/monoscript/fileName/IRewardBasedVideoAdClient.cs: 52fe3776767f097f1bf32567a2909d91 -> 
+  custom:scripting/monoscript/fileName/RewardedInterstitialAd.cs: b031cf7e56cdfe003c35f80a67cb9933 -> 
+  custom:scripting/monoscript/fileName/BannerView.cs: 1766d5de63319ff905aec1128d97054e -> 
+  custom:scripting/monoscript/fileName/InitializationStatus.cs: 99d4da5410dbc517bd7bf07953c485be -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/RewardedAdDummyClient.cs: 2319da624d00d206ec6d27569afdf64e -> 
+  custom:scripting/monoscript/fileName/AdLoaderClient.cs: 25e8a11a1b7948177c43756bf41a1444 -> 
+  custom:scripting/monoscript/fileName/MobileAdsClient.cs: 60650d23a1b3c4ef5b8dda3a18ff6e89 -> 
+  custom:scripting/monoscript/fileName/AdRequest.cs: dc16a1beb79301a69225b49d452e4757 -> 

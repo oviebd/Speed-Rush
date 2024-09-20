@@ -21,9 +21,9 @@ public class GooglePlayServiceManager : MonoBehaviour
 
 	private void Start()
 	{
-		PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder().Build();
-		PlayGamesPlatform.InitializeInstance(config);
-		PlayGamesPlatform.Activate();
+		//PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder().Build();
+		//PlayGamesPlatform.InitializeInstance(config);
+		//PlayGamesPlatform.Activate();
 
 		SignIn();
 	}
