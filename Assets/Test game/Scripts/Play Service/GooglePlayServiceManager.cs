@@ -21,26 +21,34 @@ public class GooglePlayServiceManager : MonoBehaviour
 
 	private void Start()
 	{
-		//PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder().Build();
-		//PlayGamesPlatform.InitializeInstance(config);
-		//PlayGamesPlatform.Activate();
+		PlayGamesPlatform.Activate();
+        //PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder().Build();
+        //PlayGamesPlatform.InitializeInstance(config);
+        //PlayGamesPlatform.Activate();
 
-		SignIn();
+        SignIn();
 	}
 
 	void SignIn()
 	{
-		Social.localUser.Authenticate(success => {
-			PlayerDataModel data = new PlayerDataModel();
-			data.playerName = Social.localUser.userName;
-			data.playerID = Social.localUser.id;
-		   UpdateUserWithHighScoreFromLeaderBoard(data);
-		});
-	}
+
+
+        Social.localUser.Authenticate(success =>
+        {
+
+            PlayerDataModel data = new PlayerDataModel();
+            data.playerName = Social.localUser.userName;
+            data.playerID = Social.localUser.id;
+            UpdateUserWithHighScoreFromLeaderBoard(data);
+
+            Debug.Log("U>> Login " + success + "name " + Social.localUser.userName + "email " + Social.localUser.id);
+        });
+    }
+	
 
 	public  void AddScoreToLeaderBoard(long score)
 	{
-		string leaderBordId = GPGSIds.leaderboard_hall_of_honor;
+		string leaderBordId = GPGSIds.leaderboard_hall_of_honour;
 	
 		Social.ReportScore(score, leaderBordId,success => {
 		});
@@ -74,7 +82,7 @@ public class GooglePlayServiceManager : MonoBehaviour
 	public long UpdateUserWithHighScoreFromLeaderBoard( PlayerDataModel user)
 	{
 		long highScore = -1;
-		Social.LoadScores(GPGSIds.leaderboard_hall_of_honor, scores =>
+		Social.LoadScores(GPGSIds.leaderboard_hall_of_honour, scores =>
 		{
 			if (scores.Length > 0)
 			{

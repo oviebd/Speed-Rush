@@ -24,7 +24,7 @@
 
 public static class GPGSIds
 {
-        public const string leaderboard_hall_of_honor = "CgkIwv209L4YEAIQAA"; // <GPGSID>
+        public const string leaderboard_hall_of_honour = "CgkIwv209L4YEAIQAg"; // <GPGSID>
 
 }
 
