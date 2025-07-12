@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '6000.0/staging' branch; Version is '6000.0.23f1 (1c4764c07fb4) revision 1853284'; Using compiler version '193933523'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'en' Physical Memory: 32682 MB
+OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'en' Physical Memory: 32682 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -15,9 +15,9 @@ D:/Instant Projects/Speed-Rush
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-8278
+6974
 -job-worker-count
-5
+11
 -background-job-worker-count
 8
 -asset-garbage-collectors
@@ -59,13 +59,13 @@ D:/Instant Projects/Speed-Rush
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [28224]  Target information:
+Player connection [52716]  Target information:
 
-Player connection [28224]  * "[IP] 192.168.1.17 [Port] 0 [Flags] 2 [Guid] 930270626 [EditorId] 930270626 [Version] 1048832 [Id] WindowsEditor(7,Tanvir) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [52716]  * "[IP] 192.168.1.17 [Port] 0 [Flags] 2 [Guid] 122938214 [EditorId] 122938214 [Version] 1048832 [Id] WindowsEditor(7,Tanvir) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [28224] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [28224] Host joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 5
+Player connection [52716] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [52716] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 11
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
 Library Redirect Path: Library/
@@ -75,7 +75,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 12.29 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 9.09 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.23f1 (1c4764c07fb4)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.23f1/Editor/Data/Resources/UnitySubsystems
@@ -86,55 +86,55 @@ Direct3D:
     Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
     Vendor:   NVIDIA
     VRAM:     8067 MB
-    Driver:   32.0.15.6603
+    Driver:   32.0.15.7602
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.23f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.23f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56704
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56764
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.23f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.23f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.007462 seconds.
-- Loaded All Assemblies, in  0.336 seconds
+Registered in 0.008463 seconds.
+- Loaded All Assemblies, in  0.332 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 732 ms
+Android Extension - Scanning For ADB Devices 484 ms
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.097 seconds
-Domain Reload Profiling: 1430ms
-	BeginReloadAssembly (95ms)
+- Finished resetting the current domain, in  0.790 seconds
+Domain Reload Profiling: 1118ms
+	BeginReloadAssembly (94ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (31ms)
+	RebuildCommonClasses (32ms)
 	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (47ms)
-	LoadAllAssembliesAndSetupDomain (150ms)
-		LoadAssemblies (91ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (139ms)
+		LoadAssemblies (89ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (146ms)
-			TypeCache.Refresh (145ms)
-				TypeCache.ScanAssembly (132ms)
+		AnalyzeDomain (135ms)
+			TypeCache.Refresh (134ms)
+				TypeCache.ScanAssembly (123ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (1098ms)
+	FinalizeReload (791ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1056ms)
+		SetupLoadedEditorAssemblies (757ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (841ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (578ms)
+			SetLoadedEditorAssemblies (3ms)
 			BeforeProcessingInitializeOnLoad (5ms)
-			ProcessInitializeOnLoadAttributes (140ms)
-			ProcessInitializeOnLoadMethodAttributes (63ms)
+			ProcessInitializeOnLoadAttributes (117ms)
+			ProcessInitializeOnLoadMethodAttributes (52ms)
 			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -144,8 +144,8 @@ Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.941 seconds
-Refreshing native plugins compatible for Editor in 7.46 ms, found 2 plugins.
+- Loaded All Assemblies, in  0.819 seconds
+Refreshing native plugins compatible for Editor in 7.25 ms, found 2 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
@@ -175,558 +175,50 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
 (Filename: Assets/GooglePlayGames/Editor/GPGSUpgrader.cs Line: 105)
 
-Refreshing native plugins compatible for Editor in 8.71 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 6.86 ms, found 2 plugins.
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.055 seconds
-Domain Reload Profiling: 1990ms
-	BeginReloadAssembly (437ms)
+- Finished resetting the current domain, in  0.775 seconds
+Domain Reload Profiling: 1589ms
+	BeginReloadAssembly (396ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (32ms)
-	RebuildCommonClasses (41ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (48ms)
-	LoadAllAssembliesAndSetupDomain (399ms)
-		LoadAssemblies (333ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (344ms)
+		LoadAssemblies (282ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (155ms)
-			TypeCache.Refresh (115ms)
-				TypeCache.ScanAssembly (95ms)
-			BuildScriptInfoCaches (34ms)
+		AnalyzeDomain (128ms)
+			TypeCache.Refresh (91ms)
+				TypeCache.ScanAssembly (77ms)
+			BuildScriptInfoCaches (33ms)
 			ResolveRequiredComponents (3ms)
-	FinalizeReload (1055ms)
+	FinalizeReload (776ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (833ms)
+		SetupLoadedEditorAssemblies (624ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (20ms)
+			InitializePlatformSupportModulesInManaged (16ms)
 			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (45ms)
-			ProcessInitializeOnLoadAttributes (589ms)
-			ProcessInitializeOnLoadMethodAttributes (165ms)
-			AfterProcessingInitializeOnLoad (12ms)
+			BeforeProcessingInitializeOnLoad (36ms)
+			ProcessInitializeOnLoadAttributes (442ms)
+			ProcessInitializeOnLoadMethodAttributes (116ms)
+			AfterProcessingInitializeOnLoad (10ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (4ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 11.03 ms, found 2 plugins.
+		AwakeInstancesAfterBackupRestoration (3ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 10.98 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 56 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3249 unused Assets / (2.5 MB). Loaded Objects now: 3809.
-Memory consumption went from 122.7 MB to 120.2 MB.
-Total: 17.126800 ms (FindLiveObjects: 0.576900 ms CreateObjectMapping: 0.502900 ms MarkObjects: 14.026500 ms  DeleteObjects: 2.019200 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 612236.426179 seconds.
-  path: Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Rock/RockFloating03_Normal.tif
-  artifactKey: Guid(aa9f0ee466de7e243be6369743cc3580) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Rock/RockFloating03_Normal.tif using Guid(aa9f0ee466de7e243be6369743cc3580) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '909017eca6c3585255d99257fa033ecb') in 0.1699727 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Stonework/FloorCircular03_Albedo.tif
-  artifactKey: Guid(2b90da7d9ef41a941b432d9c32bc475b) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Stonework/FloorCircular03_Albedo.tif using Guid(2b90da7d9ef41a941b432d9c32bc475b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7d38fa54e58842b74ac2a8cc5bd8c994') in 0.0908614 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Rock/RockFloating04_MetallicSmooth.tif
-  artifactKey: Guid(c9a0bf51bfbd12349a4214462466c9e0) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Rock/RockFloating04_MetallicSmooth.tif using Guid(c9a0bf51bfbd12349a4214462466c9e0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7ffd0187c6b00ed90a7ede35061a1402') in 0.0353395 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Models/Environment/Stonework/StairsCircular01.fbx
-  artifactKey: Guid(05c0c5b9da5734e4790dfa54dcf0748b) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Models/Environment/Stonework/StairsCircular01.fbx using Guid(05c0c5b9da5734e4790dfa54dcf0748b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3a6d5372a8d5bb742e05a8608eb46cd5') in 0.0624732 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Rock/RockFloating04_Occlusion.tif
-  artifactKey: Guid(5f0402585ae3c904eae3ccdbbdabf71f) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Rock/RockFloating04_Occlusion.tif using Guid(5f0402585ae3c904eae3ccdbbdabf71f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f4fa2eeb57d6191f0efe9eb8587f719c') in 0.022344 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Rock/RockFloating02_Occlusion.tif
-  artifactKey: Guid(99b1cc1989812524585b277f42e08a2e) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Rock/RockFloating02_Occlusion.tif using Guid(99b1cc1989812524585b277f42e08a2e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'de1936cca378fdc4d72744911cd175a7') in 0.0290824 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/GooglePlayGames/Editor/m2repository/com/google/games/gpgs-plugin-support/0.10.12/gpgs-plugin-support-0.10.12.pom.md5
-  artifactKey: Guid(34dd9718ba87bb3429122a20229ffc5d) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/GooglePlayGames/Editor/m2repository/com/google/games/gpgs-plugin-support/0.10.12/gpgs-plugin-support-0.10.12.pom.md5 using Guid(34dd9718ba87bb3429122a20229ffc5d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9a9fb682ab654ac391720bff46395b65') in 0.0050041 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Materials/Environment/Rock/RockFloating04_Mat.mat
-  artifactKey: Guid(3ef81e43f26c03a48a716c889d201861) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Materials/Environment/Rock/RockFloating04_Mat.mat using Guid(3ef81e43f26c03a48a716c889d201861) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f4155be701dce960aaf4e80dbfe959cb') in 0.1088884 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Stonework/StairsCircular01_Occlusion.tif
-  artifactKey: Guid(719370043a48f054fb21c7500d45396a) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Stonework/StairsCircular01_Occlusion.tif using Guid(719370043a48f054fb21c7500d45396a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '773edaea08a6bca5a1df22694e9c27a5') in 0.022168 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Stonework/StairsCircular01_Albedo.tif
-  artifactKey: Guid(5b86e493dae89d5418ed285faaf2d3ce) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Stonework/StairsCircular01_Albedo.tif using Guid(5b86e493dae89d5418ed285faaf2d3ce) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f8c191604c183b2e80e9f896bbf97cb4') in 0.0883162 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Rock/RockFloating04_Normals.tif
-  artifactKey: Guid(8ba1548737f50a94f85de65349abd43b) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Rock/RockFloating04_Normals.tif using Guid(8ba1548737f50a94f85de65349abd43b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '79d78581ed522b5c871726261a1c247d') in 0.0198616 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Rock/RockFloating03_MetallicSmooth.tif
-  artifactKey: Guid(ffea55d3550d0f342a603620ed9aacd1) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Rock/RockFloating03_MetallicSmooth.tif using Guid(ffea55d3550d0f342a603620ed9aacd1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd4c2833e8629aef41c6b02ce02898d5c') in 0.0195146 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Rock/RockFloating01_Normals.tif
-  artifactKey: Guid(b7a8e52103b698647939bc8de396cc17) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Rock/RockFloating01_Normals.tif using Guid(b7a8e52103b698647939bc8de396cc17) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd9e455b1d7921e146639e0a6aed54aaa') in 0.0252226 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/GooglePlayGames/Editor/m2repository/com/google/games/gpgs-plugin-support/0.10.12/gpgs-plugin-support-0.10.12.pom
-  artifactKey: Guid(8288610b2752b2b978136d0f6025a258) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/GooglePlayGames/Editor/m2repository/com/google/games/gpgs-plugin-support/0.10.12/gpgs-plugin-support-0.10.12.pom using Guid(8288610b2752b2b978136d0f6025a258) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e2154bffbdcc99e2aaa2210e822e3032') in 0.0062334 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Ground/Moss_Albedo.tif
-  artifactKey: Guid(fd467bbf94d53bb499d3c3075cb021c9) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Ground/Moss_Albedo.tif using Guid(fd467bbf94d53bb499d3c3075cb021c9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b1217636ce08c36fa7a8bfbec91ac65b') in 0.0649132 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Rock/RockFloating01_Albedo.tif
-  artifactKey: Guid(99a4c2d1de8595c468a9eab6cfd8cb74) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Rock/RockFloating01_Albedo.tif using Guid(99a4c2d1de8595c468a9eab6cfd8cb74) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'cabf06b93e6f3be23ba64674af9769a6') in 0.0207183 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Models/Environment/Rock/RockFloating02.fbx
-  artifactKey: Guid(28deb9f2de69da84a8b4690810e91ebb) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Models/Environment/Rock/RockFloating02.fbx using Guid(28deb9f2de69da84a8b4690810e91ebb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a492eac654307f689f212004eb7796d0') in 0.0281759 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Models/Environment/Rock/RockFloating01.fbx
-  artifactKey: Guid(2be1311ba057652448cee2e5e7f1e84b) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Models/Environment/Rock/RockFloating01.fbx using Guid(2be1311ba057652448cee2e5e7f1e84b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a0497d9179127734bf922214c5dab936') in 0.0248776 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/OrdosFX/PortalsPackage#2/SceneResourses/Prefabs/Environment/Rock/RockFloating04.prefab
-  artifactKey: Guid(99f568df8d78f814a9b7bf6ce50ab1eb) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/OrdosFX/PortalsPackage#2/SceneResourses/Prefabs/Environment/Rock/RockFloating04.prefab using Guid(99f568df8d78f814a9b7bf6ce50ab1eb) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '79c013e78d49c11e01e1c164ab55cef4') in 0.0162229 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Game GUI Vol1/PurpleRock/PNG/Shop.png
-  artifactKey: Guid(1402e28f6b5254db2a8c7e8a008025c0) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Game GUI Vol1/PurpleRock/PNG/Shop.png using Guid(1402e28f6b5254db2a8c7e8a008025c0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b456016ebacf1d4e42505aebd3bc2b7b') in 0.0161534 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Game GUI Vol1/LazyDay/Vector/LazyDay.ai
-  artifactKey: Guid(130c49e8c161548878f3ae7d36b48213) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Game GUI Vol1/LazyDay/Vector/LazyDay.ai using Guid(130c49e8c161548878f3ae7d36b48213) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ab39c6189a7d413f3ffc36d78a665c65') in 0.0044617 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/OrdosFX/PortalsPackage#2/Prefabs/Portal5.prefab
-  artifactKey: Guid(fc9b5fc3ed71a2540b1d13c814e546d6) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/OrdosFX/PortalsPackage#2/Prefabs/Portal5.prefab using Guid(fc9b5fc3ed71a2540b1d13c814e546d6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '397cdf64859eb9f50ecb6620daa4eb60') in 0.0189203 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 44
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Game GUI Vol1/Playful/PNG/RightArrow.png
-  artifactKey: Guid(37f6c6fb321ad4710954e2eaa3d57791) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Game GUI Vol1/Playful/PNG/RightArrow.png using Guid(37f6c6fb321ad4710954e2eaa3d57791) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '39e1d9c97f4a94f92c67438b477d715e') in 0.0214447 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Unity Utility/AudioSystem/AudioManager.prefab
-  artifactKey: Guid(10be81a64653f4386ba939003911bca3) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Unity Utility/AudioSystem/AudioManager.prefab using Guid(10be81a64653f4386ba939003911bca3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f6c320ac0ebb72fc1a5b4d1427273620') in 0.0102062 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/OrdosFX/PortalsPackage#2/SceneResourses/Prefabs/Environment/Rock/RockFloating02.prefab
-  artifactKey: Guid(b1f09b7a7d816da43b23b4ecea20e151) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/OrdosFX/PortalsPackage#2/SceneResourses/Prefabs/Environment/Rock/RockFloating02.prefab using Guid(b1f09b7a7d816da43b23b4ecea20e151) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c5f7212c8d583618321580b2de0fc7e9') in 0.0106452 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Game GUI Vol1/LazyDay/PNG/Forward.png
-  artifactKey: Guid(2cb44f2ba74d44feaa8292079e48c93d) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Game GUI Vol1/LazyDay/PNG/Forward.png using Guid(2cb44f2ba74d44feaa8292079e48c93d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'db7dbf03f3cf5960956a4f12acb0690a') in 0.013312 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/GoogleMobileAds/Platforms/Android/Utils.cs
-  artifactKey: Guid(e17a17026dc1549e090ee48995b0a982) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/GoogleMobileAds/Platforms/Android/Utils.cs using Guid(e17a17026dc1549e090ee48995b0a982) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '16b1e5c7f35b1ace3a1b74071a6c1ca0') in 0.0056619 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/Game GUI Vol1/LazyDay/PNG/Twitter.png
-  artifactKey: Guid(d6c546384b9de45718bfa37ad8251d25) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Game GUI Vol1/LazyDay/PNG/Twitter.png using Guid(d6c546384b9de45718bfa37ad8251d25) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'de1fedfad5039ccb3c05433cbc0e7dae') in 0.0241705 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Game GUI Vol1/PurpleRock/PNG/Settings.png
-  artifactKey: Guid(b19489b3ffbd6417989ea6d8d96437e4) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Game GUI Vol1/PurpleRock/PNG/Settings.png using Guid(b19489b3ffbd6417989ea6d8d96437e4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ec0a32363919ebc4a0105d8eef6c8279') in 0.0148711 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/GoogleMobileAds/Platforms/Unity/RewardingAdBaseClient.cs
-  artifactKey: Guid(00ac7e5d540a9488b80d2f050491947d) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/GoogleMobileAds/Platforms/Unity/RewardingAdBaseClient.cs using Guid(00ac7e5d540a9488b80d2f050491947d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ddb0e658145dc46bbbed3ca86fb28838') in 0.0046117 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/GoogleMobileAds/Api/Core/AdSize.cs
-  artifactKey: Guid(bd009f3ff246e43c8934c5bfb17e2a5a) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/GoogleMobileAds/Api/Core/AdSize.cs using Guid(bd009f3ff246e43c8934c5bfb17e2a5a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c4259576963d7a504d3fa158992808ba') in 0.0045902 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/GoogleMobileAds/Editor/Resources/DummyAds/AdImages/300x250.png
-  artifactKey: Guid(898f886a39d714db5b90d2c36676c894) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/GoogleMobileAds/Editor/Resources/DummyAds/AdImages/300x250.png using Guid(898f886a39d714db5b90d2c36676c894) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e033ea3b873e3d1462e6a00b9cea6854') in 0.0234421 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/OrdosFX/PortalsPackage#2/SceneResourses/Prefabs/Environment/Rock/RockFloating03.prefab
-  artifactKey: Guid(47c3f32edd809594683703cacb16bfe7) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/OrdosFX/PortalsPackage#2/SceneResourses/Prefabs/Environment/Rock/RockFloating03.prefab using Guid(47c3f32edd809594683703cacb16bfe7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5895f040e6b6f9c22a8b1c10d45413b2') in 0.0106736 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Test game/Scripts/Platform/PlatformGenerator.cs
-  artifactKey: Guid(d1b8dfcc5351d554fb614d9359dcd481) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Test game/Scripts/Platform/PlatformGenerator.cs using Guid(d1b8dfcc5351d554fb614d9359dcd481) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e401ff00ffe2a2a4ee16bbcbb7294d9a') in 0.0051299 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000068 seconds.
-  path: Assets/Game GUI Vol1/Playful/PNG/Minus.png
-  artifactKey: Guid(cdb25197b31d744fa9eba9d2a90e560c) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Game GUI Vol1/Playful/PNG/Minus.png using Guid(cdb25197b31d744fa9eba9d2a90e560c) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '981d9f5991157d392e1a44204d71f813') in 0.0126103 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Test game/Scripts/UI/AnimatorPanel.cs
-  artifactKey: Guid(2dd82ad3d98aec04f9af3568cc2f53bf) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Test game/Scripts/UI/AnimatorPanel.cs using Guid(2dd82ad3d98aec04f9af3568cc2f53bf) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '812905be8a54d3e23e80876a32be8851') in 0.0046767 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/OrdosFX/PortalsPackage#2/Materials/Portal1/ColorParticles.mat
-  artifactKey: Guid(62df233b6a1ae424cb66c1ac76bc0575) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/OrdosFX/PortalsPackage#2/Materials/Portal1/ColorParticles.mat using Guid(62df233b6a1ae424cb66c1ac76bc0575) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4598587210e2b607524c7009c02d1f96') in 0.0087406 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/Plus.png
-  artifactKey: Guid(0499308dc31514bf1be3189c00dd0814) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/Plus.png using Guid(0499308dc31514bf1be3189c00dd0814) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '33627edce74deca4d7b873e9046a33b8') in 0.0257163 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/GooglePlayGames/BasicApi/Nearby/AdvertisingResult.cs
-  artifactKey: Guid(941324a6338664af6a9faf5b88cad408) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/GooglePlayGames/BasicApi/Nearby/AdvertisingResult.cs using Guid(941324a6338664af6a9faf5b88cad408) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '529cc733277f99f2b0f87d5675d3cf14') in 0.0049099 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/Game GUI Vol1/Playful/PNG/Home.png
-  artifactKey: Guid(dc784d03a5bcb48e79ea5faa09963f99) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Game GUI Vol1/Playful/PNG/Home.png using Guid(dc784d03a5bcb48e79ea5faa09963f99) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1424588d1673313da05bf43c5bad88b7') in 0.0121902 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Unity Utility/Timer/Timer Scene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Unity Utility/Timer/Timer Scene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '96f0f9b72770848347abb5e42c402708') in 0.0064691 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Rock/RockFloating03_Occlusion.tif
-  artifactKey: Guid(edec81df06128604db53ddd2dc62b03a) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/OrdosFX/PortalsPackage#2/SceneResourses/Art/Textures/Environment/Rock/RockFloating03_Occlusion.tif using Guid(edec81df06128604db53ddd2dc62b03a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b953919d020fb238086d1f61076666dc') in 0.0206202 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Test game/Scripts/Ads/AdManager.cs
-  artifactKey: Guid(88881b16557d72d4ab2c2fae03077d6d) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Test game/Scripts/Ads/AdManager.cs using Guid(88881b16557d72d4ab2c2fae03077d6d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '90b9df404d3c495d46f8c72b3c2e3827') in 0.0039015 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/Game GUI Vol1/Playful/PNG/Plus.png
-  artifactKey: Guid(260b840a241de49ca868affd25c01999) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Game GUI Vol1/Playful/PNG/Plus.png using Guid(260b840a241de49ca868affd25c01999) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b344417d773948b40a31fa2e7281102e') in 0.0124139 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Test game/Animation/Heart/heart img.controller
-  artifactKey: Guid(d9c16f17ebb81a54fa4757e6be95de24) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Test game/Animation/Heart/heart img.controller using Guid(d9c16f17ebb81a54fa4757e6be95de24) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ee7bf193c20cc7cbf478ed7c3fe5fbdc') in 0.0064236 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Game GUI Vol1/WoodenBlocks/PNG/Menu.png
-  artifactKey: Guid(21a4f3d60a402429ebe35a661aa8a158) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Game GUI Vol1/WoodenBlocks/PNG/Menu.png using Guid(21a4f3d60a402429ebe35a661aa8a158) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b15db9cbc1414267c8ea9dc69acd041d') in 0.0120931 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Game GUI Vol1/PurpleRock/PNG/Restart.png
-  artifactKey: Guid(5571f1c6de6ec43b682999ea5905a215) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Game GUI Vol1/PurpleRock/PNG/Restart.png using Guid(5571f1c6de6ec43b682999ea5905a215) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '34dc99e04be19916a2e22a21eb64fdd8') in 0.0130467 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Game GUI Vol1/PurpleRock/PNG/Backward.png
-  artifactKey: Guid(cdfc291ab2d1647e2b5ae4067e00d42a) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Game GUI Vol1/PurpleRock/PNG/Backward.png using Guid(cdfc291ab2d1647e2b5ae4067e00d42a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9eb40690a7123023b86157f6dba34d84') in 0.0200138 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/GooglePlayGames/Platforms/Android/AndroidHelperFragment.cs
-  artifactKey: Guid(6eb353a6ffa554bacb374cfaf0cc45e7) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/GooglePlayGames/Platforms/Android/AndroidHelperFragment.cs using Guid(6eb353a6ffa554bacb374cfaf0cc45e7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1253a6540df8e9a26d112fab9be77fb5') in 0.0054266 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/Test game/Scripts/CountDown/CountdownController.cs
-  artifactKey: Guid(e83e51d882907f643acbb13cf4793c48) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Test game/Scripts/CountDown/CountdownController.cs using Guid(e83e51d882907f643acbb13cf4793c48) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5d4df09a1e1bea7060ef74cad7cf881a') in 0.0041041 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/OrdosFX/PortalsPackage#2/Materials/Portal2/Sparks.mat
-  artifactKey: Guid(f1d33b79bc5f0004aab619aa882d6857) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/OrdosFX/PortalsPackage#2/Materials/Portal2/Sparks.mat using Guid(f1d33b79bc5f0004aab619aa882d6857) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3a9b019a09c1a1bc9206082cbd141e33') in 0.0061273 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Game GUI Vol1/Playful/PNG/SoundON.png
-  artifactKey: Guid(38ec0776fb6b2455a9d6166b4814d5e2) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Game GUI Vol1/Playful/PNG/SoundON.png using Guid(38ec0776fb6b2455a9d6166b4814d5e2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3403f1e6ccca88367df30f6df08d48aa') in 0.01237 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Unity Utility/Collision/Script/CollisionExample.cs
-  artifactKey: Guid(e61222654bcd41f4186a1625afcd8284) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Unity Utility/Collision/Script/CollisionExample.cs using Guid(e61222654bcd41f4186a1625afcd8284) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd9f1baccdbd2439801a3d1e29f5443c9') in 0.0044527 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/GooglePlayGames/BasicApi/Video/VideoCaptureState.cs
-  artifactKey: Guid(cbf3fb68c2367460099289a57d1afecc) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/GooglePlayGames/BasicApi/Video/VideoCaptureState.cs using Guid(cbf3fb68c2367460099289a57d1afecc) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '97ee3b567cd5d681cc4519a2a44d11c5') in 0.0115239 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000060 seconds.
-  path: Assets/GoogleMobileAds/Platforms/Android/InitializationStatusClient.cs
-  artifactKey: Guid(39e48821c58d946b0ad3e8e7a2ae2a4a) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/GoogleMobileAds/Platforms/Android/InitializationStatusClient.cs using Guid(39e48821c58d946b0ad3e8e7a2ae2a4a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '723ca61238ad05d4d99f615b3c49c468') in 0.0044797 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/GoogleMobileAds/Api/Core/AdErrorEventArgs.cs
-  artifactKey: Guid(74f97ea4845754c1894b01dea7febe52) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/GoogleMobileAds/Api/Core/AdErrorEventArgs.cs using Guid(74f97ea4845754c1894b01dea7febe52) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6356a9197e7cd32a97adab37127ba41e') in 0.0042406 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/OrdosFX/PortalsPackage#2/Scripts/PortalsFX2_Light.cs
-  artifactKey: Guid(dd88fb7cd6563fe44875de9db38905ff) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/OrdosFX/PortalsPackage#2/Scripts/PortalsFX2_Light.cs using Guid(dd88fb7cd6563fe44875de9db38905ff) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'bd66489cf3dca17d331f4d4be3317be7') in 0.0047072 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/Game GUI Vol1/PurpleRock/PNG/QuestionMark.png
-  artifactKey: Guid(c80083ffcc8ea4523bd1a19b87fa03f0) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Game GUI Vol1/PurpleRock/PNG/QuestionMark.png using Guid(c80083ffcc8ea4523bd1a19b87fa03f0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'cd6f6e3c6acd7a4b67cc6a76b36c5f37') in 0.0133307 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Plugins/iOS/GADURequestConfiguration.m
-  artifactKey: Guid(756bd706ac68141cabd521858ccf829a) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Plugins/iOS/GADURequestConfiguration.m using Guid(756bd706ac68141cabd521858ccf829a) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'bfce93c15a8b837c5cdb54d5227dd746') in 0.0056397 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000066 seconds.
-  path: Assets/OrdosFX/PortalsPackage#2/Textures/compass4.png
-  artifactKey: Guid(e660c688ffd6f1d4abb684f771baf16e) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/OrdosFX/PortalsPackage#2/Textures/compass4.png using Guid(e660c688ffd6f1d4abb684f771baf16e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '69c5c7b9fab79ce14df88aa2754cf3ab') in 0.0108501 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/GooglePlayGames/BasicApi/SavedGame/SavedGameMetadataUpdate.cs
-  artifactKey: Guid(602d9e1c90f0144e79536115f3614478) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/GooglePlayGames/BasicApi/SavedGame/SavedGameMetadataUpdate.cs using Guid(602d9e1c90f0144e79536115f3614478) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '51c5c40de69f2cf03ae1f51252af105a') in 0.0116021 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Unity Utility/AudioSystem/Script/AudioManager.cs
-  artifactKey: Guid(0652afa1f9d274b668a6fda4f0eeb825) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Unity Utility/AudioSystem/Script/AudioManager.cs using Guid(0652afa1f9d274b668a6fda4f0eeb825) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'bbb31e384e0f26ad9ca36153ee5f47c7') in 0.004087 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.425800 seconds.
-  path: Assets/Test game/Icon/Icon.psd
-  artifactKey: Guid(d13297ff586bd8648a0ff0bd4cf6d291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Test game/Icon/Icon.psd using Guid(d13297ff586bd8648a0ff0bd4cf6d291) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '40a897cae2538adcbfdbd29b4ba9868a') in 0.0631557 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 651.883309 seconds.
-  path: Assets/Test game/GameScene.unity
-  artifactKey: Guid(967cb5daff65bde46a0b3d11106cfad3) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Test game/GameScene.unity using Guid(967cb5daff65bde46a0b3d11106cfad3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2aec32d0a490b8a961bf20607da76738') in 0.0275224 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
+Unloading 3249 unused Assets / (3.3 MB). Loaded Objects now: 3821.
+Memory consumption went from 125.6 MB to 122.3 MB.
+Total: 10.252200 ms (FindLiveObjects: 0.351100 ms CreateObjectMapping: 0.162100 ms MarkObjects: 8.433600 ms  DeleteObjects: 1.304400 ms)
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
