@@ -1,5 +1,5 @@
-lastUpgrade=01012
-proj.pluginVersion=0.10.12
+lastUpgrade=20100
+proj.pluginVersion=2.1.0
 proj.AppId=841520856770
 and.BundleId=com.AshToy.SpeedDash
 proj.classDir=Assets
