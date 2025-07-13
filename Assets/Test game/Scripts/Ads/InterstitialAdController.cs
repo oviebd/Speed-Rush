@@ -1,95 +1,87 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using GoogleMobileAds.Api;
 using UnityEngine;
+using GoogleMobileAds.Api;
 
 public class InterstitialAdController : MonoBehaviour
 {
-	public static InterstitialAdController instance;
-	private InterstitialAd interstitial;
+    public static InterstitialAdController instance;
+    private InterstitialAd interstitialAd;
 
+    private void Awake()
+    {
+        if (instance == null)
+            instance = this;
+    }
 
-	private void Awake()
-	{
-		if (instance == null)
-			instance = this;
-	}
+    public void SetupAd()
+    {
+        string adUnitId = AdUtility.GetInterstitialAdId(AdManager.instance.GetAppPublishMode());
 
-	public void SetupAd()
-	{
-		string adUnitId = AdUtility.GetInterstitialAdId(AdManager.instance.GetAppPublishMode());
-		this.interstitial = new InterstitialAd(adUnitId);
+        AdRequest request = new AdRequest();
+        InterstitialAd.Load(adUnitId, request, (InterstitialAd ad, LoadAdError error) =>
+        {
+            if (error != null || ad == null)
+            {
+                Debug.LogWarning("Interstitial ad failed to load: " + error);
+                return;
+            }
 
-		SetCallBacks();
-		RequestAd();
-	}
+            interstitialAd = ad;
+            RegisterAdCallbacks();
+        });
+    }
 
+    public void ShowInterstitialAd()
+    {
+        if (interstitialAd != null && interstitialAd.CanShowAd())
+        {
+            interstitialAd.Show();
+        }
+        else
+        {
+            Debug.LogWarning("Interstitial ad not ready.");
+            SetupAd(); // Preload next
+        }
+    }
 
-	public void ShowInterstitialAd()
-	{
-		if (interstitial.IsLoaded())
-		{
-			interstitial.Show();
-		}
-	}
-	private void RequestAd()
-	{
-		AdRequest request = new AdRequest.Builder().Build();
-		this.interstitial.LoadAd(request);
-	}
-	private void DestroyAd()
-	{
-		interstitial.Destroy();
-	}
+    private void RegisterAdCallbacks()
+    {
+        interstitialAd.OnAdFullScreenContentOpened += () =>
+        {
+            Debug.Log("Interstitial ad opened.");
+        };
 
+        interstitialAd.OnAdFullScreenContentClosed += () =>
+        {
+            Debug.Log("Interstitial ad closed.");
+            interstitialAd.Destroy();
+            SetupAd(); // Load next ad
+        };
 
-	#region CallBacks
-	private void SetCallBacks()
-	{
-		// Called when an ad request has successfully loaded.
-		this.interstitial.OnAdLoaded += HandleOnAdLoaded;
-		// Called when an ad request failed to load.
-		this.interstitial.OnAdFailedToLoad += HandleOnAdFailedToLoad;
-		// Called when an ad is shown.
-		this.interstitial.OnAdOpening += HandleOnAdOpened;
-		// Called when the ad is closed.
-		this.interstitial.OnAdClosed += HandleOnAdClosed;
-		// Called when the ad click caused the user to leave the application.
-		this.interstitial.OnAdLeavingApplication += HandleOnAdLeavingApplication;
+        interstitialAd.OnAdFullScreenContentFailed += (AdError error) =>
+        {
+            Debug.LogWarning("Interstitial ad failed to show: " + error.GetMessage());
+            SetupAd();
+        };
 
-	}
+        interstitialAd.OnAdImpressionRecorded += () =>
+        {
+            Debug.Log("Interstitial ad impression recorded.");
+        };
 
-	public void HandleOnAdLoaded(object sender, EventArgs args)
-	{
-		MonoBehaviour.print("HandleAdLoaded event received");
-	}
+        interstitialAd.OnAdClicked += () =>
+        {
+            Debug.Log("Interstitial ad clicked.");
+        };
 
-	public void HandleOnAdFailedToLoad(object sender, AdFailedToLoadEventArgs args)
-	{
-		MonoBehaviour.print("HandleFailedToReceiveAd event received with message: "
-							+ args.Message);
-		DestroyAd();
-		SetupAd();
-	}
+        interstitialAd.OnAdPaid += (AdValue adValue) =>
+        {
+            Debug.Log("Ad paid: " + adValue.Value);
+        };
+    }
 
-	public void HandleOnAdOpened(object sender, EventArgs args)
-	{
-		MonoBehaviour.print("HandleAdOpened event received");
-	}
-
-	public void HandleOnAdClosed(object sender, EventArgs args)
-	{
-		MonoBehaviour.print("HandleAdClosed event received");
-		DestroyAd();
-		SetupAd();
-	}
-
-	public void HandleOnAdLeavingApplication(object sender, EventArgs args)
-	{
-		MonoBehaviour.print("HandleAdLeavingApplication event received");
-		DestroyAd();
-	}
-	#endregion CallBacks
-
+    private void OnDestroy()
+    {
+        interstitialAd?.Destroy();
+    }
 }

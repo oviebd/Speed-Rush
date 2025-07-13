@@ -1,171 +1,131 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using GoogleMobileAds.Api;
 using UnityEngine;
+using GoogleMobileAds.Api;
 
 public class RewardAdController : MonoBehaviour
 {
-	public static RewardAdController instance;
-	private RewardedAd rewardedAd;
-	[Header("how much point you get after watch a reward ad")]
-	[SerializeField] private int rewardPoint = 30;
+    public static RewardAdController instance;
+    private RewardedAd rewardedAd;
 
-	public delegate void RewardAdLoaded(bool isLoaded);
-	public static event RewardAdLoaded onRewardAdLoaded;
+    [Header("How much point you get after watching a reward ad")]
+    [SerializeField] private int rewardPoint = 30;
 
-	private void Awake()
-	{
-		if (instance == null)
-			instance = this;
-	}
+    public delegate void RewardAdLoaded(bool isLoaded);
+    public static event RewardAdLoaded onRewardAdLoaded;
 
-	public int GetRewardPoint()
-	{
-		return rewardPoint;
-	}
+    private void Awake()
+    {
+        if (instance == null)
+            instance = this;
+    }
 
-	public void SetupAd()
-	{
-		string adUnitId = AdUtility.GetRewardAdId(AdManager.instance.GetAppPublishMode());
-		this.rewardedAd = new RewardedAd(adUnitId);
+    public int GetRewardPoint()
+    {
+        return rewardPoint;
+    }
 
-		SetCallBacks();
-		RequestRewardAd();
+    public void SetupAd()
+    {
+        string adUnitId = AdUtility.GetRewardAdId(AdManager.instance.GetAppPublishMode());
 
-		if (onRewardAdLoaded != null)
-			onRewardAdLoaded(false);
-	}
+        AdRequest request = new AdRequest();
 
+        RewardedAd.Load(adUnitId, request, (ad, error) =>
+        {
+            if (error != null)
+            {
+                Debug.LogError("Reward ad failed to load: " + error.GetMessage());
+                onRewardAdLoaded?.Invoke(false);
+                return;
+            }
 
-	public void ShowRewardAd()
-	{
+            Debug.Log("Reward ad loaded successfully.");
 
-		bool isNetworkAvilable = Utility.isNetworkAvilable();
-		if (isNetworkAvilable == true && rewardedAd.IsLoaded() == true)
-		{
-			if (IsRewardAdLoaded())
-			{
-				rewardedAd.Show();
-			}
-		}
-		else
-		{
-			string title = "Failed to connect with internet";
-			string message = "Please check your network connection.";
+            rewardedAd = ad;
 
-			if (isNetworkAvilable == false)
-			{
-				title = "Failed to connect with internet!";
-				message = "Please check your network connection.";
-			}
-			else
-			{
-				title = "Ad Server went wrong!";
-				message = "Currently we can not show any ads! Sorry.";
-			}
-			
-			DialogClass alertDialogClass = new DialogBuilder().
-						 Title(title).
-						 Message(message).
-						 PositiveButtonText("Ok").
-						 PositiveButtonAction((IDialog dialog) =>
-						 {
-							 dialog.HideDialog();
-							 GameManager.instance.EndGame();
-						 }).
-						 build();
+            // Setup callbacks
+            rewardedAd.OnAdFullScreenContentOpened += () =>
+            {
+                Debug.Log("Reward ad opened.");
+            };
 
-			DialogManager.instance.SpawnDialogBasedOnDialogType(DialogTypeEnum.DialogType.AlertDialog, alertDialogClass);
-		}
-	}
+            rewardedAd.OnAdFullScreenContentClosed += () =>
+            {
+                Debug.Log("Reward ad closed.");
+                SetupAd(); // Preload next
+            };
 
+            rewardedAd.OnAdFullScreenContentFailed += (adError) =>
+            {
+                Debug.LogError("Reward ad failed to show: " + adError.GetMessage());
+                SetupAd();
+            };
 
+            rewardedAd.OnAdPaid += (adValue) =>
+            {
+                Debug.Log("Ad Paid: " + adValue.Value);
+            };
 
-	public bool IsRewardAdLoaded()
-	{
-		bool isLoaded = false;
-		if (rewardedAd != null)
-			isLoaded = rewardedAd.IsLoaded();
-		return isLoaded;
-	}
+            rewardedAd.OnAdImpressionRecorded += () =>
+            {
+                Debug.Log("Impression recorded.");
+            };
 
-	private void RequestRewardAd()
-	{
-		AdRequest request = new AdRequest.Builder().Build();
-		this.rewardedAd.LoadAd(request);
-	}
+            rewardedAd.OnAdClicked += () =>
+            {
+                Debug.Log("Ad clicked.");
+            };
 
+            onRewardAdLoaded?.Invoke(true);
+        });
 
-	#region CallBacks
-	private void SetCallBacks()
-	{
+        onRewardAdLoaded?.Invoke(false); // Initial state
+    }
 
-		// Called when an ad request has successfully loaded.
-		this.rewardedAd.OnAdLoaded += HandleRewardedAdLoaded;
-		// Called when an ad request failed to load.
-		this.rewardedAd.OnAdFailedToLoad += HandleRewardedAdFailedToLoad;
-		// Called when an ad is shown.
-		this.rewardedAd.OnAdOpening += HandleRewardedAdOpening;
-		// Called when an ad request failed to show.
-		this.rewardedAd.OnAdFailedToShow += HandleRewardedAdFailedToShow;
-		// Called when the user should be rewarded for interacting with the ad.
-		this.rewardedAd.OnUserEarnedReward += HandleUserEarnedReward;
-		// Called when the ad is closed.
-		this.rewardedAd.OnAdClosed += HandleRewardedAdClosed;
+    public void ShowRewardAd()
+    {
+        bool isNetworkAvailable = Utility.isNetworkAvilable();
 
-	}
+        if (isNetworkAvailable && rewardedAd != null && rewardedAd.CanShowAd())
+        {
+            rewardedAd.Show((reward) =>
+            {
+                Debug.Log("User earned reward: " + reward.Amount);
+                GameManager.instance.OnRewardAdCompleted();
+            });
+        }
+        else
+        {
+            string title, message;
 
-	public void HandleRewardedAdLoaded(object sender, EventArgs args)
-	{
-		//MonoBehaviour.print("HandleRewardedAdLoaded event received");
-		if (onRewardAdLoaded != null)
-			onRewardAdLoaded(true);
-	}
+            if (!isNetworkAvailable)
+            {
+                title = "Failed to connect with internet!";
+                message = "Please check your network connection.";
+            }
+            else
+            {
+                title = "Ad Server went wrong!";
+                message = "Currently we cannot show any ads! Sorry.";
+            }
 
-	public void HandleRewardedAdFailedToLoad(object sender, AdErrorEventArgs args)
-	{
-		/* MonoBehaviour.print(
-			 "HandleRewardedAdFailedToLoad event received with message: "
-							  + args.Message);*/
-		SetupAd();
-	}
+            DialogClass alertDialogClass = new DialogBuilder()
+                .Title(title)
+                .Message(message)
+                .PositiveButtonText("Ok")
+                .PositiveButtonAction((IDialog dialog) =>
+                {
+                    dialog.HideDialog();
+                    GameManager.instance.EndGame();
+                })
+                .build();
 
-	public void HandleRewardedAdOpening(object sender, EventArgs args)
-	{
-		// MonoBehaviour.print("HandleRewardedAdOpening event received");
-	}
+            DialogManager.instance.SpawnDialogBasedOnDialogType(DialogTypeEnum.DialogType.AlertDialog, alertDialogClass);
+        }
+    }
 
-	public void HandleRewardedAdFailedToShow(object sender, AdErrorEventArgs args)
-	{
-		/* MonoBehaviour.print(
-			 "HandleRewardedAdFailedToShow event received with message: "
-							  + args.Message);*/
-		SetupAd();
-	}
-
-	public void HandleRewardedAdClosed(object sender, EventArgs args)
-	{
-		MonoBehaviour.print("HandleRewardedAdClosed event received");
-		SetupAd();
-	}
-
-	public void HandleUserEarnedReward(object sender, Reward args)
-	{
-		GameManager.instance.OnRewardAdCompleted();
-		/* string type = args.Type;
-		 double amount = args.Amount;
-		 MonoBehaviour.print(
-			 "HandleRewardedAdRewarded event received for "
-						 + amount.ToString() + " " + type);*/
-
-		/*PlayerAchivedDataHandler.instance.SetTotalScore(PlayerAchivedDataHandler.instance.GetTotalScore() + GetRewardPoint());
-
-		IDialog dialog = DialogManager.instance.SpawnDialogBasedOnType(GameEnum.DialogType.InfoDialog);
-		dialog.SetTitle("Success!");
-		dialog.SetMessage("You Get " + GetRewardPoint() + " point. \n your current point is " + PlayerAchivedDataHandler.instance.GetTotalScore());*/
-
-	}
-
-	#endregion CallBacks
+    public bool IsRewardAdLoaded()
+    {
+        return rewardedAd != null && rewardedAd.CanShowAd();
+    }
 }

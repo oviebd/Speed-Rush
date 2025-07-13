@@ -28,20 +28,20 @@ public class AdManager : MonoBehaviour
 		GameManager.onGameStateChanged -= OnGameStateChange;
 	}
 
-	public void Start()
-	{
-		string appId = AdUtility.GetAppId(_isPublish);
+    public void Start()
+    {
+        MobileAds.Initialize(initStatus => {
+            Debug.Log("Google Mobile Ads initialized.");
 
-		MobileAds.Initialize(appId);
+            RequestBanner();
+            InterstitialAdController.instance.SetupAd();
+            RewardAdController.instance.SetupAd();
+            ShowBannerAD();
+        });
+    }
 
-		RequestBanner();
-		InterstitialAdController.instance.SetupAd();
-		RewardAdController.instance.SetupAd();
 
-		ShowBannerAD();
-	}
-
-	public bool GetAppPublishMode()
+    public bool GetAppPublishMode()
 	{
 		return _isPublish;
 	}
@@ -52,8 +52,8 @@ public class AdManager : MonoBehaviour
 	{
 		string adUnitId = AdUtility.GetBannerAdId(_isPublish);
 		bannerView = new BannerView(adUnitId, AdSize.SmartBanner, AdPosition.Bottom);
-		AdRequest request = new AdRequest.Builder().Build();
-		bannerView.LoadAd(request);
+        AdRequest request = new AdRequest();
+        bannerView.LoadAd(request);
 	}
 
 	private void DestroyBanner()
