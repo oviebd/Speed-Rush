@@ -23,7 +23,7 @@ public class GameOverPanel : AnimatorPanel
 	{
 		base.Show();
 		currenrScoreText.text = ScoreManager.instance.GetScore() + "";
-		GooglePlayServiceManager.instance.AddScoreToLeaderBoard(ScoreManager.instance.GetScore());
+		//GooglePlayServiceManager.instance.AddScoreToLeaderBoard(ScoreManager.instance.GetScore());
 		PlayerDataSaver.instance.SetHighScore(ScoreManager.instance.GetScore());
 	}
 

@@ -1,0 +1,12 @@
+# ninja log v5
+512	892	7742639320253670	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	91606329a410850d
+895	1334	7742639324754067	D:/Instant Projects/Speed-Rush/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/z3155i3f/obj/arm64-v8a/libswappywrapper.so	478eff9648bd72f5
+11	1373	7742639325233139	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	fafbf510622c0d9f
+1	1493	7742639326393839	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	1875d5e1079811b7
+270	1633	7742639327731573	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	3d8fcfb1da3e0b42
+359	1690	7742639328318986	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	69fd4d55ec803fbb
+401	1829	7742639329825749	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	2119c547edc7aec5
+476	1883	7742639330351105	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	9430420801571982
+208	1901	7742639330532351	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	1f429d09930af771
+113	1938	7742639330887656	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	aed7e6f9c870b1ed
+1939	2188	7742639333336568	D:/Instant Projects/Speed-Rush/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/z3155i3f/obj/arm64-v8a/libgame.so	e369fa73b21c3299
