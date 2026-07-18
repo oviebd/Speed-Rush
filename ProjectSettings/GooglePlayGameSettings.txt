@@ -1,2 +1,7 @@
 lastUpgrade=20100
 proj.pluginVersion=2.1.0
+proj.AppId=841520856770
+proj.ConstantsClassName=GPGSIds
+proj.classDir=Assets
+and.ClientId=
+android.SetupDone=true

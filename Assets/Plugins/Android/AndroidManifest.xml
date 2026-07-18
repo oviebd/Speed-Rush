@@ -3,20 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-      <!-- Permissions for recorder Plugin start -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
-
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
-
-    <uses-permission android:name="android.permission.VIDEO_CAPTURE" />
-    <uses-permission android:name="android.permission.AUDIO_CAPTURE" />
-
-      <!-- Permissions for recorder Plugin end -->
+    <!-- Required for advertising ID on Android 13+ (Play Console AD_ID declaration) -->
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
 
     <application>
 
@@ -43,37 +31,5 @@
 
 
 
-        <!-- Service declarations start -->
-        <!-- Service for system audio (mode 1) and no audio (mode 0) - only mediaProjection, no microphone permission needed -->
-         <service
-            android:name="com.SmileSoft.unityplugin.ScreenCapture.ScreenRecorderForegroundService"
-            android:foregroundServiceType="mediaProjection"
-            android:enabled="true"
-            android:exported="true" />
-        
-        <!-- Service for mic audio (mode 2) - requires microphone permission -->
-         <service
-            android:name="com.SmileSoft.unityplugin.ScreenCapture.ScreenRecorderForegroundServiceMic"
-            android:foregroundServiceType="mediaProjection|microphone"
-            android:enabled="true"
-            android:exported="true" />
-
-        <!-- Service End -->
-
-       
-         <!-- Provider start -->
-
-         <provider
-            android:name="androidx.core.content.FileProvider"
-            android:authorities="com.SmileSoft.unityplugin.ScreenRecordProvider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-             <meta-data
-             android:name="android.support.FILE_PROVIDER_PATHS"
-             android:resource="@xml/file_provider_paths" />
-            </provider>
-
-         <!-- Provider End -->
-        
     </application>
 </manifest>

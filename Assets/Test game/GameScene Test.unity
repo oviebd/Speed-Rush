@@ -3589,7 +3589,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &888801005
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3796,6 +3796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   recordButtonText: {fileID: 888801011}
+  isRecording: 0
 --- !u!1 &914884746
 GameObject:
   m_ObjectHideFlags: 0
@@ -6390,67 +6391,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fpsText: {fileID: 1720579382}
---- !u!1001 &1524780718
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7945226533026865601, guid: b86a649ffb1f4544e8849ab0c60eade0, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 579.6222
-      objectReference: {fileID: 0}
-    - target: {fileID: 7945226533026865601, guid: b86a649ffb1f4544e8849ab0c60eade0, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.00004
-      objectReference: {fileID: 0}
-    - target: {fileID: 7945226533026865601, guid: b86a649ffb1f4544e8849ab0c60eade0, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 5942.399
-      objectReference: {fileID: 0}
-    - target: {fileID: 7945226533026865601, guid: b86a649ffb1f4544e8849ab0c60eade0, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7945226533026865601, guid: b86a649ffb1f4544e8849ab0c60eade0, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7945226533026865601, guid: b86a649ffb1f4544e8849ab0c60eade0, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7945226533026865601, guid: b86a649ffb1f4544e8849ab0c60eade0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7945226533026865601, guid: b86a649ffb1f4544e8849ab0c60eade0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7945226533026865601, guid: b86a649ffb1f4544e8849ab0c60eade0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7945226533026865601, guid: b86a649ffb1f4544e8849ab0c60eade0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7945226533026865603, guid: b86a649ffb1f4544e8849ab0c60eade0, type: 3}
-      propertyPath: m_Name
-      value: Screen Recorder
-      objectReference: {fileID: 0}
-    - target: {fileID: 9008842558628389617, guid: b86a649ffb1f4544e8849ab0c60eade0, type: 3}
-      propertyPath: folderName
-      value: SmileCapture
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b86a649ffb1f4544e8849ab0c60eade0, type: 3}
 --- !u!1 &1549602887
 GameObject:
   m_ObjectHideFlags: 0
@@ -8316,6 +8256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScreenRecordManager
   recordButtonText: {fileID: 888801011}
+  isRecording: 0
 --- !u!1 &1956997502
 GameObject:
   m_ObjectHideFlags: 0
@@ -9342,6 +9283,5 @@ SceneRoots:
   - {fileID: 1722996128}
   - {fileID: 2122702720}
   - {fileID: 1129356418}
-  - {fileID: 1524780718}
   - {fileID: 827722010}
   - {fileID: 169282270}
